@@ -50,6 +50,8 @@ apis:
         type: API Reference
       - url: https://github.com/coddingtonbear/obsidian-local-rest-api
         type: GitHub
+      - url: openapi/obsidian-local-rest-api-openapi.yaml
+        type: OpenAPI
     description: >-
       Community-built plugin (by @coddingtonbear) that exposes the Obsidian vault over a local HTTPS REST API on port 27124. Endpoint groups include Vault file CRUD, Active File, Periodic Notes (daily/weekly/monthly), Search, Commands, Tags, and File Opening. Bearer-token authenticated. Used by browser extensions, scripts, and AI agents to read and write into a running Obsidian instance.
   - aid: obsidian:obsidian-sync
