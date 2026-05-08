@@ -1,0 +1,29 @@
+aid: obsidian
+url: https://raw.githubusercontent.com/api-evangelist/obsidian/refs/heads/main/apis.yml
+name: Obsidian
+x-type: company
+description: >-
+  Obsidian is a local-first knowledge base and note-taking app built on plain Markdown files. The Obsidian platform exposes a plugin API and Local REST API for community plugins and external automation.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Productivity
+  - Knowledge Management
+  - Markdown
+  - Notes
+  - Local-First
+created: '2026-05-08'
+modified: '2026-05-08'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://obsidian.md/
+  - type: Plans
+    url: plans/obsidian-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/obsidian-rate-limits.yml
+  - type: FinOps
+    url: finops/obsidian-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
