@@ -5,7 +5,7 @@ provider: Obsidian
 providerId: obsidian
 created: '2026-05-08'
 modified: '2026-05-08'
-reconciled: false
+reconciled: true
 tags:
 - Productivity
 - Knowledge Management
@@ -15,22 +15,49 @@ tags:
 - Rate Limiting
 - Quotas
 - Throttling
-description: Placeholder rate-limit artifact for Obsidian. Replace with real limits once the pipeline
-  researches the provider's rate-limit documentation.
-notes: Initial scaffold — limits have not yet been reconciled against the provider's documentation.
+description: Obsidian itself does not publish a hosted SaaS API and therefore has no remote
+  rate-limit ceilings. The Plugin API runs in-process and is bounded only by the host
+  device. The community Local REST API plugin runs on localhost and has no published
+  rate-limit policy beyond the device's own throughput. Sync and Publish are managed
+  add-ons whose throughput is bounded by the device and Obsidian-operated infrastructure.
+notes: There is no public REST/HTTP API surface from Obsidian Inc. that requires shared
+  rate-limit budgeting. If using the Local REST API plugin in a high-concurrency
+  automation, implement client-side concurrency limits to avoid saturating the local
+  Obsidian process.
 sources:
 - https://obsidian.md/
+- https://github.com/coddingtonbear/obsidian-local-rest-api
 responseCodes:
   throttled: 429
 limits:
-- name: Default
+- name: Plugin API (In-Process)
+  scope: device
+  metric: none
+  limit: -1
+  notes: No platform-imposed rate limit; bounded by local CPU and event loop.
+- name: Local REST API Plugin
+  scope: device
+  metric: none
+  limit: -1
+  notes: No published rate limit; bounded by local Obsidian process. Recommend client-side
+    concurrency caps.
+- name: Obsidian Sync (Add-On)
   scope: account
-  metric: varies
-  limit: see provider documentation
-  notes: Pending reconciliation.
+  metric: not published
+  limit: not published
+  notes: Sync is a closed managed service with no publicly documented rate-limit policy.
+- name: Obsidian Publish (Add-On)
+  scope: site
+  metric: not published
+  limit: not published
+  notes: Publish is a closed managed service with no publicly documented rate-limit policy.
 policies:
-- name: Backoff Strategy
-  description: Clients should implement exponential backoff with jitter and honor any Retry-After header.
+- name: Local Concurrency
+  description: When automating against the Local REST API plugin, cap concurrent requests
+    to keep the local Obsidian UI responsive.
+- name: Self-Signed TLS
+  description: The Local REST API uses self-signed HTTPS certificates; clients must trust
+    the certificate or use the API key over HTTP if enabled.
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

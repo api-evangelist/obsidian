@@ -3,7 +3,7 @@ url: https://raw.githubusercontent.com/api-evangelist/obsidian/refs/heads/main/a
 name: Obsidian
 x-type: company
 description: >-
-  Obsidian is a local-first knowledge base and note-taking app built on plain Markdown files. The Obsidian platform exposes a plugin API and Local REST API for community plugins and external automation.
+  Obsidian is a local-first knowledge base and note-taking app built on plain Markdown files. Obsidian itself does not publish a hosted SaaS API; programmatic access is provided through (1) the in-app Plugin API for community plugins, (2) the community-built Local REST API plugin that exposes vault operations over localhost HTTPS, and (3) optional paid add-on services Obsidian Sync and Obsidian Publish.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Productivity
@@ -14,10 +14,81 @@ tags:
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+  - aid: obsidian:obsidian-plugin-api
+    name: Obsidian Plugin API
+    tags:
+      - Plugins
+      - Extensions
+      - SDK
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.obsidian.md/Home
+    baseURL: local
+    properties:
+      - url: https://docs.obsidian.md/Home
+        type: Documentation
+      - url: https://github.com/obsidianmd/obsidian-api
+        type: SDK
+      - url: https://github.com/obsidianmd/obsidian-sample-plugin
+        type: Sample
+    description: >-
+      In-app TypeScript/JavaScript Plugin API for building Obsidian plugins. Plugins access the Vault, Workspace, MetadataCache, file system, command palette, settings, editor, and Markdown post-processing. Distributed as community plugins via the Obsidian community plugin browser.
+  - aid: obsidian:obsidian-local-rest-api
+    name: Obsidian Local REST API
+    tags:
+      - Local API
+      - REST
+      - Vault
+      - Community Plugin
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://github.com/coddingtonbear/obsidian-local-rest-api
+    baseURL: https://127.0.0.1:27124
+    properties:
+      - url: https://github.com/coddingtonbear/obsidian-local-rest-api
+        type: Documentation
+      - url: https://coddingtonbear.github.io/obsidian-local-rest-api/
+        type: API Reference
+      - url: https://github.com/coddingtonbear/obsidian-local-rest-api
+        type: GitHub
+    description: >-
+      Community-built plugin (by @coddingtonbear) that exposes the Obsidian vault over a local HTTPS REST API on port 27124. Endpoint groups include Vault file CRUD, Active File, Periodic Notes (daily/weekly/monthly), Search, Commands, Tags, and File Opening. Bearer-token authenticated. Used by browser extensions, scripts, and AI agents to read and write into a running Obsidian instance.
+  - aid: obsidian:obsidian-sync
+    name: Obsidian Sync
+    tags:
+      - Sync
+      - Cross-Device
+      - End-to-End Encryption
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://obsidian.md/sync
+    baseURL: managed
+    properties:
+      - url: https://obsidian.md/sync
+        type: Documentation
+    description: >-
+      Paid managed service that syncs an Obsidian vault across devices with end-to-end encryption, version history, and shared-vault collaboration. Not exposed as a public REST API; integration is via the Obsidian client.
+  - aid: obsidian:obsidian-publish
+    name: Obsidian Publish
+    tags:
+      - Publishing
+      - Web
+      - Hosting
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://obsidian.md/publish
+    baseURL: managed
+    properties:
+      - url: https://obsidian.md/publish
+        type: Documentation
+    description: >-
+      Paid managed service that publishes selected notes from an Obsidian vault as a public website with graph view, full-text search, and customizable themes. Not exposed as a public REST API; configured from within Obsidian.
 common:
   - type: Website
     url: https://obsidian.md/
+  - type: Documentation
+    url: https://docs.obsidian.md/Home
+  - type: Pricing
+    url: https://obsidian.md/pricing
+  - type: GitHub
+    url: https://github.com/obsidianmd
   - type: Plans
     url: plans/obsidian-plans-pricing.yml
   - type: RateLimits

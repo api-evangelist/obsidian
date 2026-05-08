@@ -5,7 +5,7 @@ provider: Obsidian
 providerId: obsidian
 created: '2026-05-08'
 modified: '2026-05-08'
-reconciled: false
+reconciled: true
 tags:
 - Productivity
 - Knowledge Management
@@ -13,30 +13,134 @@ tags:
 - Notes
 - Local-First
 - Plans
-description: Placeholder plans/pricing artifact for Obsidian. Replace with real published pricing once
-  the pipeline researches the provider's plans page.
-notes: Initial scaffold — plans/pricing have not yet been reconciled against the provider's documentation.
+description: Obsidian plans reconciled against the public obsidian.md/pricing page. The
+  Obsidian app itself is free for personal use without sign-up. Optional add-ons (Sync,
+  Publish) and licenses (Commercial, Catalyst) fund development. There is no per-API or
+  per-call charge; the Plugin API and the community Local REST API plugin are free to use.
 sources:
-- https://obsidian.md/
+- https://obsidian.md/pricing
+- https://obsidian.md/sync
+- https://obsidian.md/publish
 plans:
-- id: obsidian-default
-  name: To Be Reconciled
-  type: enterprise
-  description: Initial scaffold; replace with provider plan tiers (Free / Pro / Enterprise / pay-as-you-go,
-    etc.) once pricing is reconciled.
+- id: obsidian-personal
+  name: Personal Use (Free)
+  type: free
+  description: Free use of the full Obsidian app for personal, non-commercial use. No
+    sign-up required.
   entries:
-  - label: API Access
-    name: api_access
+  - label: App License
+    name: app_license
     type: flat
-    metric: varies
+    metric: license
+    limit: -1
+    timeFrame: monthly
+    geo: global
+    unit: 1
+    price: 0
+    userMultiplied: false
+  elements:
+  - name: All Core Features
+  - name: Plugin API and Community Plugins
+  - name: Local REST API (Community Plugin)
+- id: obsidian-commercial
+  name: Commercial License
+  type: paid
+  description: License for organizational/commercial use. Encouraged but not strictly
+    enforced for commercial work.
+  entries:
+  - label: Per-User Annual License
+    name: commercial_license
+    type: flat
+    metric: user
+    limit: -1
+    timeFrame: annual
+    geo: global
+    unit: 1
+    price: 50
+    userMultiplied: true
+  elements:
+  - name: Development Support
+  - name: Featured Organization Status
+- id: obsidian-catalyst
+  name: Catalyst Supporter License
+  type: paid
+  description: One-time supporter purchase that unlocks beta access and community perks.
+  entries:
+  - label: One-Time Catalyst License
+    name: catalyst_license
+    type: flat
+    metric: license
     limit: -1
     timeFrame: usage
     geo: global
     unit: 1
-    price: see https://obsidian.md/
+    price: 25
     userMultiplied: false
   elements:
-  - name: Pending Reconciliation
+  - name: Early Beta Access
+  - name: Community Badges
+  - name: VIP Channel
+- id: obsidian-sync
+  name: Obsidian Sync (Add-On)
+  type: paid
+  description: Optional managed cross-device sync service with end-to-end encryption.
+  entries:
+  - label: Sync Annual
+    name: sync_annual
+    type: flat
+    metric: user
+    limit: -1
+    timeFrame: monthly
+    geo: global
+    unit: 1
+    price: 4
+    userMultiplied: true
+  - label: Sync Monthly
+    name: sync_monthly
+    type: flat
+    metric: user
+    limit: -1
+    timeFrame: monthly
+    geo: global
+    unit: 1
+    price: 5
+    userMultiplied: true
+  elements:
+  - name: Cross-Device Sync
+  - name: End-to-End Encryption
+  - name: Version History
+  - name: Shared Vault Collaboration
+  - name: Priority Support
+- id: obsidian-publish
+  name: Obsidian Publish (Add-On)
+  type: paid
+  description: Optional managed publishing service to host selected notes as a public website.
+  entries:
+  - label: Publish Annual
+    name: publish_annual
+    type: flat
+    metric: site
+    limit: -1
+    timeFrame: monthly
+    geo: global
+    unit: 1
+    price: 8
+    userMultiplied: false
+  - label: Publish Monthly
+    name: publish_monthly
+    type: flat
+    metric: site
+    limit: -1
+    timeFrame: monthly
+    geo: global
+    unit: 1
+    price: 10
+    userMultiplied: false
+  elements:
+  - name: No-Code Web Publishing
+  - name: Customizable Themes
+  - name: Graph and Full-Text Search
+  - name: Priority Support
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
