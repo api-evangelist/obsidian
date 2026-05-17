@@ -1,7 +1,7 @@
 aid: obsidian
 url: https://raw.githubusercontent.com/api-evangelist/obsidian/refs/heads/main/apis.yml
 name: Obsidian
-x-type: company
+kind: company
 description: >-
   Obsidian is a local-first knowledge base and note-taking app built on plain Markdown files. Obsidian itself does not publish a hosted SaaS API; programmatic access is provided through (1) the in-app Plugin API for community plugins, (2) the community-built Local REST API plugin that exposes vault operations over localhost HTTPS, and (3) optional paid add-on services Obsidian Sync and Obsidian Publish.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -47,7 +47,7 @@ apis:
       - url: https://github.com/coddingtonbear/obsidian-local-rest-api
         type: Documentation
       - url: https://coddingtonbear.github.io/obsidian-local-rest-api/
-        type: API Reference
+        type: APIReference
       - url: https://github.com/coddingtonbear/obsidian-local-rest-api
         type: GitHub
       - url: openapi/obsidian-local-rest-api-openapi.yaml
