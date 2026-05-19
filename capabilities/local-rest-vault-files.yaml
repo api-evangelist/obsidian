@@ -1,0 +1,370 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Local REST API for Obsidian — Vault Files
+  description: 'Local REST API for Obsidian — Vault Files. 5 operations. Lead operation: Delete a particular file in your
+    vault.. Self-contained Naftiko capability covering one Obsidian business surface.'
+  tags:
+  - Obsidian
+  - Vault Files
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    OBSIDIAN_API_KEY: OBSIDIAN_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: local-rest-vault-files
+    baseUri: https://{host}:{port}
+    description: Local REST API for Obsidian — Vault Files business capability. Self-contained, no shared references.
+    resources:
+    - name: vault-filename
+      path: /vault/{filename}
+      operations:
+      - name: delete
+        method: DELETE
+        description: Delete a particular file in your vault.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: filename
+          in: path
+          type: string
+          description: Path to the relevant file (relative to your vault root).
+          required: true
+      - name: get
+        method: GET
+        description: Return the content of a single file in your vault.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: filename
+          in: path
+          type: string
+          description: Path to the relevant file (relative to your vault root).
+          required: true
+        - name: Target-Type
+          in: header
+          type: string
+          description: Type of sub-document section to target. When specified, the operation
+        - name: Target
+          in: header
+          type: string
+          description: The section to target; required when `Target-Type` is specified.
+        - name: Target-Delimiter
+          in: header
+          type: string
+          description: Delimiter used when specifying nested heading targets (e.g. "Heading 1::Subheading"). Defaults to "::".
+      - name: patch
+        method: PATCH
+        description: Partially update content in an existing note.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: filename
+          in: path
+          type: string
+          description: Path to the relevant file (relative to your vault root).
+          required: true
+        - name: Operation
+          in: header
+          type: string
+          description: Patch operation to perform
+          required: true
+        - name: Create-Target-If-Missing
+          in: header
+          type: string
+          description: If the specified Target does not exist, create it?
+        - name: Apply-If-Content-Preexists
+          in: header
+          type: string
+          description: If patch data already exists in Target, apply patch anyway?
+        - name: Trim-Target-Whitespace
+          in: header
+          type: string
+          description: Trim whitespace from Target content before applying the operation?
+        - name: Target-Type
+          in: header
+          type: string
+          description: Type of sub-document section to target. When specified, the operation
+          required: true
+        - name: Target
+          in: header
+          type: string
+          description: The section to target; required when `Target-Type` is specified.
+          required: true
+        - name: Target-Delimiter
+          in: header
+          type: string
+          description: Delimiter used when specifying nested heading targets (e.g. "Heading 1::Subheading"). Defaults to "::".
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+      - name: post
+        method: POST
+        description: Append content to a new or existing file.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: filename
+          in: path
+          type: string
+          description: Path to the relevant file (relative to your vault root).
+          required: true
+        - name: Create-Target-If-Missing
+          in: header
+          type: string
+          description: If the specified Target does not exist, create it?
+        - name: Apply-If-Content-Preexists
+          in: header
+          type: string
+          description: If patch data already exists in Target, apply patch anyway?
+        - name: Trim-Target-Whitespace
+          in: header
+          type: string
+          description: Trim whitespace from Target content before applying the operation?
+        - name: Target-Type
+          in: header
+          type: string
+          description: Type of sub-document section to target. When specified, the operation
+        - name: Target
+          in: header
+          type: string
+          description: The section to target; required when `Target-Type` is specified.
+        - name: Target-Delimiter
+          in: header
+          type: string
+          description: Delimiter used when specifying nested heading targets (e.g. "Heading 1::Subheading"). Defaults to "::".
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+      - name: put
+        method: PUT
+        description: Create a new file in your vault or update the content of an existing one.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: filename
+          in: path
+          type: string
+          description: Path to the relevant file (relative to your vault root).
+          required: true
+        - name: Apply-If-Content-Preexists
+          in: header
+          type: string
+          description: If patch data already exists in Target, apply patch anyway?
+        - name: Trim-Target-Whitespace
+          in: header
+          type: string
+          description: Trim whitespace from Target content before applying the operation?
+        - name: Target-Type
+          in: header
+          type: string
+          description: Type of sub-document section to target. When specified, the operation
+        - name: Target
+          in: header
+          type: string
+          description: The section to target; required when `Target-Type` is specified.
+        - name: Target-Delimiter
+          in: header
+          type: string
+          description: Delimiter used when specifying nested heading targets (e.g. "Heading 1::Subheading"). Defaults to "::".
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    authentication:
+      type: bearer
+      token: '{{env.OBSIDIAN_API_KEY}}'
+  exposes:
+  - type: rest
+    namespace: local-rest-vault-files-rest
+    port: 8080
+    description: REST adapter for Local REST API for Obsidian — Vault Files. One Spectral-compliant resource per consumed
+      operation, prefixed with /v1.
+    resources:
+    - path: /v1/vault/{filename}
+      name: vault-filename
+      description: REST surface for vault-filename.
+      operations:
+      - method: DELETE
+        name: delete
+        description: Delete a particular file in your vault.
+        call: local-rest-vault-files.delete
+        with:
+          filename: rest.filename
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: GET
+        name: get
+        description: Return the content of a single file in your vault.
+        call: local-rest-vault-files.get
+        with:
+          filename: rest.filename
+          Target-Type: rest.Target-Type
+          Target: rest.Target
+          Target-Delimiter: rest.Target-Delimiter
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: PATCH
+        name: patch
+        description: Partially update content in an existing note.
+        call: local-rest-vault-files.patch
+        with:
+          filename: rest.filename
+          Operation: rest.Operation
+          Create-Target-If-Missing: rest.Create-Target-If-Missing
+          Apply-If-Content-Preexists: rest.Apply-If-Content-Preexists
+          Trim-Target-Whitespace: rest.Trim-Target-Whitespace
+          Target-Type: rest.Target-Type
+          Target: rest.Target
+          Target-Delimiter: rest.Target-Delimiter
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: POST
+        name: post
+        description: Append content to a new or existing file.
+        call: local-rest-vault-files.post
+        with:
+          filename: rest.filename
+          Create-Target-If-Missing: rest.Create-Target-If-Missing
+          Apply-If-Content-Preexists: rest.Apply-If-Content-Preexists
+          Trim-Target-Whitespace: rest.Trim-Target-Whitespace
+          Target-Type: rest.Target-Type
+          Target: rest.Target
+          Target-Delimiter: rest.Target-Delimiter
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: PUT
+        name: put
+        description: Create a new file in your vault or update the content of an existing one.
+        call: local-rest-vault-files.put
+        with:
+          filename: rest.filename
+          Apply-If-Content-Preexists: rest.Apply-If-Content-Preexists
+          Trim-Target-Whitespace: rest.Trim-Target-Whitespace
+          Target-Type: rest.Target-Type
+          Target: rest.Target
+          Target-Delimiter: rest.Target-Delimiter
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: local-rest-vault-files-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Local REST API for Obsidian — Vault Files. One tool per consumed operation, routed inline
+      through this capability's consumes block.
+    tools:
+    - name: delete-particular-file-your-vault
+      description: Delete a particular file in your vault.
+      hints:
+        readOnly: false
+        destructive: true
+        idempotent: true
+      call: local-rest-vault-files.delete
+      with:
+        filename: tools.filename
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: return-content-single-file-your
+      description: Return the content of a single file in your vault.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: local-rest-vault-files.get
+      with:
+        filename: tools.filename
+        Target-Type: tools.Target-Type
+        Target: tools.Target
+        Target-Delimiter: tools.Target-Delimiter
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: partially-update-content-existing-note
+      description: Partially update content in an existing note.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: true
+      call: local-rest-vault-files.patch
+      with:
+        filename: tools.filename
+        Operation: tools.Operation
+        Create-Target-If-Missing: tools.Create-Target-If-Missing
+        Apply-If-Content-Preexists: tools.Apply-If-Content-Preexists
+        Trim-Target-Whitespace: tools.Trim-Target-Whitespace
+        Target-Type: tools.Target-Type
+        Target: tools.Target
+        Target-Delimiter: tools.Target-Delimiter
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: append-content-new-existing-file
+      description: Append content to a new or existing file.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: local-rest-vault-files.post
+      with:
+        filename: tools.filename
+        Create-Target-If-Missing: tools.Create-Target-If-Missing
+        Apply-If-Content-Preexists: tools.Apply-If-Content-Preexists
+        Trim-Target-Whitespace: tools.Trim-Target-Whitespace
+        Target-Type: tools.Target-Type
+        Target: tools.Target
+        Target-Delimiter: tools.Target-Delimiter
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: create-new-file-your-vault
+      description: Create a new file in your vault or update the content of an existing one.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: true
+      call: local-rest-vault-files.put
+      with:
+        filename: tools.filename
+        Apply-If-Content-Preexists: tools.Apply-If-Content-Preexists
+        Trim-Target-Whitespace: tools.Trim-Target-Whitespace
+        Target-Type: tools.Target-Type
+        Target: tools.Target
+        Target-Delimiter: tools.Target-Delimiter
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.

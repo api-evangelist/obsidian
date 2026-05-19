@@ -1,0 +1,332 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Local REST API for Obsidian — Active File
+  description: 'Local REST API for Obsidian — Active File. 5 operations. Lead operation: Deletes the currently-active file
+    in Obsidian.. Self-contained Naftiko capability covering one Obsidian business surface.'
+  tags:
+  - Obsidian
+  - Active File
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    OBSIDIAN_API_KEY: OBSIDIAN_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: local-rest-active-file
+    baseUri: https://{host}:{port}
+    description: Local REST API for Obsidian — Active File business capability. Self-contained, no shared references.
+    resources:
+    - name: active
+      path: /active/
+      operations:
+      - name: delete
+        method: DELETE
+        description: Deletes the currently-active file in Obsidian.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+      - name: get
+        method: GET
+        description: Return the content of the active file open in Obsidian.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: Target-Type
+          in: header
+          type: string
+          description: Type of sub-document section to target. When specified, the operation
+        - name: Target
+          in: header
+          type: string
+          description: The section to target; required when `Target-Type` is specified.
+        - name: Target-Delimiter
+          in: header
+          type: string
+          description: Delimiter used when specifying nested heading targets (e.g. "Heading 1::Subheading"). Defaults to "::".
+      - name: patch
+        method: PATCH
+        description: Partially update content in the currently open note.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: Operation
+          in: header
+          type: string
+          description: Patch operation to perform
+          required: true
+        - name: Create-Target-If-Missing
+          in: header
+          type: string
+          description: If the specified Target does not exist, create it?
+        - name: Apply-If-Content-Preexists
+          in: header
+          type: string
+          description: If patch data already exists in Target, apply patch anyway?
+        - name: Trim-Target-Whitespace
+          in: header
+          type: string
+          description: Trim whitespace from Target content before applying the operation?
+        - name: Target-Type
+          in: header
+          type: string
+          description: Type of sub-document section to target. When specified, the operation
+          required: true
+        - name: Target
+          in: header
+          type: string
+          description: The section to target; required when `Target-Type` is specified.
+          required: true
+        - name: Target-Delimiter
+          in: header
+          type: string
+          description: Delimiter used when specifying nested heading targets (e.g. "Heading 1::Subheading"). Defaults to "::".
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+      - name: post
+        method: POST
+        description: Append content to the active file open in Obsidian.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: Create-Target-If-Missing
+          in: header
+          type: string
+          description: If the specified Target does not exist, create it?
+        - name: Apply-If-Content-Preexists
+          in: header
+          type: string
+          description: If patch data already exists in Target, apply patch anyway?
+        - name: Trim-Target-Whitespace
+          in: header
+          type: string
+          description: Trim whitespace from Target content before applying the operation?
+        - name: Target-Type
+          in: header
+          type: string
+          description: Type of sub-document section to target. When specified, the operation
+        - name: Target
+          in: header
+          type: string
+          description: The section to target; required when `Target-Type` is specified.
+        - name: Target-Delimiter
+          in: header
+          type: string
+          description: Delimiter used when specifying nested heading targets (e.g. "Heading 1::Subheading"). Defaults to "::".
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+      - name: put
+        method: PUT
+        description: Update the content of the active file open in Obsidian.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: Apply-If-Content-Preexists
+          in: header
+          type: string
+          description: If patch data already exists in Target, apply patch anyway?
+        - name: Trim-Target-Whitespace
+          in: header
+          type: string
+          description: Trim whitespace from Target content before applying the operation?
+        - name: Target-Type
+          in: header
+          type: string
+          description: Type of sub-document section to target. When specified, the operation
+        - name: Target
+          in: header
+          type: string
+          description: The section to target; required when `Target-Type` is specified.
+        - name: Target-Delimiter
+          in: header
+          type: string
+          description: Delimiter used when specifying nested heading targets (e.g. "Heading 1::Subheading"). Defaults to "::".
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    authentication:
+      type: bearer
+      token: '{{env.OBSIDIAN_API_KEY}}'
+  exposes:
+  - type: rest
+    namespace: local-rest-active-file-rest
+    port: 8080
+    description: REST adapter for Local REST API for Obsidian — Active File. One Spectral-compliant resource per consumed
+      operation, prefixed with /v1.
+    resources:
+    - path: /v1/active
+      name: active
+      description: REST surface for active.
+      operations:
+      - method: DELETE
+        name: delete
+        description: Deletes the currently-active file in Obsidian.
+        call: local-rest-active-file.delete
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: GET
+        name: get
+        description: Return the content of the active file open in Obsidian.
+        call: local-rest-active-file.get
+        with:
+          Target-Type: rest.Target-Type
+          Target: rest.Target
+          Target-Delimiter: rest.Target-Delimiter
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: PATCH
+        name: patch
+        description: Partially update content in the currently open note.
+        call: local-rest-active-file.patch
+        with:
+          Operation: rest.Operation
+          Create-Target-If-Missing: rest.Create-Target-If-Missing
+          Apply-If-Content-Preexists: rest.Apply-If-Content-Preexists
+          Trim-Target-Whitespace: rest.Trim-Target-Whitespace
+          Target-Type: rest.Target-Type
+          Target: rest.Target
+          Target-Delimiter: rest.Target-Delimiter
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: POST
+        name: post
+        description: Append content to the active file open in Obsidian.
+        call: local-rest-active-file.post
+        with:
+          Create-Target-If-Missing: rest.Create-Target-If-Missing
+          Apply-If-Content-Preexists: rest.Apply-If-Content-Preexists
+          Trim-Target-Whitespace: rest.Trim-Target-Whitespace
+          Target-Type: rest.Target-Type
+          Target: rest.Target
+          Target-Delimiter: rest.Target-Delimiter
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: PUT
+        name: put
+        description: Update the content of the active file open in Obsidian.
+        call: local-rest-active-file.put
+        with:
+          Apply-If-Content-Preexists: rest.Apply-If-Content-Preexists
+          Trim-Target-Whitespace: rest.Trim-Target-Whitespace
+          Target-Type: rest.Target-Type
+          Target: rest.Target
+          Target-Delimiter: rest.Target-Delimiter
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: local-rest-active-file-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Local REST API for Obsidian — Active File. One tool per consumed operation, routed inline
+      through this capability's consumes block.
+    tools:
+    - name: deletes-currently-active-file-obsidian
+      description: Deletes the currently-active file in Obsidian.
+      hints:
+        readOnly: false
+        destructive: true
+        idempotent: true
+      call: local-rest-active-file.delete
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: return-content-active-file-open
+      description: Return the content of the active file open in Obsidian.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: local-rest-active-file.get
+      with:
+        Target-Type: tools.Target-Type
+        Target: tools.Target
+        Target-Delimiter: tools.Target-Delimiter
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: partially-update-content-currently-open
+      description: Partially update content in the currently open note.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: true
+      call: local-rest-active-file.patch
+      with:
+        Operation: tools.Operation
+        Create-Target-If-Missing: tools.Create-Target-If-Missing
+        Apply-If-Content-Preexists: tools.Apply-If-Content-Preexists
+        Trim-Target-Whitespace: tools.Trim-Target-Whitespace
+        Target-Type: tools.Target-Type
+        Target: tools.Target
+        Target-Delimiter: tools.Target-Delimiter
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: append-content-active-file-open
+      description: Append content to the active file open in Obsidian.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: local-rest-active-file.post
+      with:
+        Create-Target-If-Missing: tools.Create-Target-If-Missing
+        Apply-If-Content-Preexists: tools.Apply-If-Content-Preexists
+        Trim-Target-Whitespace: tools.Trim-Target-Whitespace
+        Target-Type: tools.Target-Type
+        Target: tools.Target
+        Target-Delimiter: tools.Target-Delimiter
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: update-content-active-file-open
+      description: Update the content of the active file open in Obsidian.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: true
+      call: local-rest-active-file.put
+      with:
+        Apply-If-Content-Preexists: tools.Apply-If-Content-Preexists
+        Trim-Target-Whitespace: tools.Trim-Target-Whitespace
+        Target-Type: tools.Target-Type
+        Target: tools.Target
+        Target-Delimiter: tools.Target-Delimiter
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.

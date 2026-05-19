@@ -1,0 +1,112 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Local REST API for Obsidian — Commands
+  description: 'Local REST API for Obsidian — Commands. 2 operations. Lead operation: Get a list of available commands.. Self-contained
+    Naftiko capability covering one Obsidian business surface.'
+  tags:
+  - Obsidian
+  - Commands
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    OBSIDIAN_API_KEY: OBSIDIAN_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: local-rest-commands
+    baseUri: https://{host}:{port}
+    description: Local REST API for Obsidian — Commands business capability. Self-contained, no shared references.
+    resources:
+    - name: commands
+      path: /commands/
+      operations:
+      - name: get
+        method: GET
+        description: Get a list of available commands.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: commands-commandId
+      path: /commands/{commandId}/
+      operations:
+      - name: post
+        method: POST
+        description: Execute a command.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: commandId
+          in: path
+          type: string
+          description: The id of the command to execute
+          required: true
+    authentication:
+      type: bearer
+      token: '{{env.OBSIDIAN_API_KEY}}'
+  exposes:
+  - type: rest
+    namespace: local-rest-commands-rest
+    port: 8080
+    description: REST adapter for Local REST API for Obsidian — Commands. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/commands
+      name: commands
+      description: REST surface for commands.
+      operations:
+      - method: GET
+        name: get
+        description: Get a list of available commands.
+        call: local-rest-commands.get
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/commands/{commandid}
+      name: commands-commandid
+      description: REST surface for commands-commandId.
+      operations:
+      - method: POST
+        name: post
+        description: Execute a command.
+        call: local-rest-commands.post
+        with:
+          commandId: rest.commandId
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: local-rest-commands-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Local REST API for Obsidian — Commands. One tool per consumed operation, routed inline through
+      this capability's consumes block.
+    tools:
+    - name: get-list-available-commands
+      description: Get a list of available commands.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: local-rest-commands.get
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: execute-command
+      description: Execute a command.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: local-rest-commands.post
+      with:
+        commandId: tools.commandId
+      outputParameters:
+      - type: object
+        mapping: $.

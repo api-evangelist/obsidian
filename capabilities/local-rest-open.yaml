@@ -1,0 +1,86 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Local REST API for Obsidian — Open
+  description: 'Local REST API for Obsidian — Open. 1 operations. Lead operation: Open the specified document in the Obsidian
+    user interface.. Self-contained Naftiko capability covering one Obsidian business surface.'
+  tags:
+  - Obsidian
+  - Open
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    OBSIDIAN_API_KEY: OBSIDIAN_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: local-rest-open
+    baseUri: https://{host}:{port}
+    description: Local REST API for Obsidian — Open business capability. Self-contained, no shared references.
+    resources:
+    - name: open-filename
+      path: /open/{filename}
+      operations:
+      - name: post
+        method: POST
+        description: Open the specified document in the Obsidian user interface.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: filename
+          in: path
+          type: string
+          description: Path to the file to return (relative to your vault root).
+          required: true
+        - name: newLeaf
+          in: query
+          type: boolean
+          description: Open this as a new leaf?
+    authentication:
+      type: bearer
+      token: '{{env.OBSIDIAN_API_KEY}}'
+  exposes:
+  - type: rest
+    namespace: local-rest-open-rest
+    port: 8080
+    description: REST adapter for Local REST API for Obsidian — Open. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/open/{filename}
+      name: open-filename
+      description: REST surface for open-filename.
+      operations:
+      - method: POST
+        name: post
+        description: Open the specified document in the Obsidian user interface.
+        call: local-rest-open.post
+        with:
+          filename: rest.filename
+          newLeaf: rest.newLeaf
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: local-rest-open-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Local REST API for Obsidian — Open. One tool per consumed operation, routed inline through
+      this capability's consumes block.
+    tools:
+    - name: open-specified-document-obsidian-user
+      description: Open the specified document in the Obsidian user interface.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: local-rest-open.post
+      with:
+        filename: tools.filename
+        newLeaf: tools.newLeaf
+      outputParameters:
+      - type: object
+        mapping: $.

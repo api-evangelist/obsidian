@@ -1,0 +1,128 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Local REST API for Obsidian — Search
+  description: 'Local REST API for Obsidian — Search. 2 operations. Lead operation: Search for documents matching a specified
+    search query. Self-contained Naftiko capability covering one Obsidian business surface.'
+  tags:
+  - Obsidian
+  - Search
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    OBSIDIAN_API_KEY: OBSIDIAN_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: local-rest-search
+    baseUri: https://{host}:{port}
+    description: Local REST API for Obsidian — Search business capability. Self-contained, no shared references.
+    resources:
+    - name: search
+      path: /search/
+      operations:
+      - name: post
+        method: POST
+        description: Search for documents matching a specified search query
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: search-simple
+      path: /search/simple/
+      operations:
+      - name: post
+        method: POST
+        description: Search for documents matching a specified text query
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: query
+          in: query
+          type: string
+          description: Your search query
+          required: true
+        - name: contextLength
+          in: query
+          type: number
+          description: How much context to return around the matching string
+    authentication:
+      type: bearer
+      token: '{{env.OBSIDIAN_API_KEY}}'
+  exposes:
+  - type: rest
+    namespace: local-rest-search-rest
+    port: 8080
+    description: REST adapter for Local REST API for Obsidian — Search. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/search
+      name: search
+      description: REST surface for search.
+      operations:
+      - method: POST
+        name: post
+        description: Search for documents matching a specified search query
+        call: local-rest-search.post
+        with:
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/search/simple
+      name: search-simple
+      description: REST surface for search-simple.
+      operations:
+      - method: POST
+        name: post
+        description: Search for documents matching a specified text query
+        call: local-rest-search.post
+        with:
+          query: rest.query
+          contextLength: rest.contextLength
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: local-rest-search-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Local REST API for Obsidian — Search. One tool per consumed operation, routed inline through
+      this capability's consumes block.
+    tools:
+    - name: search-documents-matching-specified-search
+      description: Search for documents matching a specified search query
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: local-rest-search.post
+      with:
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: search-documents-matching-specified-text
+      description: Search for documents matching a specified text query
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: local-rest-search.post
+      with:
+        query: tools.query
+        contextLength: tools.contextLength
+      outputParameters:
+      - type: object
+        mapping: $.
