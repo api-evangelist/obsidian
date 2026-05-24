@@ -122,6 +122,8 @@ common:
   url: rate-limits/obsidian-rate-limits.yml
 - type: FinOps
   url: finops/obsidian-finops.yml
+- type: LLMsTxt
+  url: https://docs.obsidian.md/llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
