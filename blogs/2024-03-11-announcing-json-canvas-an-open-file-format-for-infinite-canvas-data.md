@@ -1,0 +1,8 @@
+---
+title: 'Announcing JSON Canvas: an open file format for infinite canvas data'
+url: https://obsidian.md/blog/json-canvas/
+date: '2024-03-11'
+author: kepano
+feed_url: https://obsidian.md/feed.xml
+---
+Today we're excited to announce that the Obsidian Canvas file format is now called JSON Canvas and has its own site, specification, and open source resources at jsoncanvas.org . JSON Canvas can be implemented freely as an import, export, and storage format for any app or tool . All the resources associated with JSON Canvas are open source under the MIT license, and can be found on GitHub . For the release of Obsidian Canvas we created the .canvas format with an open spec. We created this format because we felt it was essential to follow the principles that have guided us since the start. Your Obsidian data should always be stored locally, accessible offline, completely in your control, in open file formats that are easy to retrieve and read . For notes we achieve this by using plain text .md files with Markdown syntax, a widely supported format. However, infinite canvas data does not yet have a similarly established format. While infinite canvas tools are not new, they have been quickly growing in popularity . The JSON Canvas format was created in hopes of providing longevity, readability, interoperability, and extensibility to data created with infinite canvas apps. The format is designed to be easy to parse and give users ownership over their data. The JSON Canvas spec is currently at version 1.0 . The spec is relatively conservative, it does not support every feature that canvas apps may want to implement. However we think it is a useful starting point to build upon, and we plan to continue improving on it over time.

@@ -1,0 +1,8 @@
+---
+title: Obsidian 1.11.6 Mobile (Early access)
+url: https://obsidian.md/changelog/2026-01-26-mobile-v1.11.6/
+date: '2026-01-26'
+author: ''
+feed_url: https://obsidian.md/changelog.xml
+---
+Improved New Appearance settings (enabled by default): Full screen: Automatically hide interface elements while reading. Floating navigation: Navigation buttons float over the content instead of being anchored. Sliding sidebars: Option to have the sidebars slide to the side of the content instead of floating above. When full screen mode is enabled, the phone's status bar is now hidden when you scroll in a note. New App actions (the menu when you press and hold on the app icon): "Manage vaults..." Closes the current vault and takes you to the vault selection screen. "Today" — Opens today's daily note. Only available when the daily notes plugin is enabled. "New Note" — Creates a new note in the active vault. Vault switcher has a new option to "Open Vault in Restricted Mode." This option opens the vault without activating any plugins. If your vault is failing to open due to a plugin issue, use this option to debug. No longer broken iOS: Fixed bug where the first tap or long-press in the File Explorer and Outline did not work. iOS: Fixed scroll getting interrupted if touch overlaps with a link. iOS: Fixed text on Debug screen ("Show debug info") appearing very faint. iPad: Fixed Command + , not opening in-app settings. iPad: Fixed mobile toolbar not appearing when using "Floating keyboard" option. iPad: Fixed File Explorer context menu appearing too high and overlapping with the status bar. Fixed bug where the right-most navigation bar icon flashed briefly when the app was first loading.

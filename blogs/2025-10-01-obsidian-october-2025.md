@@ -1,0 +1,8 @@
+---
+title: Obsidian October 2025
+url: https://obsidian.md/blog/2025-obsidian-october/
+date: '2025-10-01'
+author: silver
+feed_url: https://obsidian.md/feed.xml
+---
+Obsidian October is back! Every October, the community comes together to hack on plugins, themes, vaults, videos, and other projects. We'll host office hours on Discord to help you polish your creations, ship updates, or kick off that project you've been itching to build! Polish and release If you don't know where to start, take a look at our self-assessment checklists. We've updated these checklists with the latest requirements and recommendations to make your plugins and themes more performant, more secure, more mobile-friendly, and more cohesive with Obsidian. Plugin checklist Theme checklist Vault checklist Try something new with Bases Recently we launched Obsidian 1.9 with Bases , a new core plugin that lets you display dynamic views of your notes as tables, cards, and now lists. Today, we're releasing Obsidian 1.10 beta with Bases APIs to help you create your own custom view layouts. As an example, we've created a new open source plugin called Maps that adds map views to Bases. We've also written a guide to help you build a view . Bases can be a playground for new kinds of workflows, templates, and vaults. Educational content can help other Obsidian users discover the power of Bases. Want some feedback on your blog post or video? This is the time for it! Join the fun Now's the time to share your Obsidian October projects and get feedback from the Obsidian team and other participants! Join our new Discord channels to showcase your project and chat with other participants .

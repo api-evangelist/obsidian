@@ -1,0 +1,8 @@
+---
+title: 'Obsidian Softwear: new Fractal t-shirts and hoodies'
+url: https://obsidian.md/blog/fractal-softwear/
+date: '2024-11-21'
+author: kepano
+feed_url: https://obsidian.md/feed.xml
+---
+A new design called "Fractal" is now available on the Softwear merch store. You can get this design on t-shirts and hoodies, silkscreened using high-opacity colors. The artwork was created by Obsidian user Shaun Yue . It is an anime-inspired fractal explosion of the Obsidian logo. Shaun is the VFX artist behind sci-fi interfaces you've seen in Andor, Rogue One, Prometheus, Pacific Rim, Mission Impossible, The Dark Knight, and many more movies and shows. See links at the bottom of this post for a wallpaper version of this artwork. Place your order before December 2 to receive it by December 25, if you're located in the US. Worldwide shipping is also available, but delivery may take longer depending on your country. All items are available through Cotton Bureau and ship from Pennsylvania. There are three variations of the Fractal design: T-shirt with big graphic on the front, no art on the back T-shirt with little logo on front, big graphic on the back Hoodie with little logo on front, big graphic on the back Here's the hoodie with a two-sided print. Small logo on the front, and large graphic on the back. The t-shirt is available in two print styles. Either with the artwork on the front as shown below, or as a two-sided print like the hoodie above. Visit the Softwear store to place your order, and explore other Obsidian merch items. Download the artwork as a 5K resolution wallpaper in two variations: Fractal graphic wallpaper Fractal logo wallpaper
