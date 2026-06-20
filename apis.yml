@@ -6,7 +6,7 @@ description: Obsidian is a local-first knowledge base and note-taking app built 
   not publish a hosted SaaS API; programmatic access is provided through (1) the in-app Plugin API for community plugins,
   (2) the community-built Local REST API plugin that exposes vault operations over localhost HTTPS, and (3) optional paid
   add-on services Obsidian Sync and Obsidian Publish.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Productivity
 - Knowledge Management
@@ -23,7 +23,7 @@ apis:
   - Plugins
   - Extensions
   - SDK
-  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://docs.obsidian.md/Home
   baseURL: local
   properties:
@@ -43,7 +43,7 @@ apis:
   - REST
   - Vault
   - Community Plugin
-  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://github.com/coddingtonbear/obsidian-local-rest-api
   baseURL: https://127.0.0.1:27124
   properties:
@@ -83,7 +83,7 @@ apis:
   - Sync
   - Cross-Device
   - End-to-End Encryption
-  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://obsidian.md/sync
   baseURL: managed
   properties:
@@ -97,7 +97,7 @@ apis:
   - Publishing
   - Web
   - Hosting
-  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://obsidian.md/publish
   baseURL: managed
   properties:
