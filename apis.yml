@@ -30,7 +30,7 @@ apis:
   - url: https://docs.obsidian.md/Home
     type: Documentation
   - url: https://github.com/obsidianmd/obsidian-api
-    type: SDK
+    type: SDKs
   - url: https://github.com/obsidianmd/obsidian-sample-plugin
     type: Sample
   description: In-app TypeScript/JavaScript Plugin API for building Obsidian plugins. Plugins access the Vault, Workspace,
@@ -55,23 +55,23 @@ apis:
     type: GitHub
   - url: openapi/obsidian-local-rest-api-openapi.yaml
     type: OpenAPI
-  - type: NaftikoCapability
+  - type: X-NaftikoCapability
     url: capabilities/local-rest-active-file.yaml
-  - type: NaftikoCapability
+  - type: X-NaftikoCapability
     url: capabilities/local-rest-commands.yaml
-  - type: NaftikoCapability
+  - type: X-NaftikoCapability
     url: capabilities/local-rest-open.yaml
-  - type: NaftikoCapability
+  - type: X-NaftikoCapability
     url: capabilities/local-rest-periodic-notes.yaml
-  - type: NaftikoCapability
+  - type: X-NaftikoCapability
     url: capabilities/local-rest-search.yaml
-  - type: NaftikoCapability
+  - type: X-NaftikoCapability
     url: capabilities/local-rest-system.yaml
-  - type: NaftikoCapability
+  - type: X-NaftikoCapability
     url: capabilities/local-rest-tags.yaml
-  - type: NaftikoCapability
+  - type: X-NaftikoCapability
     url: capabilities/local-rest-vault-directories.yaml
-  - type: NaftikoCapability
+  - type: X-NaftikoCapability
     url: capabilities/local-rest-vault-files.yaml
   description: Community-built plugin (by @coddingtonbear) that exposes the Obsidian vault over a local HTTPS REST API on
     port 27124. Endpoint groups include Vault file CRUD, Active File, Periodic Notes (daily/weekly/monthly), Search, Commands,
@@ -122,7 +122,7 @@ common:
   url: rate-limits/obsidian-rate-limits.yml
 - type: FinOps
   url: finops/obsidian-finops.yml
-- type: LLMsTxt
+- type: LlmsText
   url: https://docs.obsidian.md/llms.txt
 maintainers:
 - FN: Kin Lane
