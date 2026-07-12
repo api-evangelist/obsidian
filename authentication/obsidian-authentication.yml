@@ -1,0 +1,15 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/obsidian-local-rest-api-openapi.yaml
+summary:
+  types:
+  - http
+schemes:
+- name: apiKeyAuth
+  type: http
+  scheme: bearer
+  description: |-
+    Find your API Key in your Obsidian settings
+    in the "Local REST API" section under "Plugins".
+  sources:
+  - openapi/obsidian-local-rest-api-openapi.yaml

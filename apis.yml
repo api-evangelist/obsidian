@@ -106,6 +106,12 @@ apis:
   description: Paid managed service that publishes selected notes from an Obsidian vault as a public website with graph view,
     full-text search, and customizable themes. Not exposed as a public REST API; configured from within Obsidian.
 common:
+- type: VulnerabilityDisclosure
+  url: security/obsidian-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/obsidian-domain-security.yml
+- type: Authentication
+  url: authentication/obsidian-authentication.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/obsidianmd
 - type: Website
@@ -124,6 +130,8 @@ common:
   url: finops/obsidian-finops.yml
 - type: LlmsText
   url: https://docs.obsidian.md/llms.txt
+- type: Blog
+  url: https://obsidian.md/feed.xml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
