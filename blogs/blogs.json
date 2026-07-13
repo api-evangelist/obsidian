@@ -1,0 +1,21 @@
+{
+  "repo": "obsidian",
+  "feeds": [
+    {
+      "source": "https://obsidian.md/feed.xml",
+      "feed_url": "https://obsidian.md/feed.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://docs.obsidian.md/llms.txt",
+      "feed_url": "https://docs.obsidian.md/llms.txt",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 73
+}
