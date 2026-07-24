@@ -1,0 +1,138 @@
+openapi: 3.0.2
+info:
+  description: 'You can use this interface for trying out your Local REST API in Obsidian.
+
+
+    Before trying the below tools, you will want to make sure you press the "Authorize" button below and provide the API Key you are shown when you open the "Local REST API" section of your Obsidian settings.  All requests to the API require a valid API Key; so you won''t get very far without doing that.
+
+
+    When using this tool you may see browser security warnings due to your browser not trusting the self-signed certificate the plugin will generate on its first run.  If you do, you can make those errors disappear by adding the certificate as a "Trusted Certificate" in your browser or operating system''s settings.
+
+    '
+  title: Local REST API for Obsidian Active File Vault Directories API
+  version: '1.0'
+servers:
+- description: HTTPS (Secure Mode)
+  url: https://{host}:{port}
+  variables:
+    host:
+      default: 127.0.0.1
+      description: Binding host
+    port:
+      default: '27124'
+      description: HTTPS port
+- description: HTTP (Insecure Mode)
+  url: http://{host}:{port}
+  variables:
+    host:
+      default: 127.0.0.1
+      description: Binding host
+    port:
+      default: '27123'
+      description: HTTP port
+security:
+- apiKeyAuth: []
+tags:
+- name: Vault Directories
+paths:
+  /vault/:
+    get:
+      description: 'Lists files in the root directory of your vault.
+
+
+        Note: that this is exactly the same API endpoint as the below "List files that exist in the specified directory." and exists here only due to a quirk of this particular interactive tool.
+
+        '
+      responses:
+        '200':
+          content:
+            application/json:
+              example:
+                files:
+                - mydocument.md
+                - somedirectory/
+              schema:
+                properties:
+                  files:
+                    items:
+                      type: string
+                    type: array
+                type: object
+          description: Success
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+          description: Directory does not exist
+      summary: 'List files that exist in the root of your vault.
+
+        '
+      tags:
+      - Vault Directories
+  /vault/{pathToDirectory}/:
+    get:
+      parameters:
+      - description: 'Path to list files from (relative to your vault root).  Note that empty directories will not be returned.
+
+
+          Note: this particular interactive tool requires that you provide an argument for this field, but the API itself will allow you to list the root folder of your vault. If you would like to try listing content in the root of your vault using this interactive tool, use the above "List files that exist in the root of your vault" form above.
+
+          '
+        in: path
+        name: pathToDirectory
+        required: true
+        schema:
+          format: path
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              example:
+                files:
+                - mydocument.md
+                - somedirectory/
+              schema:
+                properties:
+                  files:
+                    items:
+                      type: string
+                    type: array
+                type: object
+          description: Success
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+          description: Directory does not exist
+      summary: 'List files that exist in the specified directory.
+
+        '
+      tags:
+      - Vault Directories
+components:
+  schemas:
+    Error:
+      properties:
+        errorCode:
+          description: 'A 5-digit error code uniquely identifying this particular type of error.
+
+            '
+          example: 40149
+          type: number
+        message:
+          description: Message describing the error.
+          example: A brief description of the error.
+          type: string
+      type: object
+  securitySchemes:
+    apiKeyAuth:
+      description: 'Find your API Key in your Obsidian settings
+
+        in the "Local REST API" section under "Plugins".
+
+        '
+      scheme: bearer
+      type: http

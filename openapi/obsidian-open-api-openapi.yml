@@ -1,0 +1,78 @@
+openapi: 3.0.2
+info:
+  description: 'You can use this interface for trying out your Local REST API in Obsidian.
+
+
+    Before trying the below tools, you will want to make sure you press the "Authorize" button below and provide the API Key you are shown when you open the "Local REST API" section of your Obsidian settings.  All requests to the API require a valid API Key; so you won''t get very far without doing that.
+
+
+    When using this tool you may see browser security warnings due to your browser not trusting the self-signed certificate the plugin will generate on its first run.  If you do, you can make those errors disappear by adding the certificate as a "Trusted Certificate" in your browser or operating system''s settings.
+
+    '
+  title: Local REST API for Obsidian Active File Open API
+  version: '1.0'
+servers:
+- description: HTTPS (Secure Mode)
+  url: https://{host}:{port}
+  variables:
+    host:
+      default: 127.0.0.1
+      description: Binding host
+    port:
+      default: '27124'
+      description: HTTPS port
+- description: HTTP (Insecure Mode)
+  url: http://{host}:{port}
+  variables:
+    host:
+      default: 127.0.0.1
+      description: Binding host
+    port:
+      default: '27123'
+      description: HTTP port
+security:
+- apiKeyAuth: []
+tags:
+- name: Open
+paths:
+  /open/{filename}:
+    post:
+      description: 'Note: Obsidian will create a new document at the path you have
+
+        specified if such a document did not already exist.
+
+        '
+      parameters:
+      - description: 'Path to the file to return (relative to your vault root).
+
+          '
+        in: path
+        name: filename
+        required: true
+        schema:
+          format: path
+          type: string
+      - description: Open this as a new leaf?
+        in: query
+        name: newLeaf
+        required: false
+        schema:
+          type: boolean
+      responses:
+        '200':
+          description: Success
+      summary: 'Open the specified document in the Obsidian user interface.
+
+        '
+      tags:
+      - Open
+components:
+  securitySchemes:
+    apiKeyAuth:
+      description: 'Find your API Key in your Obsidian settings
+
+        in the "Local REST API" section under "Plugins".
+
+        '
+      scheme: bearer
+      type: http

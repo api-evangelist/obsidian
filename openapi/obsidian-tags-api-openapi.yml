@@ -1,0 +1,86 @@
+openapi: 3.0.2
+info:
+  description: 'You can use this interface for trying out your Local REST API in Obsidian.
+
+
+    Before trying the below tools, you will want to make sure you press the "Authorize" button below and provide the API Key you are shown when you open the "Local REST API" section of your Obsidian settings.  All requests to the API require a valid API Key; so you won''t get very far without doing that.
+
+
+    When using this tool you may see browser security warnings due to your browser not trusting the self-signed certificate the plugin will generate on its first run.  If you do, you can make those errors disappear by adding the certificate as a "Trusted Certificate" in your browser or operating system''s settings.
+
+    '
+  title: Local REST API for Obsidian Active File Tags API
+  version: '1.0'
+servers:
+- description: HTTPS (Secure Mode)
+  url: https://{host}:{port}
+  variables:
+    host:
+      default: 127.0.0.1
+      description: Binding host
+    port:
+      default: '27124'
+      description: HTTPS port
+- description: HTTP (Insecure Mode)
+  url: http://{host}:{port}
+  variables:
+    host:
+      default: 127.0.0.1
+      description: Binding host
+    port:
+      default: '27123'
+      description: HTTP port
+security:
+- apiKeyAuth: []
+tags:
+- name: Tags
+paths:
+  /tags/:
+    get:
+      description: 'Returns all tags found across all files in the vault, drawn from both inline (`#tag`) and frontmatter tag syntax. Each tag is returned without the `#` prefix. Hierarchical tags (e.g. `work/tasks`) also contribute a count to every parent prefix (e.g. `work`), mirroring how Obsidian displays tag counts in its sidebar.
+
+        '
+      responses:
+        '200':
+          content:
+            application/json:
+              example:
+                tags:
+                - count: 3
+                  name: project
+                - count: 1
+                  name: important
+                - count: 2
+                  name: work
+                - count: 2
+                  name: work/tasks
+              schema:
+                properties:
+                  tags:
+                    items:
+                      properties:
+                        count:
+                          description: Number of times this tag is used across the vault.
+                          type: number
+                        name:
+                          description: Tag name without the leading `#`.
+                          type: string
+                      type: object
+                    type: array
+                type: object
+          description: A list of tags with their usage counts.
+      summary: 'Get a list of all tags with metadata.
+
+        '
+      tags:
+      - Tags
+components:
+  securitySchemes:
+    apiKeyAuth:
+      description: 'Find your API Key in your Obsidian settings
+
+        in the "Local REST API" section under "Plugins".
+
+        '
+      scheme: bearer
+      type: http

@@ -1,0 +1,106 @@
+openapi: 3.0.2
+info:
+  description: 'You can use this interface for trying out your Local REST API in Obsidian.
+
+
+    Before trying the below tools, you will want to make sure you press the "Authorize" button below and provide the API Key you are shown when you open the "Local REST API" section of your Obsidian settings.  All requests to the API require a valid API Key; so you won''t get very far without doing that.
+
+
+    When using this tool you may see browser security warnings due to your browser not trusting the self-signed certificate the plugin will generate on its first run.  If you do, you can make those errors disappear by adding the certificate as a "Trusted Certificate" in your browser or operating system''s settings.
+
+    '
+  title: Local REST API for Obsidian Active File System API
+  version: '1.0'
+servers:
+- description: HTTPS (Secure Mode)
+  url: https://{host}:{port}
+  variables:
+    host:
+      default: 127.0.0.1
+      description: Binding host
+    port:
+      default: '27124'
+      description: HTTPS port
+- description: HTTP (Insecure Mode)
+  url: http://{host}:{port}
+  variables:
+    host:
+      default: 127.0.0.1
+      description: Binding host
+    port:
+      default: '27123'
+      description: HTTP port
+security:
+- apiKeyAuth: []
+tags:
+- name: System
+paths:
+  /:
+    get:
+      description: 'Returns basic details about the server as well as your authentication status.
+
+
+        This is the only API request that does *not* require authentication.
+
+        '
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  authenticated:
+                    description: Is your current request authenticated?
+                    type: boolean
+                  ok:
+                    description: '''OK'''
+                    type: string
+                  service:
+                    description: '''Obsidian Local REST API'''
+                    type: string
+                  versions:
+                    properties:
+                      obsidian:
+                        description: Obsidian plugin API version
+                        type: string
+                      self:
+                        description: Plugin version.
+                        type: string
+                    type: object
+                type: object
+          description: Success
+      summary: 'Returns basic details about the server.
+
+        '
+      tags:
+      - System
+  /obsidian-local-rest-api.crt:
+    get:
+      responses:
+        '200':
+          description: Success
+      summary: 'Returns the certificate in use by this API.
+
+        '
+      tags:
+      - System
+  /openapi.yaml:
+    get:
+      responses:
+        '200':
+          description: Success
+      summary: 'Returns OpenAPI YAML document describing the capabilities of this API.
+
+        '
+      tags:
+      - System
+components:
+  securitySchemes:
+    apiKeyAuth:
+      description: 'Find your API Key in your Obsidian settings
+
+        in the "Local REST API" section under "Plugins".
+
+        '
+      scheme: bearer
+      type: http
