@@ -2,138 +2,390 @@ aid: obsidian
 url: https://raw.githubusercontent.com/api-evangelist/obsidian/refs/heads/main/apis.yml
 name: Obsidian
 kind: company
-description: Obsidian is a local-first knowledge base and note-taking app built on plain Markdown files. Obsidian itself does
-  not publish a hosted SaaS API; programmatic access is provided through (1) the in-app Plugin API for community plugins,
-  (2) the community-built Local REST API plugin that exposes vault operations over localhost HTTPS, and (3) optional paid
-  add-on services Obsidian Sync and Obsidian Publish.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+description: Obsidian is a local-first knowledge base and note-taking app built on plain Markdown files. Obsidian itself does not publish a hosted SaaS API; programmatic access is provided through (1) the in-app Plugin API for community plugins, (2) the community-built Local REST API plugin that exposes vault operations over localhost HTTPS, and (3) optional paid add-on services Obsidian Sync and Obsidian Publish.
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+    - plans
+    - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/obsidian.png
 tags:
-- Productivity
-- Knowledge Management
-- Markdown
-- Notes
-- Local-First
+  - Productivity
+  - Knowledge Management
+  - Markdown
+  - Notes
+  - Local-First
 created: '2026-05-08'
-modified: '2026-05-19'
+modified: '2026-07-25'
 specificationVersion: '0.19'
 apis:
-- aid: obsidian:obsidian-plugin-api
-  name: Obsidian Plugin API
-  tags:
-  - Plugins
-  - Extensions
-  - SDK
-  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-  humanURL: https://docs.obsidian.md/Home
-  baseURL: local
-  properties:
-  - url: https://docs.obsidian.md/Home
-    type: Documentation
-  - url: https://github.com/obsidianmd/obsidian-api
-    type: SDKs
-  - url: https://github.com/obsidianmd/obsidian-sample-plugin
-    type: Sample
-  description: In-app TypeScript/JavaScript Plugin API for building Obsidian plugins. Plugins access the Vault, Workspace,
-    MetadataCache, file system, command palette, settings, editor, and Markdown post-processing. Distributed as community
-    plugins via the Obsidian community plugin browser.
-- aid: obsidian:obsidian-local-rest-api
-  name: Obsidian Local REST API
-  tags:
-  - Local API
-  - REST
-  - Vault
-  - Community Plugin
-  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-  humanURL: https://github.com/coddingtonbear/obsidian-local-rest-api
-  baseURL: https://127.0.0.1:27124
-  properties:
-  - url: https://github.com/coddingtonbear/obsidian-local-rest-api
-    type: Documentation
-  - url: https://coddingtonbear.github.io/obsidian-local-rest-api/
-    type: APIReference
-  - url: https://github.com/coddingtonbear/obsidian-local-rest-api
-    type: GitHub
-  - url: openapi/obsidian-local-rest-api-openapi.yaml
-    type: OpenAPI
-  - type: X-NaftikoCapability
-    url: capabilities/local-rest-active-file.yaml
-  - type: X-NaftikoCapability
-    url: capabilities/local-rest-commands.yaml
-  - type: X-NaftikoCapability
-    url: capabilities/local-rest-open.yaml
-  - type: X-NaftikoCapability
-    url: capabilities/local-rest-periodic-notes.yaml
-  - type: X-NaftikoCapability
-    url: capabilities/local-rest-search.yaml
-  - type: X-NaftikoCapability
-    url: capabilities/local-rest-system.yaml
-  - type: X-NaftikoCapability
-    url: capabilities/local-rest-tags.yaml
-  - type: X-NaftikoCapability
-    url: capabilities/local-rest-vault-directories.yaml
-  - type: X-NaftikoCapability
-    url: capabilities/local-rest-vault-files.yaml
-  description: Community-built plugin (by @coddingtonbear) that exposes the Obsidian vault over a local HTTPS REST API on
-    port 27124. Endpoint groups include Vault file CRUD, Active File, Periodic Notes (daily/weekly/monthly), Search, Commands,
-    Tags, and File Opening. Bearer-token authenticated. Used by browser extensions, scripts, and AI agents to read and write
-    into a running Obsidian instance.
-- aid: obsidian:obsidian-sync
-  name: Obsidian Sync
-  tags:
-  - Sync
-  - Cross-Device
-  - End-to-End Encryption
-  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-  humanURL: https://obsidian.md/sync
-  baseURL: managed
-  properties:
-  - url: https://obsidian.md/sync
-    type: Documentation
-  description: Paid managed service that syncs an Obsidian vault across devices with end-to-end encryption, version history,
-    and shared-vault collaboration. Not exposed as a public REST API; integration is via the Obsidian client.
-- aid: obsidian:obsidian-publish
-  name: Obsidian Publish
-  tags:
-  - Publishing
-  - Web
-  - Hosting
-  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-  humanURL: https://obsidian.md/publish
-  baseURL: managed
-  properties:
-  - url: https://obsidian.md/publish
-    type: Documentation
-  description: Paid managed service that publishes selected notes from an Obsidian vault as a public website with graph view,
-    full-text search, and customizable themes. Not exposed as a public REST API; configured from within Obsidian.
+  - aid: obsidian:obsidian-plugin-api
+    name: Obsidian Plugin API
+    tags:
+      - Plugins
+      - Extensions
+      - SDK
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.obsidian.md/Home
+    baseURL: local
+    properties:
+      - url: https://docs.obsidian.md/Home
+        type: Documentation
+      - url: https://github.com/obsidianmd/obsidian-api
+        type: SDKs
+      - url: https://github.com/obsidianmd/obsidian-sample-plugin
+        type: Sample
+    description: >-
+      In-app TypeScript/JavaScript Plugin API for building Obsidian plugins. Plugins access the Vault, Workspace,
+      MetadataCache, file system, command palette, settings, editor, and Markdown post-processing. Distributed
+      as community plugins via the Obsidian community plugin browser.
+  - aid: obsidian:obsidian-active-file-api
+    name: Obsidian Active File API
+    description: The Active File API from Obsidian — 1 operation(s) for active file.
+    humanURL: https://docs.obsidian.md/Home
+    baseURL: local
+    tags:
+      - Active File
+    properties:
+      - type: OpenAPI
+        url: openapi/obsidian-active-file-api-openapi.yml
+      - type: Documentation
+        url: https://github.com/coddingtonbear/obsidian-local-rest-api
+      - type: APIReference
+        url: https://coddingtonbear.github.io/obsidian-local-rest-api/
+      - type: GitHub
+        url: https://github.com/coddingtonbear/obsidian-local-rest-api
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-active-file.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-commands.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-open.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-periodic-notes.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-search.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-system.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-tags.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-vault-directories.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-vault-files.yaml
+  - aid: obsidian:obsidian-commands-api
+    name: Obsidian Commands API
+    description: The Commands API from Obsidian — 2 operation(s) for commands.
+    humanURL: https://docs.obsidian.md/Home
+    baseURL: local
+    tags:
+      - Commands
+    properties:
+      - type: OpenAPI
+        url: openapi/obsidian-commands-api-openapi.yml
+      - type: Documentation
+        url: https://github.com/coddingtonbear/obsidian-local-rest-api
+      - type: APIReference
+        url: https://coddingtonbear.github.io/obsidian-local-rest-api/
+      - type: GitHub
+        url: https://github.com/coddingtonbear/obsidian-local-rest-api
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-active-file.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-commands.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-open.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-periodic-notes.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-search.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-system.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-tags.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-vault-directories.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-vault-files.yaml
+  - aid: obsidian:obsidian-open-api
+    name: Obsidian Open API
+    description: The Open API from Obsidian — 1 operation(s) for open.
+    humanURL: https://docs.obsidian.md/Home
+    baseURL: local
+    tags:
+      - Open
+    properties:
+      - type: OpenAPI
+        url: openapi/obsidian-open-api-openapi.yml
+      - type: Documentation
+        url: https://github.com/coddingtonbear/obsidian-local-rest-api
+      - type: APIReference
+        url: https://coddingtonbear.github.io/obsidian-local-rest-api/
+      - type: GitHub
+        url: https://github.com/coddingtonbear/obsidian-local-rest-api
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-active-file.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-commands.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-open.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-periodic-notes.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-search.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-system.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-tags.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-vault-directories.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-vault-files.yaml
+  - aid: obsidian:obsidian-periodic-notes-api
+    name: Obsidian Periodic Notes API
+    description: The Periodic Notes API from Obsidian — 2 operation(s) for periodic notes.
+    humanURL: https://docs.obsidian.md/Home
+    baseURL: local
+    tags:
+      - Periodic Notes
+    properties:
+      - type: OpenAPI
+        url: openapi/obsidian-periodic-notes-api-openapi.yml
+      - type: Documentation
+        url: https://github.com/coddingtonbear/obsidian-local-rest-api
+      - type: APIReference
+        url: https://coddingtonbear.github.io/obsidian-local-rest-api/
+      - type: GitHub
+        url: https://github.com/coddingtonbear/obsidian-local-rest-api
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-active-file.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-commands.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-open.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-periodic-notes.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-search.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-system.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-tags.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-vault-directories.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-vault-files.yaml
+  - aid: obsidian:obsidian-search-api
+    name: Obsidian Search API
+    description: The Search API from Obsidian — 2 operation(s) for search.
+    humanURL: https://docs.obsidian.md/Home
+    baseURL: local
+    tags:
+      - Search
+    properties:
+      - type: OpenAPI
+        url: openapi/obsidian-search-api-openapi.yml
+      - type: Documentation
+        url: https://github.com/coddingtonbear/obsidian-local-rest-api
+      - type: APIReference
+        url: https://coddingtonbear.github.io/obsidian-local-rest-api/
+      - type: GitHub
+        url: https://github.com/coddingtonbear/obsidian-local-rest-api
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-active-file.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-commands.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-open.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-periodic-notes.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-search.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-system.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-tags.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-vault-directories.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-vault-files.yaml
+  - aid: obsidian:obsidian-system-api
+    name: Obsidian System API
+    description: The System API from Obsidian — 3 operation(s) for system.
+    humanURL: https://docs.obsidian.md/Home
+    baseURL: local
+    tags:
+      - System
+    properties:
+      - type: OpenAPI
+        url: openapi/obsidian-system-api-openapi.yml
+      - type: Documentation
+        url: https://github.com/coddingtonbear/obsidian-local-rest-api
+      - type: APIReference
+        url: https://coddingtonbear.github.io/obsidian-local-rest-api/
+      - type: GitHub
+        url: https://github.com/coddingtonbear/obsidian-local-rest-api
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-active-file.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-commands.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-open.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-periodic-notes.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-search.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-system.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-tags.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-vault-directories.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-vault-files.yaml
+  - aid: obsidian:obsidian-tags-api
+    name: Obsidian Tags API
+    description: The Tags API from Obsidian — 1 operation(s) for tags.
+    humanURL: https://docs.obsidian.md/Home
+    baseURL: local
+    tags:
+      - Tags
+    properties:
+      - type: OpenAPI
+        url: openapi/obsidian-tags-api-openapi.yml
+      - type: Documentation
+        url: https://github.com/coddingtonbear/obsidian-local-rest-api
+      - type: APIReference
+        url: https://coddingtonbear.github.io/obsidian-local-rest-api/
+      - type: GitHub
+        url: https://github.com/coddingtonbear/obsidian-local-rest-api
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-active-file.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-commands.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-open.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-periodic-notes.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-search.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-system.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-tags.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-vault-directories.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-vault-files.yaml
+  - aid: obsidian:obsidian-vault-directories-api
+    name: Obsidian Vault Directories API
+    description: The Vault Directories API from Obsidian — 2 operation(s) for vault directories.
+    humanURL: https://docs.obsidian.md/Home
+    baseURL: local
+    tags:
+      - Vault Directories
+    properties:
+      - type: OpenAPI
+        url: openapi/obsidian-vault-directories-api-openapi.yml
+      - type: Documentation
+        url: https://github.com/coddingtonbear/obsidian-local-rest-api
+      - type: APIReference
+        url: https://coddingtonbear.github.io/obsidian-local-rest-api/
+      - type: GitHub
+        url: https://github.com/coddingtonbear/obsidian-local-rest-api
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-active-file.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-commands.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-open.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-periodic-notes.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-search.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-system.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-tags.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-vault-directories.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-vault-files.yaml
+  - aid: obsidian:obsidian-vault-files-api
+    name: Obsidian Vault Files API
+    description: The Vault Files API from Obsidian — 1 operation(s) for vault files.
+    humanURL: https://docs.obsidian.md/Home
+    baseURL: local
+    tags:
+      - Vault Files
+    properties:
+      - type: OpenAPI
+        url: openapi/obsidian-vault-files-api-openapi.yml
+      - type: Documentation
+        url: https://github.com/coddingtonbear/obsidian-local-rest-api
+      - type: APIReference
+        url: https://coddingtonbear.github.io/obsidian-local-rest-api/
+      - type: GitHub
+        url: https://github.com/coddingtonbear/obsidian-local-rest-api
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-active-file.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-commands.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-open.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-periodic-notes.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-search.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-system.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-tags.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-vault-directories.yaml
+      - type: X-NaftikoCapability
+        url: capabilities/local-rest-vault-files.yaml
 common:
-- type: AgenticAccess
-  url: agentic-access/obsidian-agentic-access.yml
-- type: VulnerabilityDisclosure
-  url: security/obsidian-vulnerability-disclosure.yml
-- type: DomainSecurity
-  url: security/obsidian-domain-security.yml
-- type: Authentication
-  url: authentication/obsidian-authentication.yml
-- type: LinkedIn
-  url: https://www.linkedin.com/company/obsidianmd
-- type: Website
-  url: https://obsidian.md/
-- type: Documentation
-  url: https://docs.obsidian.md/Home
-- type: Pricing
-  url: https://obsidian.md/pricing
-- type: GitHub
-  url: https://github.com/obsidianmd
-- type: Plans
-  url: plans/obsidian-plans-pricing.yml
-- type: RateLimits
-  url: rate-limits/obsidian-rate-limits.yml
-- type: FinOps
-  url: finops/obsidian-finops.yml
-- type: LlmsText
-  url: https://docs.obsidian.md/llms.txt
-- type: Blog
-  url: https://obsidian.md/feed.xml
+  - type: AgenticAccess
+    url: agentic-access/obsidian-agentic-access.yml
+  - type: VulnerabilityDisclosure
+    url: security/obsidian-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/obsidian-domain-security.yml
+  - type: Authentication
+    url: authentication/obsidian-authentication.yml
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/obsidianmd
+  - type: Website
+    url: https://obsidian.md/
+  - type: Documentation
+    url: https://docs.obsidian.md/Home
+  - type: Pricing
+    url: https://obsidian.md/pricing
+  - type: GitHub
+    url: https://github.com/obsidianmd
+  - type: Plans
+    url: plans/obsidian-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/obsidian-rate-limits.yml
+  - type: FinOps
+    url: finops/obsidian-finops.yml
+  - type: LlmsText
+    url: https://docs.obsidian.md/llms.txt
+  - type: Blog
+    url: https://obsidian.md/feed.xml
+  - type: ProductPage
+    url: https://obsidian.md/sync
+  - type: ProductPage
+    url: https://obsidian.md/publish
 maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+  - FN: Kin Lane
+    email: kin@apievangelist.com
