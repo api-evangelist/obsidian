@@ -1,0 +1,30 @@
+{
+  "provider": "obsidian",
+  "sources": [
+    "obsidian-active-file-api-openapi.yml",
+    "obsidian-commands-api-openapi.yml",
+    "obsidian-open-api-openapi.yml",
+    "obsidian-periodic-notes-api-openapi.yml",
+    "obsidian-search-api-openapi.yml",
+    "obsidian-system-api-openapi.yml",
+    "obsidian-tags-api-openapi.yml",
+    "obsidian-vault-directories-api-openapi.yml",
+    "obsidian-vault-files-api-openapi.yml"
+  ],
+  "outputs": [
+    "obsidian-active-file-api-openapi.yml",
+    "obsidian-commands-api-openapi.yml",
+    "obsidian-open-api-openapi.yml",
+    "obsidian-periodic-notes-api-openapi.yml",
+    "obsidian-search-api-openapi.yml",
+    "obsidian-system-api-openapi.yml",
+    "obsidian-tags-api-openapi.yml",
+    "obsidian-vault-directories-api-openapi.yml",
+    "obsidian-vault-files-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
