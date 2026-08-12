@@ -63,24 +63,6 @@ apis:
         url: https://coddingtonbear.github.io/obsidian-local-rest-api/
       - type: GitHub
         url: https://github.com/coddingtonbear/obsidian-local-rest-api
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-active-file.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-commands.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-open.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-periodic-notes.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-search.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-system.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-tags.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-vault-directories.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-vault-files.yaml
   - aid: obsidian:obsidian-commands-api
     name: Obsidian Commands API
     description: The Commands API from Obsidian — 2 operation(s) for commands.
@@ -97,24 +79,6 @@ apis:
         url: https://coddingtonbear.github.io/obsidian-local-rest-api/
       - type: GitHub
         url: https://github.com/coddingtonbear/obsidian-local-rest-api
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-active-file.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-commands.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-open.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-periodic-notes.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-search.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-system.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-tags.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-vault-directories.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-vault-files.yaml
   - aid: obsidian:obsidian-open-api
     name: Obsidian Open API
     description: The Open API from Obsidian — 1 operation(s) for open.
@@ -131,24 +95,6 @@ apis:
         url: https://coddingtonbear.github.io/obsidian-local-rest-api/
       - type: GitHub
         url: https://github.com/coddingtonbear/obsidian-local-rest-api
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-active-file.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-commands.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-open.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-periodic-notes.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-search.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-system.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-tags.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-vault-directories.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-vault-files.yaml
   - aid: obsidian:obsidian-periodic-notes-api
     name: Obsidian Periodic Notes API
     description: The Periodic Notes API from Obsidian — 2 operation(s) for periodic notes.
@@ -165,24 +111,6 @@ apis:
         url: https://coddingtonbear.github.io/obsidian-local-rest-api/
       - type: GitHub
         url: https://github.com/coddingtonbear/obsidian-local-rest-api
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-active-file.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-commands.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-open.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-periodic-notes.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-search.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-system.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-tags.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-vault-directories.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-vault-files.yaml
   - aid: obsidian:obsidian-search-api
     name: Obsidian Search API
     description: The Search API from Obsidian — 2 operation(s) for search.
@@ -199,24 +127,6 @@ apis:
         url: https://coddingtonbear.github.io/obsidian-local-rest-api/
       - type: GitHub
         url: https://github.com/coddingtonbear/obsidian-local-rest-api
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-active-file.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-commands.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-open.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-periodic-notes.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-search.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-system.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-tags.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-vault-directories.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-vault-files.yaml
   - aid: obsidian:obsidian-system-api
     name: Obsidian System API
     description: The System API from Obsidian — 3 operation(s) for system.
@@ -233,24 +143,6 @@ apis:
         url: https://coddingtonbear.github.io/obsidian-local-rest-api/
       - type: GitHub
         url: https://github.com/coddingtonbear/obsidian-local-rest-api
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-active-file.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-commands.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-open.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-periodic-notes.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-search.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-system.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-tags.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-vault-directories.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-vault-files.yaml
   - aid: obsidian:obsidian-tags-api
     name: Obsidian Tags API
     description: The Tags API from Obsidian — 1 operation(s) for tags.
@@ -267,24 +159,6 @@ apis:
         url: https://coddingtonbear.github.io/obsidian-local-rest-api/
       - type: GitHub
         url: https://github.com/coddingtonbear/obsidian-local-rest-api
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-active-file.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-commands.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-open.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-periodic-notes.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-search.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-system.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-tags.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-vault-directories.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-vault-files.yaml
   - aid: obsidian:obsidian-vault-directories-api
     name: Obsidian Vault Directories API
     description: The Vault Directories API from Obsidian — 2 operation(s) for vault directories.
@@ -301,24 +175,6 @@ apis:
         url: https://coddingtonbear.github.io/obsidian-local-rest-api/
       - type: GitHub
         url: https://github.com/coddingtonbear/obsidian-local-rest-api
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-active-file.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-commands.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-open.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-periodic-notes.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-search.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-system.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-tags.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-vault-directories.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-vault-files.yaml
   - aid: obsidian:obsidian-vault-files-api
     name: Obsidian Vault Files API
     description: The Vault Files API from Obsidian — 1 operation(s) for vault files.
@@ -335,24 +191,6 @@ apis:
         url: https://coddingtonbear.github.io/obsidian-local-rest-api/
       - type: GitHub
         url: https://github.com/coddingtonbear/obsidian-local-rest-api
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-active-file.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-commands.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-open.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-periodic-notes.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-search.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-system.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-tags.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-vault-directories.yaml
-      - type: X-NaftikoCapability
-        url: capabilities/local-rest-vault-files.yaml
 common:
   - type: AgenticAccess
     url: agentic-access/obsidian-agentic-access.yml
