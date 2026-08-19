@@ -1,0 +1,54 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Local REST API for Obsidian Active File Vault Directories API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Vault Directories",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List files that exist in the root of your vault.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}:{port}/vault/"
+          },
+          "docs": "Lists files in the root directory of your vault.\n\nNote: that this is exactly the same API endpoint as the below \"List files that exist in the specified directory.\" and exists here only due to a quirk of this particular interactive tool.\n"
+        },
+        {
+          "info": {
+            "name": "List files that exist in the specified directory.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}:{port}/vault/:pathToDirectory/",
+            "params": [
+              {
+                "name": "pathToDirectory",
+                "value": "",
+                "type": "path",
+                "description": "Path to list files from (relative to your vault root).  Note that empty directories will not be returned.\n\nNote: this particular interactive tool requires that you provide an argument for this field, but the API itself will allow you to list the root folder of your vault. If you would like to try listing content in the root of your vault using this interactive tool, use the above \"List files that exist in the root of your vault\" form above.\n"
+              }
+            ]
+          },
+          "docs": "List files that exist in the specified directory.\n"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

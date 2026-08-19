@@ -1,0 +1,1929 @@
+{
+  "item": [
+    {
+      "id": "95563e18-30ab-4f9e-9e73-4d24846e0314",
+      "name": "Active File",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "6bfbe3ff-d4d2-40c9-8635-d6a28fcd7e23",
+          "name": "Deletes the currently-active file in Obsidian.\n",
+          "request": {
+            "name": "Deletes the currently-active file in Obsidian.\n",
+            "description": {},
+            "url": {
+              "path": [
+                "active",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Binding host",
+                  "type": "any",
+                  "value": "{{host}}",
+                  "key": "host"
+                },
+                {
+                  "description": "HTTPS port",
+                  "type": "any",
+                  "value": "{{port}}",
+                  "key": "port"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7019d16e-7046-4281-8c34-9cb6cb8dd213",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "active",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Binding host",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": "HTTPS port",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "No Content",
+              "code": 204,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "7c44e9c2-259b-4855-b6fe-fb1fbd7e2c15",
+              "name": "File does not exist.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "active",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Binding host",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": "HTTPS port",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"errorCode\": 40149,\n  \"message\": \"A brief description of the error.\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "6b29d946-1ee2-411e-a168-ca6732528a7c",
+              "name": "Your path references a directory instead of a file; this request method is valid only for updating files.\n",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "active",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Binding host",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": "HTTPS port",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Method Not Allowed",
+              "code": 405,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"errorCode\": 40149,\n  \"message\": \"A brief description of the error.\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "1e4e5d32-c86a-4308-8067-b11fd8324f7c",
+          "name": "Return the content of the active file open in Obsidian.\n",
+          "request": {
+            "name": "Return the content of the active file open in Obsidian.\n",
+            "description": {
+              "content": "Returns the content of the currently active file in Obsidian.\n\n# Targeting a Sub-part of your Document\n\nYou can operate on a specific section of a note instead of the whole file by providing `Target-Type` and `Target` headers:\n\n- Set `Target-Type` to `heading`, `block`, or `frontmatter`.\n- Set `Target` to the name of the heading, block reference, or frontmatter field. If the target contains non-ASCII characters (e.g. accented letters), percent-encode the value (e.g. `H%C3%A9llo` for `Héllo`).\n- For nested headings, use the `Target-Delimiter` header (default `::`) to separate levels.\n\nYou can also embed the target type and target directly in the URL path after the note identifier instead of using headers. The segment immediately following the note identifier is the target type, and the remaining segments form the target:\n\n- `.../heading/My%20Section` is equivalent to supplying `Target-Type: heading` and `Target: My%20Section`.\n- For nested headings, add additional path segments: `.../heading/My%20Section/Subsection` is equivalent to `Target: My%20Section::Subsection`.\n- `.../frontmatter/fieldName` targets the `fieldName` frontmatter field.\n- `.../block/abc123` targets the block with reference ID `abc123`.\n\nWhen URL-embedded values are present they take priority over the corresponding headers.\n\n# Retrieving Document Metadata\n\n## Metadata\n\nIf you specify the header `Accept: application/vnd.olrapi.note+json`, will return a JSON representation of your note including parsed tag and frontmatter data as well as filesystem metadata.\n\n## Document Map\n\nIf you specify the header `Accept: application/vnd.olrapi.document-map+json`, will return a JSON object outlining what PATCH targets exist. See \"responses\" below for details.\n",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "active",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Binding host",
+                  "type": "any",
+                  "value": "{{host}}",
+                  "key": "host"
+                },
+                {
+                  "description": "HTTPS port",
+                  "type": "any",
+                  "value": "{{port}}",
+                  "key": "port"
+                }
+              ]
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "Type of sub-document section to target. When specified, the operation\napplies only to the matching section rather than the whole file. Must\nbe used together with the `Target` header.\n\n- `heading`: a markdown heading section.\n- `block`: a block reference.\n- `frontmatter`: a frontmatter field.\n",
+                "key": "Target-Type",
+                "value": "<string>"
+              },
+              {
+                "disabled": false,
+                "description": "The section to target; required when `Target-Type` is specified.\nThis value can be URL-Encoded and *must* be URL-Encoded if it\nincludes non-ASCII characters.\n",
+                "key": "Target",
+                "value": "<string>"
+              },
+              {
+                "disabled": false,
+                "description": "Delimiter used when specifying nested heading targets (e.g. \"Heading 1::Subheading\"). Defaults to \"::\".",
+                "key": "Target-Delimiter",
+                "value": "::"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d25cbf48-6070-457c-b56a-2ca4bed1531b",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "active",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Binding host",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": "HTTPS port",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Type of sub-document section to target. When specified, the operation\napplies only to the matching section rather than the whole file. Must\nbe used together with the `Target` header.\n\n- `heading`: a markdown heading section.\n- `block`: a block reference.\n- `frontmatter`: a frontmatter field.\n",
+                    "key": "Target-Type",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "The section to target; required when `Target-Type` is specified.\nThis value can be URL-Encoded and *must* be URL-Encoded if it\nincludes non-ASCII characters.\n",
+                    "key": "Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Delimiter used when specifying nested heading targets (e.g. \"Heading 1::Subheading\"). Defaults to \"::\".",
+                    "key": "Target-Delimiter",
+                    "value": "::"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a97449d4-584d-421c-b963-16dc3f965acd",
+              "name": "File or target section does not exist",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "active",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Binding host",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": "HTTPS port",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Type of sub-document section to target. When specified, the operation\napplies only to the matching section rather than the whole file. Must\nbe used together with the `Target` header.\n\n- `heading`: a markdown heading section.\n- `block`: a block reference.\n- `frontmatter`: a frontmatter field.\n",
+                    "key": "Target-Type",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "The section to target; required when `Target-Type` is specified.\nThis value can be URL-Encoded and *must* be URL-Encoded if it\nincludes non-ASCII characters.\n",
+                    "key": "Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Delimiter used when specifying nested heading targets (e.g. \"Heading 1::Subheading\"). Defaults to \"::\".",
+                    "key": "Target-Delimiter",
+                    "value": "::"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b235424b-9d54-4f5f-b793-90ea1d198f06",
+          "name": "Partially update content in the currently open note.\n",
+          "request": {
+            "name": "Partially update content in the currently open note.\n",
+            "description": {
+              "content": "Inserts content into the currently-open note relative to a heading, block reference, or frontmatter field within that document.\n\nAllows you to modify the content relative to a heading, block reference, or frontmatter field in your document.\n\n> ![note]\n> Note that this API was changed in Version 3.0 of this extension and the earlier PATCH API is now deprecated. Requests made using the previous version of this API will continue to work until Version 4.0 is released.  See https://github.com/coddingtonbear/obsidian-local-rest-api/wiki/Changes-to-PATCH-requests-between-versions-2.0-and-3.0 for more details and migration instructions.\n\n# How to Use & Examples\n\nAll of the below examples assume you have a document that looks like\nthis:\n\n```markdown\n---\nalpha: 1\nbeta: test\ndelta:\nzeta: 1\nyotta: 1\ngamma:\n- one\n- two\n---\n\n# Heading 1\n\nThis is the content for heading one\n\nAlso references some [[#^484ef2]]\n\n## Subheading 1:1\nContent for Subheading 1:1\n\n### Subsubheading 1:1:1\n\n### Subsubheading 1:1:2\n\nTesting how block references work for a table.[[#^2c7cfa]]\nSome content for Subsubheading 1:1:2\n\nMore random text.\n\n^2d9b4a\n\n## Subheading 1:2\n\nContent for Subheading 1:2.\n\nsome content with a block reference ^484ef2\n\n## Subheading 1:3\n| City         | Population |\n| ------------ | ---------- |\n| Seattle, WA  | 8          |\n| Portland, OR | 4          |\n\n^2c7cfa\n```\n\n## Append, Prepend, or Replace Content Below a Heading\n\nIf you wanted to append the content \"Hello\" below \"Subheading 1:1:1\" under \"Heading 1\",\nyou could send a request with the following headers:\n\n- `Operation`: `append`\n- `Target-Type`: `heading`\n- `Target`: `Heading 1::Subheading 1:1:1` (percent-encode any non-ASCII characters, e.g. `H%C3%A9llo` for `Héllo`)\n- with the request body: `Hello`\n\nThe above would work just fine for `prepend` or `replace`, too, of course,\nbut with different results.\n\n## Append, Prepend, or Replace Content to a Block Reference\n\nIf you wanted to append the content \"Hello\" below the block referenced by\n\"2d9b4a\" above (\"More random text.\"), you could send the following headers:\n\n- `Operation`: `append`\n- `Target-Type`: `block`\n- `Target`: `2d9b4a`\n- with the request body: `Hello`\n\nThe above would work just fine for `prepend` or `replace`, too, of course,\nbut with different results.\n\n## Append, Prepend, or Replace a Row or Rows to/in a Table Referenced by a Block Reference\n\nIf you wanted to add a new city (\"Chicago, IL\") and population (\"16\") pair to the table above\nreferenced by the block reference `2c7cfa`, you could send the following\nheaders:\n\n- `Operation`: `append`\n- `Target-Type`: `block`\n- `Target`: `2c7cfa`\n- `Content-Type`: `application/json`\n- with the request body: `[[\"Chicago, IL\", \"16\"]]`\n\nThe use of a `Content-Type` of `application/json` allows the API\nto infer that member of your array represents rows and columns of your\nto append to the referenced table.  You can of course just use a\n`Content-Type` of `text/markdown`, but in such a case you'll have to\nformat your table row manually instead of letting the library figure\nit out for you.\n\nYou also have the option of using `prepend` (in which case, your new\nrow would be the first -- right below the table heading) or `replace` (in which\ncase all rows except the table heading would be replaced by the new row(s)\nyou supplied).\n\n## Setting a Frontmatter Field\n\nIf you wanted to set the frontmatter field `alpha` to `2`, you could\nsend the following headers:\n\n- `Operation`: `replace`\n- `Target-Type`: `frontmatter`\n- `Target`: `beep`\n- with the request body `2`\n\nIf you're setting a frontmatter field that might not already exist\nyou may want to use the `Create-Target-If-Missing` header so the\nnew frontmatter field is created and set to your specified value\nif it doesn't already exist.\n\nYou may find using a `Content-Type` of `application/json` to be\nparticularly useful in the case of frontmatter since frontmatter\nfields' values are JSON data, and the API can be smarter about\ninterpreting your `prepend` or `append` requests if you specify\nyour data as JSON (particularly when appending, for example,\nlist items).\n\n## Identifying Patch Targets in a File\n\nYou can issue a GET request to `/vault/files/{path}` with an `Accept` header\nof `application/vnd.olrapi.document-map+json` to get a JSON object\noutlining what headings, block references, and frontmatter fields exist.\n",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "active",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Binding host",
+                  "type": "any",
+                  "value": "{{host}}",
+                  "key": "host"
+                },
+                {
+                  "description": "HTTPS port",
+                  "type": "any",
+                  "value": "{{port}}",
+                  "key": "port"
+                }
+              ]
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "(Required) Patch operation to perform",
+                "key": "Operation",
+                "value": "<string>"
+              },
+              {
+                "disabled": false,
+                "description": "If the specified Target does not exist, create it?",
+                "key": "Create-Target-If-Missing",
+                "value": "false"
+              },
+              {
+                "disabled": false,
+                "description": "If patch data already exists in Target, apply patch anyway?",
+                "key": "Apply-If-Content-Preexists",
+                "value": "false"
+              },
+              {
+                "disabled": false,
+                "description": "Trim whitespace from Target content before applying the operation?",
+                "key": "Trim-Target-Whitespace",
+                "value": "false"
+              },
+              {
+                "disabled": false,
+                "description": "(Required) Type of sub-document section to target. When specified, the operation\napplies only to the matching section rather than the whole file. Must\nbe used together with the `Target` header.\n\n- `heading`: a markdown heading section.\n- `block`: a block reference.\n- `frontmatter`: a frontmatter field.\n",
+                "key": "Target-Type",
+                "value": "<string>"
+              },
+              {
+                "disabled": false,
+                "description": "(Required) The section to target; required when `Target-Type` is specified.\nThis value can be URL-Encoded and *must* be URL-Encoded if it\nincludes non-ASCII characters.\n",
+                "key": "Target",
+                "value": "<string>"
+              },
+              {
+                "disabled": false,
+                "description": "Delimiter used when specifying nested heading targets (e.g. \"Heading 1::Subheading\"). Defaults to \"::\".",
+                "key": "Target-Delimiter",
+                "value": "::"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PATCH",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "<string>",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "c638f2a9-d479-4f9f-919c-876e3d8b0d03",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "active",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Binding host",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": "HTTPS port",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) Patch operation to perform",
+                    "key": "Operation",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If the specified Target does not exist, create it?",
+                    "key": "Create-Target-If-Missing",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If patch data already exists in Target, apply patch anyway?",
+                    "key": "Apply-If-Content-Preexists",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Trim whitespace from Target content before applying the operation?",
+                    "key": "Trim-Target-Whitespace",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) Type of sub-document section to target. When specified, the operation\napplies only to the matching section rather than the whole file. Must\nbe used together with the `Target` header.\n\n- `heading`: a markdown heading section.\n- `block`: a block reference.\n- `frontmatter`: a frontmatter field.\n",
+                    "key": "Target-Type",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) The section to target; required when `Target-Type` is specified.\nThis value can be URL-Encoded and *must* be URL-Encoded if it\nincludes non-ASCII characters.\n",
+                    "key": "Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Delimiter used when specifying nested heading targets (e.g. \"Heading 1::Subheading\"). Defaults to \"::\".",
+                    "key": "Target-Delimiter",
+                    "value": "::"
+                  }
+                ],
+                "method": "PATCH",
+                "body": {
+                  "mode": "raw",
+                  "raw": "['one', 'two']",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "4c4fa7b5-9cb3-4f2c-915f-05643bac3281",
+              "name": "Bad Request; see response message for details.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "active",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Binding host",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": "HTTPS port",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) Patch operation to perform",
+                    "key": "Operation",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If the specified Target does not exist, create it?",
+                    "key": "Create-Target-If-Missing",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If patch data already exists in Target, apply patch anyway?",
+                    "key": "Apply-If-Content-Preexists",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Trim whitespace from Target content before applying the operation?",
+                    "key": "Trim-Target-Whitespace",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) Type of sub-document section to target. When specified, the operation\napplies only to the matching section rather than the whole file. Must\nbe used together with the `Target` header.\n\n- `heading`: a markdown heading section.\n- `block`: a block reference.\n- `frontmatter`: a frontmatter field.\n",
+                    "key": "Target-Type",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) The section to target; required when `Target-Type` is specified.\nThis value can be URL-Encoded and *must* be URL-Encoded if it\nincludes non-ASCII characters.\n",
+                    "key": "Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Delimiter used when specifying nested heading targets (e.g. \"Heading 1::Subheading\"). Defaults to \"::\".",
+                    "key": "Target-Delimiter",
+                    "value": "::"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PATCH",
+                "body": {
+                  "mode": "raw",
+                  "raw": "['one', 'two']",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"errorCode\": 40149,\n  \"message\": \"A brief description of the error.\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "538524e6-a2ea-4cd2-a506-d92b07c51f2a",
+              "name": "Does not exist",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "active",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Binding host",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": "HTTPS port",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) Patch operation to perform",
+                    "key": "Operation",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If the specified Target does not exist, create it?",
+                    "key": "Create-Target-If-Missing",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If patch data already exists in Target, apply patch anyway?",
+                    "key": "Apply-If-Content-Preexists",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Trim whitespace from Target content before applying the operation?",
+                    "key": "Trim-Target-Whitespace",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) Type of sub-document section to target. When specified, the operation\napplies only to the matching section rather than the whole file. Must\nbe used together with the `Target` header.\n\n- `heading`: a markdown heading section.\n- `block`: a block reference.\n- `frontmatter`: a frontmatter field.\n",
+                    "key": "Target-Type",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) The section to target; required when `Target-Type` is specified.\nThis value can be URL-Encoded and *must* be URL-Encoded if it\nincludes non-ASCII characters.\n",
+                    "key": "Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Delimiter used when specifying nested heading targets (e.g. \"Heading 1::Subheading\"). Defaults to \"::\".",
+                    "key": "Target-Delimiter",
+                    "value": "::"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PATCH",
+                "body": {
+                  "mode": "raw",
+                  "raw": "['one', 'two']",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"errorCode\": 40149,\n  \"message\": \"A brief description of the error.\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "294c361c-bb05-423a-ac1a-7ac247f424bd",
+              "name": "Your path references a directory instead of a file; this request method is valid only for updating files.\n",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "active",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Binding host",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": "HTTPS port",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) Patch operation to perform",
+                    "key": "Operation",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If the specified Target does not exist, create it?",
+                    "key": "Create-Target-If-Missing",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If patch data already exists in Target, apply patch anyway?",
+                    "key": "Apply-If-Content-Preexists",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Trim whitespace from Target content before applying the operation?",
+                    "key": "Trim-Target-Whitespace",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) Type of sub-document section to target. When specified, the operation\napplies only to the matching section rather than the whole file. Must\nbe used together with the `Target` header.\n\n- `heading`: a markdown heading section.\n- `block`: a block reference.\n- `frontmatter`: a frontmatter field.\n",
+                    "key": "Target-Type",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) The section to target; required when `Target-Type` is specified.\nThis value can be URL-Encoded and *must* be URL-Encoded if it\nincludes non-ASCII characters.\n",
+                    "key": "Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Delimiter used when specifying nested heading targets (e.g. \"Heading 1::Subheading\"). Defaults to \"::\".",
+                    "key": "Target-Delimiter",
+                    "value": "::"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PATCH",
+                "body": {
+                  "mode": "raw",
+                  "raw": "['one', 'two']",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Method Not Allowed",
+              "code": 405,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"errorCode\": 40149,\n  \"message\": \"A brief description of the error.\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "870e60e8-bc73-4ac9-8588-86412b90a4e7",
+          "name": "Append content to the active file open in Obsidian.\n",
+          "request": {
+            "name": "Append content to the active file open in Obsidian.\n",
+            "description": {
+              "content": "Appends content to the end of the currently-open note.\n\n# Targeting a Sub-part of your Document\n\nYou can operate on a specific section of a note instead of the whole file by providing `Target-Type` and `Target` headers:\n\n- Set `Target-Type` to `heading`, `block`, or `frontmatter`.\n- Set `Target` to the name of the heading, block reference, or frontmatter field. If the target contains non-ASCII characters (e.g. accented letters), percent-encode the value (e.g. `H%C3%A9llo` for `Héllo`).\n- For nested headings, use the `Target-Delimiter` header (default `::`) to separate levels.\n\nYou can also embed the target type and target directly in the URL path after the note identifier instead of using headers. The segment immediately following the note identifier is the target type, and the remaining segments form the target:\n\n- `.../heading/My%20Section` is equivalent to supplying `Target-Type: heading` and `Target: My%20Section`.\n- For nested headings, add additional path segments: `.../heading/My%20Section/Subsection` is equivalent to `Target: My%20Section::Subsection`.\n- `.../frontmatter/fieldName` targets the `fieldName` frontmatter field.\n- `.../block/abc123` targets the block with reference ID `abc123`.\n\nWhen URL-embedded values are present they take priority over the corresponding headers.\n\nWhen a target is specified the content is appended within that section and the full updated file content is returned with a `200` status. Without a target, the content is appended to the end of the file and a `204` status is returned.\n\nIf you need `prepend` or `replace` operations, use `PATCH` instead.\n",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "active",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Binding host",
+                  "type": "any",
+                  "value": "{{host}}",
+                  "key": "host"
+                },
+                {
+                  "description": "HTTPS port",
+                  "type": "any",
+                  "value": "{{port}}",
+                  "key": "port"
+                }
+              ]
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "If the specified Target does not exist, create it?",
+                "key": "Create-Target-If-Missing",
+                "value": "false"
+              },
+              {
+                "disabled": false,
+                "description": "If patch data already exists in Target, apply patch anyway?",
+                "key": "Apply-If-Content-Preexists",
+                "value": "false"
+              },
+              {
+                "disabled": false,
+                "description": "Trim whitespace from Target content before applying the operation?",
+                "key": "Trim-Target-Whitespace",
+                "value": "false"
+              },
+              {
+                "disabled": false,
+                "description": "Type of sub-document section to target. When specified, the operation\napplies only to the matching section rather than the whole file. Must\nbe used together with the `Target` header.\n\n- `heading`: a markdown heading section.\n- `block`: a block reference.\n- `frontmatter`: a frontmatter field.\n",
+                "key": "Target-Type",
+                "value": "<string>"
+              },
+              {
+                "disabled": false,
+                "description": "The section to target; required when `Target-Type` is specified.\nThis value can be URL-Encoded and *must* be URL-Encoded if it\nincludes non-ASCII characters.\n",
+                "key": "Target",
+                "value": "<string>"
+              },
+              {
+                "disabled": false,
+                "description": "Delimiter used when specifying nested heading targets (e.g. \"Heading 1::Subheading\"). Defaults to \"::\".",
+                "key": "Target-Delimiter",
+                "value": "::"
+              },
+              {
+                "key": "Content-Type",
+                "value": "text/markdown"
+              },
+              {
+                "key": "Accept",
+                "value": "text/markdown"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "<string>"
+            }
+          },
+          "response": [
+            {
+              "id": "a4ce6f01-d6f5-46da-8397-57b0cfe3044f",
+              "name": "Success; targeted section updated. The full updated file content is returned.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "active",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Binding host",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": "HTTPS port",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If the specified Target does not exist, create it?",
+                    "key": "Create-Target-If-Missing",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If patch data already exists in Target, apply patch anyway?",
+                    "key": "Apply-If-Content-Preexists",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Trim whitespace from Target content before applying the operation?",
+                    "key": "Trim-Target-Whitespace",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Type of sub-document section to target. When specified, the operation\napplies only to the matching section rather than the whole file. Must\nbe used together with the `Target` header.\n\n- `heading`: a markdown heading section.\n- `block`: a block reference.\n- `frontmatter`: a frontmatter field.\n",
+                    "key": "Target-Type",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "The section to target; required when `Target-Type` is specified.\nThis value can be URL-Encoded and *must* be URL-Encoded if it\nincludes non-ASCII characters.\n",
+                    "key": "Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Delimiter used when specifying nested heading targets (e.g. \"Heading 1::Subheading\"). Defaults to \"::\".",
+                    "key": "Target-Delimiter",
+                    "value": "::"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/markdown"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "# This is my document\n\nsomething else here\n"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/markdown"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "0062c219-7d7b-4537-b7e2-f3c28d3a4521",
+              "name": "Success; content appended to end of file.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "active",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Binding host",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": "HTTPS port",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If the specified Target does not exist, create it?",
+                    "key": "Create-Target-If-Missing",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If patch data already exists in Target, apply patch anyway?",
+                    "key": "Apply-If-Content-Preexists",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Trim whitespace from Target content before applying the operation?",
+                    "key": "Trim-Target-Whitespace",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Type of sub-document section to target. When specified, the operation\napplies only to the matching section rather than the whole file. Must\nbe used together with the `Target` header.\n\n- `heading`: a markdown heading section.\n- `block`: a block reference.\n- `frontmatter`: a frontmatter field.\n",
+                    "key": "Target-Type",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "The section to target; required when `Target-Type` is specified.\nThis value can be URL-Encoded and *must* be URL-Encoded if it\nincludes non-ASCII characters.\n",
+                    "key": "Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Delimiter used when specifying nested heading targets (e.g. \"Heading 1::Subheading\"). Defaults to \"::\".",
+                    "key": "Target-Delimiter",
+                    "value": "::"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "# This is my document\n\nsomething else here\n"
+                }
+              },
+              "status": "No Content",
+              "code": 204,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "d2c9e071-168f-4be0-90e3-115ebf6a12be",
+              "name": "Bad Request",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "active",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Binding host",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": "HTTPS port",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If the specified Target does not exist, create it?",
+                    "key": "Create-Target-If-Missing",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If patch data already exists in Target, apply patch anyway?",
+                    "key": "Apply-If-Content-Preexists",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Trim whitespace from Target content before applying the operation?",
+                    "key": "Trim-Target-Whitespace",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Type of sub-document section to target. When specified, the operation\napplies only to the matching section rather than the whole file. Must\nbe used together with the `Target` header.\n\n- `heading`: a markdown heading section.\n- `block`: a block reference.\n- `frontmatter`: a frontmatter field.\n",
+                    "key": "Target-Type",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "The section to target; required when `Target-Type` is specified.\nThis value can be URL-Encoded and *must* be URL-Encoded if it\nincludes non-ASCII characters.\n",
+                    "key": "Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Delimiter used when specifying nested heading targets (e.g. \"Heading 1::Subheading\"). Defaults to \"::\".",
+                    "key": "Target-Delimiter",
+                    "value": "::"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "# This is my document\n\nsomething else here\n"
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"errorCode\": 40149,\n  \"message\": \"A brief description of the error.\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "067942e4-854c-4418-97de-d026cc902a38",
+              "name": "Your path references a directory instead of a file; this request method is valid only for updating files.\n",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "active",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Binding host",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": "HTTPS port",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If the specified Target does not exist, create it?",
+                    "key": "Create-Target-If-Missing",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If patch data already exists in Target, apply patch anyway?",
+                    "key": "Apply-If-Content-Preexists",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Trim whitespace from Target content before applying the operation?",
+                    "key": "Trim-Target-Whitespace",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Type of sub-document section to target. When specified, the operation\napplies only to the matching section rather than the whole file. Must\nbe used together with the `Target` header.\n\n- `heading`: a markdown heading section.\n- `block`: a block reference.\n- `frontmatter`: a frontmatter field.\n",
+                    "key": "Target-Type",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "The section to target; required when `Target-Type` is specified.\nThis value can be URL-Encoded and *must* be URL-Encoded if it\nincludes non-ASCII characters.\n",
+                    "key": "Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Delimiter used when specifying nested heading targets (e.g. \"Heading 1::Subheading\"). Defaults to \"::\".",
+                    "key": "Target-Delimiter",
+                    "value": "::"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "# This is my document\n\nsomething else here\n"
+                }
+              },
+              "status": "Method Not Allowed",
+              "code": 405,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"errorCode\": 40149,\n  \"message\": \"A brief description of the error.\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7e86cde9-3f93-4ee3-8dbf-04dc2f4fb3f9",
+          "name": "Update the content of the active file open in Obsidian.\n",
+          "request": {
+            "name": "Update the content of the active file open in Obsidian.\n",
+            "description": {
+              "content": "# Targeting a Sub-part of your Document\n\nYou can operate on a specific section of a note instead of the whole file by providing `Target-Type` and `Target` headers:\n\n- Set `Target-Type` to `heading`, `block`, or `frontmatter`.\n- Set `Target` to the name of the heading, block reference, or frontmatter field. If the target contains non-ASCII characters (e.g. accented letters), percent-encode the value (e.g. `H%C3%A9llo` for `Héllo`).\n- For nested headings, use the `Target-Delimiter` header (default `::`) to separate levels.\n\nYou can also embed the target type and target directly in the URL path after the note identifier instead of using headers. The segment immediately following the note identifier is the target type, and the remaining segments form the target:\n\n- `.../heading/My%20Section` is equivalent to supplying `Target-Type: heading` and `Target: My%20Section`.\n- For nested headings, add additional path segments: `.../heading/My%20Section/Subsection` is equivalent to `Target: My%20Section::Subsection`.\n- `.../frontmatter/fieldName` targets the `fieldName` frontmatter field.\n- `.../block/abc123` targets the block with reference ID `abc123`.\n\nWhen URL-embedded values are present they take priority over the corresponding headers.\n\nWhen a target is specified the target section is replaced with the request body and the full updated file content is returned with a `200` status. If the target does not exist it will be created. Without a target, the entire file is replaced and a `204` status is returned.\n",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "active",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Binding host",
+                  "type": "any",
+                  "value": "{{host}}",
+                  "key": "host"
+                },
+                {
+                  "description": "HTTPS port",
+                  "type": "any",
+                  "value": "{{port}}",
+                  "key": "port"
+                }
+              ]
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "If patch data already exists in Target, apply patch anyway?",
+                "key": "Apply-If-Content-Preexists",
+                "value": "false"
+              },
+              {
+                "disabled": false,
+                "description": "Trim whitespace from Target content before applying the operation?",
+                "key": "Trim-Target-Whitespace",
+                "value": "false"
+              },
+              {
+                "disabled": false,
+                "description": "Type of sub-document section to target. When specified, the operation\napplies only to the matching section rather than the whole file. Must\nbe used together with the `Target` header.\n\n- `heading`: a markdown heading section.\n- `block`: a block reference.\n- `frontmatter`: a frontmatter field.\n",
+                "key": "Target-Type",
+                "value": "<string>"
+              },
+              {
+                "disabled": false,
+                "description": "The section to target; required when `Target-Type` is specified.\nThis value can be URL-Encoded and *must* be URL-Encoded if it\nincludes non-ASCII characters.\n",
+                "key": "Target",
+                "value": "<string>"
+              },
+              {
+                "disabled": false,
+                "description": "Delimiter used when specifying nested heading targets (e.g. \"Heading 1::Subheading\"). Defaults to \"::\".",
+                "key": "Target-Delimiter",
+                "value": "::"
+              },
+              {
+                "key": "Content-Type",
+                "value": "*/*"
+              },
+              {
+                "key": "Accept",
+                "value": "text/markdown"
+              }
+            ],
+            "method": "PUT",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "<string>"
+            }
+          },
+          "response": [
+            {
+              "id": "4dfdb9a1-111e-4018-ab6b-6fde807b20a3",
+              "name": "Success; targeted section replaced. The full updated file content is returned.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "active",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Binding host",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": "HTTPS port",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If patch data already exists in Target, apply patch anyway?",
+                    "key": "Apply-If-Content-Preexists",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Trim whitespace from Target content before applying the operation?",
+                    "key": "Trim-Target-Whitespace",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Type of sub-document section to target. When specified, the operation\napplies only to the matching section rather than the whole file. Must\nbe used together with the `Target` header.\n\n- `heading`: a markdown heading section.\n- `block`: a block reference.\n- `frontmatter`: a frontmatter field.\n",
+                    "key": "Target-Type",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "The section to target; required when `Target-Type` is specified.\nThis value can be URL-Encoded and *must* be URL-Encoded if it\nincludes non-ASCII characters.\n",
+                    "key": "Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Delimiter used when specifying nested heading targets (e.g. \"Heading 1::Subheading\"). Defaults to \"::\".",
+                    "key": "Target-Delimiter",
+                    "value": "::"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/markdown"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "<string>"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/markdown"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "959284b6-bf5b-4bbd-8ec3-d8814902d70f",
+              "name": "Success; entire file replaced.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "active",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Binding host",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": "HTTPS port",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If patch data already exists in Target, apply patch anyway?",
+                    "key": "Apply-If-Content-Preexists",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Trim whitespace from Target content before applying the operation?",
+                    "key": "Trim-Target-Whitespace",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Type of sub-document section to target. When specified, the operation\napplies only to the matching section rather than the whole file. Must\nbe used together with the `Target` header.\n\n- `heading`: a markdown heading section.\n- `block`: a block reference.\n- `frontmatter`: a frontmatter field.\n",
+                    "key": "Target-Type",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "The section to target; required when `Target-Type` is specified.\nThis value can be URL-Encoded and *must* be URL-Encoded if it\nincludes non-ASCII characters.\n",
+                    "key": "Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Delimiter used when specifying nested heading targets (e.g. \"Heading 1::Subheading\"). Defaults to \"::\".",
+                    "key": "Target-Delimiter",
+                    "value": "::"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "<string>"
+                }
+              },
+              "status": "No Content",
+              "code": 204,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "78e9eca3-38c4-43d8-985d-7bd5cff4eb3c",
+              "name": "Incoming file could not be processed.  Make sure you have specified a reasonable file name, and make sure you have set a reasonable 'Content-Type' header; if you are uploading a note, 'text/markdown' is likely the right choice.\n",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "active",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Binding host",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": "HTTPS port",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If patch data already exists in Target, apply patch anyway?",
+                    "key": "Apply-If-Content-Preexists",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Trim whitespace from Target content before applying the operation?",
+                    "key": "Trim-Target-Whitespace",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Type of sub-document section to target. When specified, the operation\napplies only to the matching section rather than the whole file. Must\nbe used together with the `Target` header.\n\n- `heading`: a markdown heading section.\n- `block`: a block reference.\n- `frontmatter`: a frontmatter field.\n",
+                    "key": "Target-Type",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "The section to target; required when `Target-Type` is specified.\nThis value can be URL-Encoded and *must* be URL-Encoded if it\nincludes non-ASCII characters.\n",
+                    "key": "Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Delimiter used when specifying nested heading targets (e.g. \"Heading 1::Subheading\"). Defaults to \"::\".",
+                    "key": "Target-Delimiter",
+                    "value": "::"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "<string>"
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"errorCode\": 40149,\n  \"message\": \"A brief description of the error.\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "6df03814-f58d-4636-b9a9-4048b79a2ac9",
+              "name": "Your path references a directory instead of a file; this request method is valid only for updating files.\n",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "active",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Binding host",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": "HTTPS port",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "If patch data already exists in Target, apply patch anyway?",
+                    "key": "Apply-If-Content-Preexists",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Trim whitespace from Target content before applying the operation?",
+                    "key": "Trim-Target-Whitespace",
+                    "value": "false"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Type of sub-document section to target. When specified, the operation\napplies only to the matching section rather than the whole file. Must\nbe used together with the `Target` header.\n\n- `heading`: a markdown heading section.\n- `block`: a block reference.\n- `frontmatter`: a frontmatter field.\n",
+                    "key": "Target-Type",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "The section to target; required when `Target-Type` is specified.\nThis value can be URL-Encoded and *must* be URL-Encoded if it\nincludes non-ASCII characters.\n",
+                    "key": "Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Delimiter used when specifying nested heading targets (e.g. \"Heading 1::Subheading\"). Defaults to \"::\".",
+                    "key": "Target-Delimiter",
+                    "value": "::"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "<string>"
+                }
+              },
+              "status": "Method Not Allowed",
+              "code": 405,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"errorCode\": 40149,\n  \"message\": \"A brief description of the error.\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Binding host",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "127.0.0.1",
+      "key": "host"
+    },
+    {
+      "description": {
+        "content": "HTTPS port",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "27124",
+      "key": "port"
+    },
+    {
+      "type": "string",
+      "value": "https://{{host}}:{{port}}",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "3a33ffad-8236-49db-9d18-2b64abd39fd1",
+    "name": "Local REST API for Obsidian Active File API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "You can use this interface for trying out your Local REST API in Obsidian.\n\nBefore trying the below tools, you will want to make sure you press the \"Authorize\" button below and provide the API Key you are shown when you open the \"Local REST API\" section of your Obsidian settings.  All requests to the API require a valid API Key; so you won't get very far without doing that.\n\nWhen using this tool you may see browser security warnings due to your browser not trusting the self-signed certificate the plugin will generate on its first run.  If you do, you can make those errors disappear by adding the certificate as a \"Trusted Certificate\" in your browser or operating system's settings.\n",
+      "type": "text/plain"
+    }
+  }
+}

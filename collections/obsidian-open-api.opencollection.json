@@ -1,0 +1,49 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Local REST API for Obsidian Active File Open API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Open",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Open the specified document in the Obsidian user interface.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{host}:{port}/open/:filename",
+            "params": [
+              {
+                "name": "filename",
+                "value": "",
+                "type": "path",
+                "description": "Path to the file to return (relative to your vault root).\n"
+              },
+              {
+                "name": "newLeaf",
+                "value": "",
+                "type": "query",
+                "description": "Open this as a new leaf?"
+              }
+            ]
+          },
+          "docs": "Note: Obsidian will create a new document at the path you have\nspecified if such a document did not already exist.\n"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

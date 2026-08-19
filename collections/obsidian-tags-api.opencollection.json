@@ -1,0 +1,35 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Local REST API for Obsidian Active File Tags API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Tags",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get a list of all tags with metadata.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}:{port}/tags/"
+          },
+          "docs": "Returns all tags found across all files in the vault, drawn from both inline (`#tag`) and frontmatter tag syntax. Each tag is returned without the `#` prefix. Hierarchical tags (e.g. `work/tasks`) also contribute a count to every parent prefix (e.g. `work`), mirroring how Obsidian displays tag counts in its sidebar.\n"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

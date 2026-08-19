@@ -1,0 +1,57 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Local REST API for Obsidian Active File System API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "System",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Returns basic details about the server.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}:{port}/"
+          },
+          "docs": "Returns basic details about the server as well as your authentication status.\n\nThis is the only API request that does *not* require authentication.\n"
+        },
+        {
+          "info": {
+            "name": "Returns the certificate in use by this API.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}:{port}/obsidian-local-rest-api.crt"
+          },
+          "docs": "Returns the certificate in use by this API.\n"
+        },
+        {
+          "info": {
+            "name": "Returns OpenAPI YAML document describing the capabilities of this API.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}:{port}/openapi.yaml"
+          },
+          "docs": "Returns OpenAPI YAML document describing the capabilities of this API.\n"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

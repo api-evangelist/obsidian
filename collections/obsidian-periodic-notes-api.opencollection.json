@@ -1,0 +1,496 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Local REST API for Obsidian Active File Periodic Notes API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Periodic Notes",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get current periodic note for the specified period.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}:{port}/periodic/:period/",
+            "headers": [
+              {
+                "name": "Target-Type",
+                "value": ""
+              },
+              {
+                "name": "Target",
+                "value": ""
+              },
+              {
+                "name": "Target-Delimiter",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "period",
+                "value": "",
+                "type": "path",
+                "description": "The name of the period for which you would like to grab a periodic note."
+              }
+            ]
+          },
+          "docs": "Returns the content of the current periodic note for the specified period.\n\n# Targeting a Sub-part of your Document\n\nYou can operate on a specific section of a note instead of the whole file by providing `Target-Type` and `Target` headers:\n\n- Set `Target-Type` to `heading`, `block`, or `frontmatter`.\n- Set `Target` to the name of the heading, block reference, or frontmatter field. If the target contains non-ASCII characters (e.g. accented letters), percent-encode the value (e.g. `H%C3%A9llo` for"
+        },
+        {
+          "info": {
+            "name": "Append content to the current periodic note for the specified period.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{host}:{port}/periodic/:period/",
+            "headers": [
+              {
+                "name": "Create-Target-If-Missing",
+                "value": ""
+              },
+              {
+                "name": "Apply-If-Content-Preexists",
+                "value": ""
+              },
+              {
+                "name": "Trim-Target-Whitespace",
+                "value": ""
+              },
+              {
+                "name": "Target-Type",
+                "value": ""
+              },
+              {
+                "name": "Target",
+                "value": ""
+              },
+              {
+                "name": "Target-Delimiter",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "period",
+                "value": "",
+                "type": "path",
+                "description": "The name of the period for which you would like to grab a periodic note."
+              }
+            ]
+          },
+          "docs": "Appends content to the current periodic note for the specified period. Note that this will create the relevant periodic note if necessary.\n\n# Targeting a Sub-part of your Document\n\nYou can operate on a specific section of a note instead of the whole file by providing `Target-Type` and `Target` headers:\n\n- Set `Target-Type` to `heading`, `block`, or `frontmatter`.\n- Set `Target` to the name of the heading, block reference, or frontmatter field. If the target contains non-ASCII characters (e.g. ac"
+        },
+        {
+          "info": {
+            "name": "Update the content of the current periodic note for the specified period.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://{host}:{port}/periodic/:period/",
+            "headers": [
+              {
+                "name": "Apply-If-Content-Preexists",
+                "value": ""
+              },
+              {
+                "name": "Trim-Target-Whitespace",
+                "value": ""
+              },
+              {
+                "name": "Target-Type",
+                "value": ""
+              },
+              {
+                "name": "Target",
+                "value": ""
+              },
+              {
+                "name": "Target-Delimiter",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "period",
+                "value": "",
+                "type": "path",
+                "description": "The name of the period for which you would like to grab a periodic note."
+              }
+            ]
+          },
+          "docs": "# Targeting a Sub-part of your Document\n\nYou can operate on a specific section of a note instead of the whole file by providing `Target-Type` and `Target` headers:\n\n- Set `Target-Type` to `heading`, `block`, or `frontmatter`.\n- Set `Target` to the name of the heading, block reference, or frontmatter field. If the target contains non-ASCII characters (e.g. accented letters), percent-encode the value (e.g. `H%C3%A9llo` for `Héllo`).\n- For nested headings, use the `Target-Delimiter` header (default"
+        },
+        {
+          "info": {
+            "name": "Partially update content in the current periodic note for the specified period.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://{host}:{port}/periodic/:period/",
+            "headers": [
+              {
+                "name": "Operation",
+                "value": ""
+              },
+              {
+                "name": "Create-Target-If-Missing",
+                "value": ""
+              },
+              {
+                "name": "Apply-If-Content-Preexists",
+                "value": ""
+              },
+              {
+                "name": "Trim-Target-Whitespace",
+                "value": ""
+              },
+              {
+                "name": "Target-Type",
+                "value": ""
+              },
+              {
+                "name": "Target",
+                "value": ""
+              },
+              {
+                "name": "Target-Delimiter",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "period",
+                "value": "",
+                "type": "path",
+                "description": "The name of the period for which you would like to grab a periodic note."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Inserts content into the current periodic note for the specified period relative to a heading, block reference, or frontmatter field within that document.\n\nAllows you to modify the content relative to a heading, block reference, or frontmatter field in your document.\n\n> ![note]\n> Note that this API was changed in Version 3.0 of this extension and the earlier PATCH API is now deprecated. Requests made using the previous version of this API will continue to work until Version 4.0 is released.  See"
+        },
+        {
+          "info": {
+            "name": "Delete the current periodic note for the specified period.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://{host}:{port}/periodic/:period/",
+            "params": [
+              {
+                "name": "period",
+                "value": "",
+                "type": "path",
+                "description": "The name of the period for which you would like to grab a periodic note."
+              }
+            ]
+          },
+          "docs": "Delete the current periodic note for the specified period.\n"
+        },
+        {
+          "info": {
+            "name": "Get the periodic note for the specified period and date.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}:{port}/periodic/:period/:year/:month/:day/",
+            "headers": [
+              {
+                "name": "Target-Type",
+                "value": ""
+              },
+              {
+                "name": "Target",
+                "value": ""
+              },
+              {
+                "name": "Target-Delimiter",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "year",
+                "value": "",
+                "type": "path",
+                "description": "The year of the date for which you would like to grab a periodic note."
+              },
+              {
+                "name": "month",
+                "value": "",
+                "type": "path",
+                "description": "The month (1-12) of the date for which you would like to grab a periodic note."
+              },
+              {
+                "name": "day",
+                "value": "",
+                "type": "path",
+                "description": "The day (1-31) of the date for which you would like to grab a periodic note."
+              },
+              {
+                "name": "period",
+                "value": "",
+                "type": "path",
+                "description": "The name of the period for which you would like to grab a periodic note."
+              }
+            ]
+          },
+          "docs": "Returns the content of the periodic note for the specified period and date.\n\n# Targeting a Sub-part of your Document\n\nYou can operate on a specific section of a note instead of the whole file by providing `Target-Type` and `Target` headers:\n\n- Set `Target-Type` to `heading`, `block`, or `frontmatter`.\n- Set `Target` to the name of the heading, block reference, or frontmatter field. If the target contains non-ASCII characters (e.g. accented letters), percent-encode the value (e.g. `H%C3%A9llo` fo"
+        },
+        {
+          "info": {
+            "name": "Append content to the periodic note for the specified period and date.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{host}:{port}/periodic/:period/:year/:month/:day/",
+            "headers": [
+              {
+                "name": "Create-Target-If-Missing",
+                "value": ""
+              },
+              {
+                "name": "Apply-If-Content-Preexists",
+                "value": ""
+              },
+              {
+                "name": "Trim-Target-Whitespace",
+                "value": ""
+              },
+              {
+                "name": "Target-Type",
+                "value": ""
+              },
+              {
+                "name": "Target",
+                "value": ""
+              },
+              {
+                "name": "Target-Delimiter",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "year",
+                "value": "",
+                "type": "path",
+                "description": "The year of the date for which you would like to grab a periodic note."
+              },
+              {
+                "name": "month",
+                "value": "",
+                "type": "path",
+                "description": "The month (1-12) of the date for which you would like to grab a periodic note."
+              },
+              {
+                "name": "day",
+                "value": "",
+                "type": "path",
+                "description": "The day (1-31) of the date for which you would like to grab a periodic note."
+              },
+              {
+                "name": "period",
+                "value": "",
+                "type": "path",
+                "description": "The name of the period for which you would like to grab a periodic note."
+              }
+            ]
+          },
+          "docs": "Appends content to the periodic note for the specified period and date. Note that this will create the relevant periodic note if necessary.\n\n# Targeting a Sub-part of your Document\n\nYou can operate on a specific section of a note instead of the whole file by providing `Target-Type` and `Target` headers:\n\n- Set `Target-Type` to `heading`, `block`, or `frontmatter`.\n- Set `Target` to the name of the heading, block reference, or frontmatter field. If the target contains non-ASCII characters (e.g. a"
+        },
+        {
+          "info": {
+            "name": "Update the content of the periodic note for the specified period and date.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://{host}:{port}/periodic/:period/:year/:month/:day/",
+            "headers": [
+              {
+                "name": "Apply-If-Content-Preexists",
+                "value": ""
+              },
+              {
+                "name": "Trim-Target-Whitespace",
+                "value": ""
+              },
+              {
+                "name": "Target-Type",
+                "value": ""
+              },
+              {
+                "name": "Target",
+                "value": ""
+              },
+              {
+                "name": "Target-Delimiter",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "year",
+                "value": "",
+                "type": "path",
+                "description": "The year of the date for which you would like to grab a periodic note."
+              },
+              {
+                "name": "month",
+                "value": "",
+                "type": "path",
+                "description": "The month (1-12) of the date for which you would like to grab a periodic note."
+              },
+              {
+                "name": "day",
+                "value": "",
+                "type": "path",
+                "description": "The day (1-31) of the date for which you would like to grab a periodic note."
+              },
+              {
+                "name": "period",
+                "value": "",
+                "type": "path",
+                "description": "The name of the period for which you would like to grab a periodic note."
+              }
+            ]
+          },
+          "docs": "# Targeting a Sub-part of your Document\n\nYou can operate on a specific section of a note instead of the whole file by providing `Target-Type` and `Target` headers:\n\n- Set `Target-Type` to `heading`, `block`, or `frontmatter`.\n- Set `Target` to the name of the heading, block reference, or frontmatter field. If the target contains non-ASCII characters (e.g. accented letters), percent-encode the value (e.g. `H%C3%A9llo` for `Héllo`).\n- For nested headings, use the `Target-Delimiter` header (default"
+        },
+        {
+          "info": {
+            "name": "Partially update content in the periodic note for the specified period and date.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://{host}:{port}/periodic/:period/:year/:month/:day/",
+            "headers": [
+              {
+                "name": "Operation",
+                "value": ""
+              },
+              {
+                "name": "Create-Target-If-Missing",
+                "value": ""
+              },
+              {
+                "name": "Apply-If-Content-Preexists",
+                "value": ""
+              },
+              {
+                "name": "Trim-Target-Whitespace",
+                "value": ""
+              },
+              {
+                "name": "Target-Type",
+                "value": ""
+              },
+              {
+                "name": "Target",
+                "value": ""
+              },
+              {
+                "name": "Target-Delimiter",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "year",
+                "value": "",
+                "type": "path",
+                "description": "The year of the date for which you would like to grab a periodic note."
+              },
+              {
+                "name": "month",
+                "value": "",
+                "type": "path",
+                "description": "The month (1-12) of the date for which you would like to grab a periodic note."
+              },
+              {
+                "name": "day",
+                "value": "",
+                "type": "path",
+                "description": "The day (1-31) of the date for which you would like to grab a periodic note."
+              },
+              {
+                "name": "period",
+                "value": "",
+                "type": "path",
+                "description": "The name of the period for which you would like to grab a periodic note."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Inserts content into a periodic note for the specified period and date relative to a heading, block reference, or frontmatter field within that document.\n\nAllows you to modify the content relative to a heading, block reference, or frontmatter field in your document.\n\n> ![note]\n> Note that this API was changed in Version 3.0 of this extension and the earlier PATCH API is now deprecated. Requests made using the previous version of this API will continue to work until Version 4.0 is released.  See "
+        },
+        {
+          "info": {
+            "name": "Delete the periodic note for the specified period and date.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://{host}:{port}/periodic/:period/:year/:month/:day/",
+            "params": [
+              {
+                "name": "year",
+                "value": "",
+                "type": "path",
+                "description": "The year of the date for which you would like to grab a periodic note."
+              },
+              {
+                "name": "month",
+                "value": "",
+                "type": "path",
+                "description": "The month (1-12) of the date for which you would like to grab a periodic note."
+              },
+              {
+                "name": "day",
+                "value": "",
+                "type": "path",
+                "description": "The day (1-31) of the date for which you would like to grab a periodic note."
+              },
+              {
+                "name": "period",
+                "value": "",
+                "type": "path",
+                "description": "The name of the period for which you would like to grab a periodic note."
+              }
+            ]
+          },
+          "docs": "Deletes the periodic note for the specified period.\n"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

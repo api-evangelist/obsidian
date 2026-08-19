@@ -1,0 +1,54 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Local REST API for Obsidian Active File Commands API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Commands",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get a list of available commands.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}:{port}/commands/"
+          },
+          "docs": "Get a list of available commands.\n"
+        },
+        {
+          "info": {
+            "name": "Execute a command.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{host}:{port}/commands/:commandId/",
+            "params": [
+              {
+                "name": "commandId",
+                "value": "",
+                "type": "path",
+                "description": "The id of the command to execute"
+              }
+            ]
+          },
+          "docs": "Execute a command.\n"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

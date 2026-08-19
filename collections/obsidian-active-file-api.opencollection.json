@@ -1,0 +1,175 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Local REST API for Obsidian Active File API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Active File",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Return the content of the active file open in Obsidian.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}:{port}/active/",
+            "headers": [
+              {
+                "name": "Target-Type",
+                "value": ""
+              },
+              {
+                "name": "Target",
+                "value": ""
+              },
+              {
+                "name": "Target-Delimiter",
+                "value": ""
+              }
+            ]
+          },
+          "docs": "Returns the content of the currently active file in Obsidian.\n\n# Targeting a Sub-part of your Document\n\nYou can operate on a specific section of a note instead of the whole file by providing `Target-Type` and `Target` headers:\n\n- Set `Target-Type` to `heading`, `block`, or `frontmatter`.\n- Set `Target` to the name of the heading, block reference, or frontmatter field. If the target contains non-ASCII characters (e.g. accented letters), percent-encode the value (e.g. `H%C3%A9llo` for `Héllo`).\n- "
+        },
+        {
+          "info": {
+            "name": "Append content to the active file open in Obsidian.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{host}:{port}/active/",
+            "headers": [
+              {
+                "name": "Create-Target-If-Missing",
+                "value": ""
+              },
+              {
+                "name": "Apply-If-Content-Preexists",
+                "value": ""
+              },
+              {
+                "name": "Trim-Target-Whitespace",
+                "value": ""
+              },
+              {
+                "name": "Target-Type",
+                "value": ""
+              },
+              {
+                "name": "Target",
+                "value": ""
+              },
+              {
+                "name": "Target-Delimiter",
+                "value": ""
+              }
+            ]
+          },
+          "docs": "Appends content to the end of the currently-open note.\n\n# Targeting a Sub-part of your Document\n\nYou can operate on a specific section of a note instead of the whole file by providing `Target-Type` and `Target` headers:\n\n- Set `Target-Type` to `heading`, `block`, or `frontmatter`.\n- Set `Target` to the name of the heading, block reference, or frontmatter field. If the target contains non-ASCII characters (e.g. accented letters), percent-encode the value (e.g. `H%C3%A9llo` for `Héllo`).\n- For nes"
+        },
+        {
+          "info": {
+            "name": "Update the content of the active file open in Obsidian.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://{host}:{port}/active/",
+            "headers": [
+              {
+                "name": "Apply-If-Content-Preexists",
+                "value": ""
+              },
+              {
+                "name": "Trim-Target-Whitespace",
+                "value": ""
+              },
+              {
+                "name": "Target-Type",
+                "value": ""
+              },
+              {
+                "name": "Target",
+                "value": ""
+              },
+              {
+                "name": "Target-Delimiter",
+                "value": ""
+              }
+            ]
+          },
+          "docs": "# Targeting a Sub-part of your Document\n\nYou can operate on a specific section of a note instead of the whole file by providing `Target-Type` and `Target` headers:\n\n- Set `Target-Type` to `heading`, `block`, or `frontmatter`.\n- Set `Target` to the name of the heading, block reference, or frontmatter field. If the target contains non-ASCII characters (e.g. accented letters), percent-encode the value (e.g. `H%C3%A9llo` for `Héllo`).\n- For nested headings, use the `Target-Delimiter` header (default"
+        },
+        {
+          "info": {
+            "name": "Partially update content in the currently open note.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://{host}:{port}/active/",
+            "headers": [
+              {
+                "name": "Operation",
+                "value": ""
+              },
+              {
+                "name": "Create-Target-If-Missing",
+                "value": ""
+              },
+              {
+                "name": "Apply-If-Content-Preexists",
+                "value": ""
+              },
+              {
+                "name": "Trim-Target-Whitespace",
+                "value": ""
+              },
+              {
+                "name": "Target-Type",
+                "value": ""
+              },
+              {
+                "name": "Target",
+                "value": ""
+              },
+              {
+                "name": "Target-Delimiter",
+                "value": ""
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Inserts content into the currently-open note relative to a heading, block reference, or frontmatter field within that document.\n\nAllows you to modify the content relative to a heading, block reference, or frontmatter field in your document.\n\n> ![note]\n> Note that this API was changed in Version 3.0 of this extension and the earlier PATCH API is now deprecated. Requests made using the previous version of this API will continue to work until Version 4.0 is released.  See https://github.com/codding"
+        },
+        {
+          "info": {
+            "name": "Deletes the currently-active file in Obsidian.\n",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://{host}:{port}/active/"
+          },
+          "docs": "Deletes the currently-active file in Obsidian.\n"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
