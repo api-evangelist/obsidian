@@ -3,6 +3,18 @@ url: https://raw.githubusercontent.com/api-evangelist/obsidian/refs/heads/main/a
 name: Obsidian
 kind: company
 description: Obsidian is a local-first knowledge base and note-taking app built on plain Markdown files. Obsidian itself does not publish a hosted SaaS API; programmatic access is provided through (1) the in-app Plugin API for community plugins, (2) the community-built Local REST API plugin that exposes vault operations over localhost HTTPS, and (3) optional paid add-on services Obsidian Sync and Obsidian Publish.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
