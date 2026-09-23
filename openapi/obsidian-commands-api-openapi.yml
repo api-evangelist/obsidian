@@ -1,15 +1,7 @@
-openapi: 3.0.2
+openapi: 3.2.0
 info:
-  description: 'You can use this interface for trying out your Local REST API in Obsidian.
-
-
-    Before trying the below tools, you will want to make sure you press the "Authorize" button below and provide the API Key you are shown when you open the "Local REST API" section of your Obsidian settings.  All requests to the API require a valid API Key; so you won''t get very far without doing that.
-
-
-    When using this tool you may see browser security warnings due to your browser not trusting the self-signed certificate the plugin will generate on its first run.  If you do, you can make those errors disappear by adding the certificate as a "Trusted Certificate" in your browser or operating system''s settings.
-
-    '
-  title: Local REST API for Obsidian Active File Commands API
+  description: You can use this interface for trying out your Local REST API in Obsidian.
+  title: Local REST API for Obsidian Commands API
   version: '1.0'
 servers:
 - description: HTTPS (Secure Mode)
@@ -60,11 +52,11 @@ paths:
                     type: array
                 type: object
           description: A list of available commands.
-      summary: 'Get a list of available commands.
-
-        '
+      summary: Get a list of available commands
       tags:
       - Commands
+      operationId: getCommands
+      x-operation-id-source: derived
   /commands/{commandId}/:
     post:
       parameters:
@@ -83,11 +75,11 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
           description: The command you specified does not exist.
-      summary: 'Execute a command.
-
-        '
+      summary: Execute a command
       tags:
       - Commands
+      operationId: postCommandsByCommandId
+      x-operation-id-source: derived
 components:
   schemas:
     Error:

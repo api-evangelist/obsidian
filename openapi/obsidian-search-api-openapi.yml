@@ -1,15 +1,7 @@
-openapi: 3.0.2
+openapi: 3.2.0
 info:
-  description: 'You can use this interface for trying out your Local REST API in Obsidian.
-
-
-    Before trying the below tools, you will want to make sure you press the "Authorize" button below and provide the API Key you are shown when you open the "Local REST API" section of your Obsidian settings.  All requests to the API require a valid API Key; so you won''t get very far without doing that.
-
-
-    When using this tool you may see browser security warnings due to your browser not trusting the self-signed certificate the plugin will generate on its first run.  If you do, you can make those errors disappear by adding the certificate as a "Trusted Certificate" in your browser or operating system''s settings.
-
-    '
-  title: Local REST API for Obsidian Active File Search API
+  description: You can use this interface for trying out your Local REST API in Obsidian.
+  title: Local REST API for Obsidian Search API
   version: '1.0'
 servers:
 - description: HTTPS (Secure Mode)
@@ -40,27 +32,27 @@ paths:
       description: 'Evaluates a provided query against each file in your vault.
 
 
-        This endpoint supports multiple query formats.  Your query should be specified in your request''s body, and will be interpreted according to the `Content-type` header you specify from the below options. Additional query formats may be added in the future.
+        This endpoint supports multiple query formats. Your query should be specified in your request''s body, and will be interpreted according to the `Content-type` header you specify from the below options. Additional query formats may be added in the future.
 
 
         # Dataview DQL (`application/vnd.olrapi.dataview.dql+txt`)
 
 
-        Accepts a `TABLE`-type Dataview query as a text string.  See [Dataview](https://blacksmithgu.github.io/obsidian-dataview/query/queries/)''s query documentation for information on how to construct a query.
+        Accepts a `TABLE`-type Dataview query as a text string. See Dataview''s query documentation for information on how to construct a query.
 
 
         # JsonLogic (`application/vnd.olrapi.jsonlogic+json`)
 
 
-        Accepts a JsonLogic query specified as JSON.  See [JsonLogic](https://jsonlogic.com/operations.html)''s documentation for information about the base set of operators available, but in addition to those operators the following operators are available:
+        Accepts a JsonLogic query specified as JSON. See JsonLogic''s documentation for information about the base set of operators available, but in addition to those operators the following operators are available:
 
 
-        - `glob: [PATTERN, VALUE]`: Returns `true` if a string matches a glob pattern.  E.g.: `{"glob": ["*.foo", "bar.foo"]}` is `true` and `{"glob": ["*.bar", "bar.foo"]}` is `false`.
+        - `glob: [PATTERN, VALUE]`: Returns `true` if a string matches a glob pattern. E.g.: `{"glob": ["*.foo", "bar.foo"]}` is `true` and `{"glob": ["*.bar", "bar.foo"]}` is `false`.
 
-        - `regexp: [PATTERN, VALUE]`: Returns `true` if a string matches a regular expression.  E.g.: `{"regexp": [".*\.foo", "bar.foo"]` is `true` and `{"regexp": [".*\.bar", "bar.foo"]}` is `false`.
+        - `regexp: [PATTERN, VALUE]`: Returns `true` if a string matches a regular expression. E.g.: `{"regexp": [".*\.foo", "bar.foo"]` is `true` and `{"regexp": [".*\.bar", "bar.foo"]}` is `false`.
 
 
-        Returns only non-falsy results.  "Non-falsy" here treats the following values as "falsy":
+        Returns only non-falsy results. "Non-falsy" here treats the following values as "falsy":
 
 
         - `false`
@@ -84,15 +76,13 @@ paths:
 
         for individual files in your vault to understand exactly what values
 
-        are returned.  To see that, access the `GET` `/vault/{filePath}`
+        are returned. To see that, access the `GET` `/vault/{filePath}`
 
         route setting the header:
 
-        `Accept: application/vnd.olrapi.note+json`.  See examples below
+        `Accept: application/vnd.olrapi.note+json`. See examples below
 
-        for working examples of queries performing common search operations.
-
-        '
+        for working examples of queries performing common search operations.'
       requestBody:
         content:
           application/vnd.olrapi.dataview.dql+txt:
@@ -154,11 +144,11 @@ paths:
             Content-Type for your search query.
 
             '
-      summary: 'Search for documents matching a specified search query
-
-        '
+      summary: Search for documents matching a specified search query
       tags:
       - Search
+      operationId: postSearch
+      x-operation-id-source: derived
   /search/simple/:
     post:
       parameters:
@@ -210,11 +200,11 @@ paths:
                   type: object
                 type: array
           description: Success
-      summary: 'Search for documents matching a specified text query
-
-        '
+      summary: Search for documents matching a specified text query
       tags:
       - Search
+      operationId: postSearchSimple
+      x-operation-id-source: derived
 components:
   schemas:
     Error:

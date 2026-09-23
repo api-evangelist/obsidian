@@ -1,15 +1,7 @@
-openapi: 3.0.2
+openapi: 3.2.0
 info:
-  description: 'You can use this interface for trying out your Local REST API in Obsidian.
-
-
-    Before trying the below tools, you will want to make sure you press the "Authorize" button below and provide the API Key you are shown when you open the "Local REST API" section of your Obsidian settings.  All requests to the API require a valid API Key; so you won''t get very far without doing that.
-
-
-    When using this tool you may see browser security warnings due to your browser not trusting the self-signed certificate the plugin will generate on its first run.  If you do, you can make those errors disappear by adding the certificate as a "Trusted Certificate" in your browser or operating system''s settings.
-
-    '
-  title: Local REST API for Obsidian Active File Tags API
+  description: You can use this interface for trying out your Local REST API in Obsidian.
+  title: Local REST API for Obsidian Tags API
   version: '1.0'
 servers:
 - description: HTTPS (Secure Mode)
@@ -37,9 +29,7 @@ tags:
 paths:
   /tags/:
     get:
-      description: 'Returns all tags found across all files in the vault, drawn from both inline (`#tag`) and frontmatter tag syntax. Each tag is returned without the `#` prefix. Hierarchical tags (e.g. `work/tasks`) also contribute a count to every parent prefix (e.g. `work`), mirroring how Obsidian displays tag counts in its sidebar.
-
-        '
+      description: Returns all tags found across all files in the vault, drawn from both inline (`#tag`) and frontmatter tag syntax. Each tag is returned without the `#` prefix. Hierarchical tags (e.g. `work/tasks`) also contribute a count to every parent prefix (e.g. `work`), mirroring how Obsidian displays tag counts in its sidebar.
       responses:
         '200':
           content:
@@ -69,11 +59,11 @@ paths:
                     type: array
                 type: object
           description: A list of tags with their usage counts.
-      summary: 'Get a list of all tags with metadata.
-
-        '
+      summary: Get a list of all tags with metadata
       tags:
       - Tags
+      operationId: getTags
+      x-operation-id-source: derived
 components:
   securitySchemes:
     apiKeyAuth:

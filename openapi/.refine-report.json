@@ -1,15 +1,7 @@
 {
   "provider": "obsidian",
   "sources": [
-    "obsidian-active-file-api-openapi.yml",
-    "obsidian-commands-api-openapi.yml",
-    "obsidian-open-api-openapi.yml",
-    "obsidian-periodic-notes-api-openapi.yml",
-    "obsidian-search-api-openapi.yml",
-    "obsidian-system-api-openapi.yml",
-    "obsidian-tags-api-openapi.yml",
-    "obsidian-vault-directories-api-openapi.yml",
-    "obsidian-vault-files-api-openapi.yml"
+    "_original/obsidian-local-rest-api-openapi.yaml"
   ],
   "outputs": [
     "obsidian-active-file-api-openapi.yml",
@@ -25,6 +17,21 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "obsidian-local-rest-api-openapi.yaml: upgraded openapi 3.0.2 -> OpenAPI 3.2.0",
+    "obsidian-local-rest-api-openapi.yaml: declared missing tag: Tags",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "obsidian-active-file-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "obsidian-commands-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "obsidian-open-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "obsidian-periodic-notes-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "obsidian-search-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "obsidian-system-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "obsidian-tags-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "obsidian-vault-directories-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "obsidian-vault-files-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

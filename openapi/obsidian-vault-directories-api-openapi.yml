@@ -1,15 +1,7 @@
-openapi: 3.0.2
+openapi: 3.2.0
 info:
-  description: 'You can use this interface for trying out your Local REST API in Obsidian.
-
-
-    Before trying the below tools, you will want to make sure you press the "Authorize" button below and provide the API Key you are shown when you open the "Local REST API" section of your Obsidian settings.  All requests to the API require a valid API Key; so you won''t get very far without doing that.
-
-
-    When using this tool you may see browser security warnings due to your browser not trusting the self-signed certificate the plugin will generate on its first run.  If you do, you can make those errors disappear by adding the certificate as a "Trusted Certificate" in your browser or operating system''s settings.
-
-    '
-  title: Local REST API for Obsidian Active File Vault Directories API
+  description: You can use this interface for trying out your Local REST API in Obsidian.
+  title: Local REST API for Obsidian Vault Directories API
   version: '1.0'
 servers:
 - description: HTTPS (Secure Mode)
@@ -40,9 +32,7 @@ paths:
       description: 'Lists files in the root directory of your vault.
 
 
-        Note: that this is exactly the same API endpoint as the below "List files that exist in the specified directory." and exists here only due to a quirk of this particular interactive tool.
-
-        '
+        Note: that this is exactly the same API endpoint as the below "List files that exist in the specified directory." and exists here only due to a quirk of this particular interactive tool.'
       responses:
         '200':
           content:
@@ -65,11 +55,11 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
           description: Directory does not exist
-      summary: 'List files that exist in the root of your vault.
-
-        '
+      summary: List files that exist in the root of your vault
       tags:
       - Vault Directories
+      operationId: getVault
+      x-operation-id-source: derived
   /vault/{pathToDirectory}/:
     get:
       parameters:
@@ -107,11 +97,11 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
           description: Directory does not exist
-      summary: 'List files that exist in the specified directory.
-
-        '
+      summary: List files that exist in the specified directory
       tags:
       - Vault Directories
+      operationId: getVaultByPathToDirectory
+      x-operation-id-source: derived
 components:
   schemas:
     Error:

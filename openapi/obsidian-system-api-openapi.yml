@@ -1,15 +1,7 @@
-openapi: 3.0.2
+openapi: 3.2.0
 info:
-  description: 'You can use this interface for trying out your Local REST API in Obsidian.
-
-
-    Before trying the below tools, you will want to make sure you press the "Authorize" button below and provide the API Key you are shown when you open the "Local REST API" section of your Obsidian settings.  All requests to the API require a valid API Key; so you won''t get very far without doing that.
-
-
-    When using this tool you may see browser security warnings due to your browser not trusting the self-signed certificate the plugin will generate on its first run.  If you do, you can make those errors disappear by adding the certificate as a "Trusted Certificate" in your browser or operating system''s settings.
-
-    '
-  title: Local REST API for Obsidian Active File System API
+  description: You can use this interface for trying out your Local REST API in Obsidian.
+  title: Local REST API for Obsidian System API
   version: '1.0'
 servers:
 - description: HTTPS (Secure Mode)
@@ -40,9 +32,7 @@ paths:
       description: 'Returns basic details about the server as well as your authentication status.
 
 
-        This is the only API request that does *not* require authentication.
-
-        '
+        This is the only API request that does *not* require authentication.'
       responses:
         '200':
           content:
@@ -69,31 +59,31 @@ paths:
                     type: object
                 type: object
           description: Success
-      summary: 'Returns basic details about the server.
-
-        '
+      summary: Returns basic details about the server
       tags:
       - System
+      operationId: getRoot
+      x-operation-id-source: derived
   /obsidian-local-rest-api.crt:
     get:
       responses:
         '200':
           description: Success
-      summary: 'Returns the certificate in use by this API.
-
-        '
+      summary: Returns the certificate in use by this API
       tags:
       - System
+      operationId: getObsidianLocalRestApiCrt
+      x-operation-id-source: derived
   /openapi.yaml:
     get:
       responses:
         '200':
           description: Success
-      summary: 'Returns OpenAPI YAML document describing the capabilities of this API.
-
-        '
+      summary: Returns OpenAPI YAML document describing the capabilities of this API
       tags:
       - System
+      operationId: getOpenapiYaml
+      x-operation-id-source: derived
 components:
   securitySchemes:
     apiKeyAuth:
