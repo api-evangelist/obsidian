@@ -5,15 +5,19 @@ kind: company
 description: Obsidian is a local-first knowledge base and note-taking app built on plain Markdown files. Obsidian itself does not publish a hosted SaaS API; programmatic access is provided through (1) the in-app Plugin API for community plugins, (2) the community-built Local REST API plugin that exposes vault operations over localhost HTTPS, and (3) optional paid add-on services Obsidian Sync and Obsidian Publish.
 deliveryModel:
   model: saas
-  open_source: false
+  license_evidence:
+    not_product:
+    - coddingtonbear/obsidian-local-rest-api
+  open_source: unknown
   commercial: true
   callable_host: false
   label: Hosted service · you call their endpoint
-  confidence: medium
+  confidence: low
   source:
   - openapi
   - pricing
-  generated: '2026-08-28'
+  - repository-not-product
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: freemium
@@ -32,7 +36,7 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/obsidian.png
 tags:
   - Productivity
-  - Knowledge-Management
+  - Knowledge Management
   - Markdown
   - Notes
   - Local-First
@@ -42,6 +46,7 @@ tags_raw:
   - Markdown
   - Notes
   - Local-First
+  - Knowledge-Management
 created: '2026-05-08'
 modified: '2026-07-25'
 specificationVersion: '0.23'
