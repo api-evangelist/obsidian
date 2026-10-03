@@ -652,6 +652,19 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
+    Error:
+      properties:
+        errorCode:
+          description: 'A 5-digit error code uniquely identifying this particular type of error.
+
+            '
+          example: 40149
+          type: number
+        message:
+          description: Message describing the error.
+          example: A brief description of the error.
+          type: string
+      type: object
     NoteJson:
       properties:
         content:
@@ -683,19 +696,6 @@ components:
       - stat
       - path
       - content
-      type: object
-    Error:
-      properties:
-        errorCode:
-          description: 'A 5-digit error code uniquely identifying this particular type of error.
-
-            '
-          example: 40149
-          type: number
-        message:
-          description: Message describing the error.
-          example: A brief description of the error.
-          type: string
       type: object
   securitySchemes:
     apiKeyAuth:
