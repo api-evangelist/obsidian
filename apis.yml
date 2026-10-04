@@ -216,6 +216,9 @@ apis:
       - type: GitHub
         url: https://github.com/coddingtonbear/obsidian-local-rest-api
 common:
+  - type: CapabilityMap
+    url: capabilities/obsidian-capability-edges.yml
+    name: Obsidian Business Capability Map
   - type: AgenticAccess
     url: agentic-access/obsidian-agentic-access.yml
   - type: VulnerabilityDisclosure
