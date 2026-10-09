@@ -147,3 +147,53 @@ plans:
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - seat
+  - subscription
+  units:
+  - object
+  - seat
+  plans:
+  - name: Personal Use (Free)
+    access: free
+    model: seat
+    model_how: derived
+    units:
+    - seat
+    periods:
+    - month
+  - name: Commercial License
+    access: paid
+    model: seat
+    model_how: derived
+    units:
+    - seat
+    periods:
+    - year
+  - name: Catalyst Supporter License
+    access: paid
+    model: seat
+    model_how: derived
+    units:
+    - seat
+    periods:
+    - per-use
+  - name: Obsidian Sync (Add-On)
+    access: paid
+    model: seat
+    model_how: derived
+    units:
+    - seat
+    periods:
+    - month
+  - name: Obsidian Publish (Add-On)
+    access: paid
+    model: subscription
+    model_how: derived
+    units:
+    - object
+    periods:
+    - month
