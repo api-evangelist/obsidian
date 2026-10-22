@@ -93,3 +93,4961 @@
     detected: '2026-10-22'
   status: not-a-workflow
   arazzo: null
+- slug: obsidian-1password
+  label: 1Password
+  partner: 1password
+  partner_name: 1Password
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/lai2301/obsidian-secret-placeholders
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: Liam
+    register_id: https://github.com/lai2301/obsidian-secret-placeholders
+    matched_domain: 1password.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: developer.1password.com
+    builder: community
+    plugins:
+    - secret-placeholders
+    downloads_context: 1737
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-airtable
+  label: Airtable
+  partner: airtable
+  partner_name: Airtable
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/uppinote20/obsidian-auto-note-importer
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: uppinote20
+    register_id: https://github.com/uppinote20/obsidian-auto-note-importer
+    matched_domain: airtable.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: airtable.com
+    builder: community
+    plugins:
+    - auto-note-importer
+    - airtable-tabula
+    downloads_context: 4104
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-anilist
+  label: AniList
+  partner: anilist
+  partner_name: AniList
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/venvk/obsidian-library-plugin
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: venv
+    register_id: https://github.com/venvk/obsidian-library-plugin
+    matched_domain: anilist.co
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: anilist.co
+    builder: community
+    plugins:
+    - library
+    downloads_context: 4640
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-anthropic
+  label: Anthropic
+  partner: anthropic
+  partner_name: Anthropic
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/qgrail/obsidian-ai-assistant
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: qgrail
+    register_id: https://github.com/qgrail/obsidian-ai-assistant
+    matched_domain: anthropic.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: console.anthropic.com
+    builder: community
+    plugins:
+    - ai-assistant
+    - nanobanana-pro
+    - llm-hub
+    - chatting-with-ai
+    - perplexed
+    - vault-companion-for-claude
+    - ya-gpt
+    - copilot-auto-completion-plus
+    - vaultchat
+    - claudian-mobile
+    - co-intelligence
+    - feynman-research-agent
+    - chatting-with-ai-plus
+    - atoms
+    - liminal
+    downloads_context: 80211
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-arxiv
+  label: arXiv
+  partner: arxiv
+  partner_name: arXiv
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/chenzhekl/obsidian_paper_importer
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: chenzhekl
+    register_id: https://github.com/chenzhekl/obsidian_paper_importer
+    matched_domain: arxiv.org
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: arxiv.org
+    builder: community
+    plugins:
+    - paper_importer
+    - arxiv-papers
+    - paper-link
+    - paperflow
+    - pubmed-fetcher
+    - scientific-article-card
+    - tahoe-organize
+    downloads_context: 8366
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-asana
+  label: Asana
+  partner: asana
+  partner_name: Asana
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/mryanb/obsidian-asana
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: mryanb
+    register_id: https://github.com/mryanb/obsidian-asana
+    matched_domain: asana.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: app.asana.com
+    builder: community
+    plugins:
+    - asana
+    - asana-connect
+    downloads_context: 2678
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-assemblyai
+  label: AssemblyAI
+  partner: assemblyai
+  partner_name: AssemblyAI
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/waheni/obsidian-speaknote
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: waheni
+    register_id: https://github.com/waheni/obsidian-speaknote
+    matched_domain: assemblyai.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: api.assemblyai.com
+    builder: community
+    plugins:
+    - speaknote
+    - audio-transcript
+    downloads_context: 2476
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-atlassian
+  label: Atlassian
+  partner: atlassian
+  partner_name: Atlassian
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/obsidian-jira-plugin/obsidian-jira-issue
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: Obsidian-jira-plugin
+    register_id: https://github.com/obsidian-jira-plugin/obsidian-jira-issue
+    matched_domain: atlassian.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: www.atlassian.com
+    builder: community
+    plugins:
+    - obsidian-jira-issue
+    - jira-tiles
+    - atlassian-jira-auto-linker
+    downloads_context: 49690
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-baidu
+  label: Baidu
+  partner: baidu
+  partner_name: Baidu
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/ai-chen2050/obsidian-wechat-public-platform
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: ai-chen2050
+    register_id: https://github.com/ai-chen2050/obsidian-wechat-public-platform
+    matched_domain: baidu.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: baijiahao.baidu.com
+    builder: community
+    plugins:
+    - wechat-public-platform
+    - baidu-netdisk-sync
+    - tri-sync
+    - vaultsail
+    - baidu-sync
+    downloads_context: 8359
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-basecamp
+  label: Basecamp
+  partner: basecamp
+  partner_name: Basecamp
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/mkdev-me/obsidian-basecamp-sync
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: fodoj
+    register_id: https://github.com/mkdev-me/obsidian-basecamp-sync
+    matched_domain: basecamp.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: 3.basecamp.com
+    builder: community
+    plugins:
+    - basecamp-sync
+    downloads_context: 55
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-bilibili
+  label: Bilibili
+  partner: bilibili
+  partner_name: Bilibili
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/dao1023/bili-card
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: DaoWang
+    register_id: https://github.com/dao1023/bili-card
+    matched_domain: bilibili.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: space.bilibili.com
+    builder: community
+    plugins:
+    - bili-card
+    - video-transcript-fetch
+    - canvas-bili-player
+    downloads_context: 261
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-bitwarden
+  label: Bitwarden
+  partner: bitwarden
+  partner_name: Bitwarden
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/lai2301/obsidian-secret-placeholders
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: Liam
+    register_id: https://github.com/lai2301/obsidian-secret-placeholders
+    matched_domain: bitwarden.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: bitwarden.com
+    builder: community
+    plugins:
+    - secret-placeholders
+    - bitwarden
+    downloads_context: 3052
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-boohee
+  label: Boohee
+  partner: boohee
+  partner_name: Boohee
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/liuba1223/super-nutrition-calculator
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: LQ
+    register_id: https://github.com/liuba1223/super-nutrition-calculator
+    matched_domain: boohee.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: fc.boohee.com
+    builder: community
+    plugins:
+    - super-nutrition-calculator
+    downloads_context: 153
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-box
+  label: Box
+  partner: box
+  partner_name: Box
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/remotely-save/remotely-save
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: remotely-save
+    register_id: https://github.com/remotely-save/remotely-save
+    matched_domain: box.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: api.box.com
+    builder: community
+    plugins:
+    - remotely-save
+    downloads_context: 2324065
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-bruno
+  label: Bruno
+  partner: bruno-api
+  partner_name: Bruno
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/msyaifullah/brunet
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: masykurisyaifullah
+    register_id: https://github.com/msyaifullah/brunet
+    matched_domain: usebruno.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: www.usebruno.com
+    builder: community
+    plugins:
+    - brunet
+    downloads_context: 213
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-bunny-net
+  label: Bunny.net
+  partner: bunny-net
+  partner_name: Bunny.net
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/ericmwalk/obsidian-bunny-publisher
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: ericmwalk
+    register_id: https://github.com/ericmwalk/obsidian-bunny-publisher
+    matched_domain: bunny.net
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: bunny.net
+    builder: community
+    plugins:
+    - bunny-publisher
+    downloads_context: 151
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-chess-com
+  label: Chess.com
+  partner: chess-com
+  partner_name: Chess.com
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/eddie-d0/last-chess-game
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: eddie-d0
+    register_id: https://github.com/eddie-d0/last-chess-game
+    matched_domain: chess.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: chess.com
+    builder: community
+    plugins:
+    - last-chess-game
+    downloads_context: 141
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-clickup
+  label: Clickup
+  partner: clickup
+  partner_name: Clickup
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/hokim-m/click-up-x-obsidian
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: hokim-m
+    register_id: https://github.com/hokim-m/click-up-x-obsidian
+    matched_domain: clickup.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: api.clickup.com
+    builder: community
+    plugins:
+    - click-up-sync
+    downloads_context: 3803
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-clockify
+  label: Clockify
+  partner: clockify
+  partner_name: Clockify
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/theluckystrike/clockify-mobile-timer
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: theluckystrike
+    register_id: https://github.com/theluckystrike/clockify-mobile-timer
+    matched_domain: clockify.me
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: api.clockify.me
+    builder: community
+    plugins:
+    - clockify-mobile-timer
+    downloads_context: 50
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-cloudflare
+  label: Cloudflare
+  partner: cloudflare
+  partner_name: Cloudflare
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/kavinsood/yaos
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: kavin
+    register_id: https://github.com/kavinsood/yaos
+    matched_domain: cloudflare.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: deploy.workers.cloudflare.com
+    builder: community
+    plugins:
+    - yaos
+    - cf-sync
+    - one-click-publish
+    - obsttorte
+    - cloudflare-artifacts-sync
+    downloads_context: 39853
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-cloudflare-kv
+  label: Cloudflare KV
+  partner: cloudflare-kv
+  partner_name: Cloudflare KV
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/alexmensch/obsidian-cloudflare-kv-sync
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: alexmensch
+    register_id: https://github.com/alexmensch/obsidian-cloudflare-kv-sync
+    matched_domain: cloudflare.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: api.cloudflare.com
+    builder: community
+    plugins:
+    - cloudflare-kv-sync
+    downloads_context: 243
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-cloudflare-r2
+  label: Cloudflare R2
+  partner: cloudflare-r2
+  partner_name: Cloudflare R2
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/imaikosuke/obsidian-cloudflare-r2-sync
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: imaikosuke
+    register_id: https://github.com/imaikosuke/obsidian-cloudflare-r2-sync
+    matched_domain: cloudflare.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: developers.cloudflare.com
+    builder: community
+    plugins:
+    - cloudflare-images-sync
+    - isomite
+    - cloudflare-vault-backup
+    - cloudflare-image-uploader
+    downloads_context: 795
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-cloudinary
+  label: Cloudinary
+  partner: cloudinary
+  partner_name: Cloudinary
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/jordanhandy/obsidian-cloudinary-uploader
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: jordanhandy
+    register_id: https://github.com/jordanhandy/obsidian-cloudinary-uploader
+    matched_domain: cloudinary.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: cloudinary.com
+    builder: community
+    plugins:
+    - obsidian-cloudinary-uploader
+    - cloudinary
+    downloads_context: 12141
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-codepen
+  label: CodePen
+  partner: codepen
+  partner_name: CodePen
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/davidvkimball/obsidian-extended-embeds
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: David V. Kimball
+    register_id: https://github.com/davidvkimball/obsidian-extended-embeds
+    matched_domain: codepen.io
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: codepen.io
+    builder: community
+    plugins:
+    - extended-embeds
+    downloads_context: 4054
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-confluence
+  label: Confluence
+  partner: confluence
+  partner_name: Confluence
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/markdown-confluence/obsidian-integration
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: markdown-confluence
+    register_id: https://github.com/markdown-confluence/obsidian-integration
+    matched_domain: atlassian.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: developer.atlassian.com
+    builder: community
+    plugins:
+    - confluence-integration
+    - confluence-to-obsidian
+    - confluence-link
+    - confluence-sync
+    - confluence-import
+    - confluence-weaver
+    - sync-confluence
+    - confluence-integration-plus
+    - confluence-publisher
+    - confluence-vault-uploader
+    downloads_context: 38111
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-datamuse
+  label: Datamuse
+  partner: datamuse
+  partner_name: Datamuse
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/nqthqn/obsidian-wordy
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: nqthqn
+    register_id: https://github.com/nqthqn/obsidian-wordy
+    matched_domain: datamuse.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: www.datamuse.com
+    builder: community
+    plugins:
+    - obsidian-wordy
+    - creative-thesaurus
+    downloads_context: 17514
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-deepgram
+  label: Deepgram
+  partner: deepgram
+  partner_name: Deepgram
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/waheni/obsidian-speaknote
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: waheni
+    register_id: https://github.com/waheni/obsidian-speaknote
+    matched_domain: deepgram.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: api.deepgram.com
+    builder: community
+    plugins:
+    - speaknote
+    - voxnote
+    - speech-to-text
+    - audio-transcript
+    - voice-to-text
+    downloads_context: 4886
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-deepl
+  label: DeepL
+  partner: deepl
+  partner_name: DeepL
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/fevol/obsidian-translate
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: Fevol
+    register_id: https://github.com/fevol/obsidian-translate
+    matched_domain: deepl.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: www.deepl.com
+    builder: community
+    plugins:
+    - translate
+    - deepl
+    - deepl-translate-selection
+    - bilingual-reader
+    downloads_context: 101996
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-deepseek
+  label: DeepSeek
+  partner: deepseek
+  partner_name: DeepSeek
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/tarslab/obsidian-tars
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: ae86jack
+    register_id: https://github.com/tarslab/obsidian-tars
+    matched_domain: deepseek.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: www.deepseek.com
+    builder: community
+    plugins:
+    - tars
+    - deepseek-ai-assistant
+    - aibrowser-chat
+    - llm-test-gen
+    - istart-note-ai
+    - ratel-vault
+    - deepseek-translator
+    - bilingual-translator
+    - notebrain
+    - llm-translate
+    - lapis-lazuli-ai-assistant
+    - knowledge-brain
+    - kuaifanyi
+    - vault-agent
+    - harness-like
+    downloads_context: 81070
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-desmos
+  label: Desmos
+  partner: desmos
+  partner_name: Desmos
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/nigecat/obsidian-desmos
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: nigecat
+    register_id: https://github.com/nigecat/obsidian-desmos
+    matched_domain: desmos.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: www.desmos.com
+    builder: community
+    plugins:
+    - obsidian-desmos
+    - live-plots
+    downloads_context: 32119
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-discogs
+  label: Discogs
+  partner: discogs
+  partner_name: Discogs
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/gfontenot/obsidian-music-search
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: gfontenot
+    register_id: https://github.com/gfontenot/obsidian-music-search
+    matched_domain: discogs.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: www.discogs.com
+    builder: community
+    plugins:
+    - music-search
+    - discogs-music-sync
+    - netease-sync
+    - discogs-cover
+    downloads_context: 1886
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-dropbox
+  label: Dropbox
+  partner: dropbox
+  partner_name: Dropbox
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/ryanpcmcquen/obsidian-dropbox-backups
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: ryanpcmcquen
+    register_id: https://github.com/ryanpcmcquen/obsidian-dropbox-backups
+    matched_domain: dropbox.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: dropbox.com
+    builder: community
+    plugins:
+    - obsidian-dropbox-backups
+    - air-sync
+    - powerconnect
+    - vaultbox
+    - archivist
+    - dropbox-photo-grid
+    - multisync
+    downloads_context: 29526
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-duckduckgo
+  label: DuckDuckGo
+  partner: duckduckgo
+  partner_name: DuckDuckGo
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/ismailsaoulaj/quickcite
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: ismail saoulaj
+    register_id: https://github.com/ismailsaoulaj/quickcite
+    matched_domain: duckduckgo.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: api.duckduckgo.com
+    builder: community
+    plugins:
+    - quickcite
+    downloads_context: 67
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-elevenlabs
+  label: ElevenLabs
+  partner: elevenlabs
+  partner_name: ElevenLabs
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/danialkalbasi/obsidian-vox
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: danialkalbasi
+    register_id: https://github.com/danialkalbasi/obsidian-vox
+    matched_domain: elevenlabs.io
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: elevenlabs.io
+    builder: community
+    plugins:
+    - vox-reader
+    - live-scribe
+    - note-narrator
+    downloads_context: 642
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-factory
+  label: Factory
+  partner: factory-ai
+  partner_name: Factory
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/yuchenssr/buildian
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: YuChenSSR
+    register_id: https://github.com/yuchenssr/buildian
+    matched_domain: factory.ai
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: factory.ai
+    builder: community
+    plugins:
+    - buildian
+    downloads_context: 1567
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-fatsecret
+  label: fatsecret
+  partner: fatsecret
+  partner_name: fatsecret
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/jamescliffordspratt/macros
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: jamescliffordspratt
+    register_id: https://github.com/jamescliffordspratt/macros
+    matched_domain: fatsecret.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: platform.fatsecret.com
+    builder: community
+    plugins:
+    - macros
+    downloads_context: 7516
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-feedly
+  label: Feedly
+  partner: feedly
+  partner_name: Feedly
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/fleker/feedly-for-obsidian
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: fleker
+    register_id: https://github.com/fleker/feedly-for-obsidian
+    matched_domain: feedly.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: feedly.com
+    builder: community
+    plugins:
+    - feedly-annotations
+    downloads_context: 949
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-figma
+  label: Figma
+  partner: figma
+  partner_name: Figma
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/kocheck/obsidian-figma-viewer
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: kocheck
+    register_id: https://github.com/kocheck/obsidian-figma-viewer
+    matched_domain: figma.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: help.figma.com
+    builder: community
+    plugins:
+    - figma-embed
+    downloads_context: 5473
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-garmin
+  label: Garmin
+  partner: garmin
+  partner_name: Garmin
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/fcandi/Garmin-Health-Sync
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: fcandi
+    register_id: https://github.com/fcandi/Garmin-Health-Sync
+    matched_domain: garmin.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: connect.garmin.com
+    builder: community
+    plugins:
+    - garmin-health-sync
+    - garmin-connect
+    downloads_context: 2222
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-geoapify
+  label: Geoapify
+  partner: geoapify
+  partner_name: Geoapify
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/bobstanton/places-geoapify
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: bobstanton
+    register_id: https://github.com/bobstanton/places-geoapify
+    matched_domain: geoapify.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: www.geoapify.com
+    builder: community
+    plugins:
+    - places-geoapify
+    downloads_context: 70
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-ghost
+  label: Ghost
+  partner: ghost-org
+  partner_name: Ghost
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/southpaw1496/obsidian-send-to-ghost
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: southpaw1496
+    register_id: https://github.com/southpaw1496/obsidian-send-to-ghost
+    matched_domain: ghost.org
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: ghost.org
+    builder: community
+    plugins:
+    - send-to-ghost
+    downloads_context: 4961
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-giphy
+  label: Giphy
+  partner: giphy
+  partner_name: Giphy
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/lucjager/giphy-plugin
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: lucjager
+    register_id: https://github.com/lucjager/giphy-plugin
+    matched_domain: giphy.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: developers.giphy.com
+    builder: community
+    plugins:
+    - giphy
+    downloads_context: 3499
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-gitea
+  label: Gitea
+  partner: gitea
+  partner_name: Gitea
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/wk-obsidian/HybridGitSync
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: walkskyer
+    register_id: https://github.com/wk-obsidian/HybridGitSync
+    matched_domain: gitea.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: gitea.com
+    builder: community
+    plugins:
+    - hybrid-git-sync
+    - gitea-cards
+    downloads_context: 1881
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-gitee
+  label: Gitee
+  partner: gitee
+  partner_name: Gitee
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/ericquan8/obsidian-gitee-sync
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: eric
+    register_id: https://github.com/ericquan8/obsidian-gitee-sync
+    matched_domain: gitee.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: gitee.com
+    builder: community
+    plugins:
+    - gitee-sync
+    - gitee-sync-plus
+    - gitee-sync-better
+    - ob-sync
+    downloads_context: 1868
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-gladia
+  label: Gladia
+  partner: gladia
+  partner_name: Gladia
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/jaliriogbarrios19/Audio_Transcript
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: Jesús García
+    register_id: https://github.com/jaliriogbarrios19/Audio_Transcript
+    matched_domain: gladia.io
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: app.gladia.io
+    builder: community
+    plugins:
+    - audio-transcript
+    downloads_context: 494
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-goodreads
+  label: Goodreads
+  partner: goodreads
+  partner_name: Goodreads
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/ducktapekiller/global-book-search
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: ducktapekiller
+    register_id: https://github.com/ducktapekiller/global-book-search
+    matched_domain: goodreads.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: www.goodreads.com
+    builder: community
+    plugins:
+    - global-book-search
+    - goodreadsync
+    downloads_context: 7978
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-google-gemini
+  label: Google Gemini
+  partner: google-gemini
+  partner_name: Google Gemini
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/takeshy/obsidian-gemini-helper
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: TAKESHI MORITA
+    register_id: https://github.com/takeshy/obsidian-gemini-helper
+    matched_domain: google.dev
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: ai.google.dev
+    builder: community
+    plugins:
+    - gemini-helper
+    - chat-with-bard
+    - gemini-generator
+    - handwriting-to-text
+    - nice-korean-spell-checker
+    downloads_context: 45500
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-granola
+  label: Granola
+  partner: granola
+  partner_name: Granola
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/og-sync/obsidian-granola-sync
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: og-sync
+    register_id: https://github.com/og-sync/obsidian-granola-sync
+    matched_domain: granola.ai
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: granola.ai
+    builder: community
+    plugins:
+    - granola-sync
+    - granola-meetings-simple-sync
+    - granola-sync-plus
+    - granola-api-sync
+    downloads_context: 35371
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-graphhopper
+  label: GraphHopper
+  partner: graphhopper
+  partner_name: GraphHopper
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/bobstanton/places-graphhopper
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: bobstanton
+    register_id: https://github.com/bobstanton/places-graphhopper
+    matched_domain: graphhopper.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: graphhopper.com
+    builder: community
+    plugins:
+    - places-graphhopper
+    downloads_context: 88
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-groq
+  label: Groq
+  partner: groq
+  partner_name: Groq
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/ducktapekiller/horme
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: ducktapekiller
+    register_id: https://github.com/ducktapekiller/horme
+    matched_domain: groq.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: api.groq.com
+    builder: community
+    plugins:
+    - horme
+    - ya-gpt
+    - ai-autocomplete
+    - rag-chat
+    - multi-ai-assistant
+    - polymind
+    - automatic-mood-history
+    - voice-to-text
+    - nebi-chat
+    - note-improver
+    - untitled-auto-title
+    downloads_context: 6489
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-gyazo
+  label: Gyazo
+  partner: gyazo
+  partner_name: Gyazo
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/nota/gyazo-obsidian-plugin
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: nota
+    register_id: https://github.com/nota/gyazo-obsidian-plugin
+    matched_domain: gyazo.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: gyazo.com
+    builder: community
+    plugins:
+    - gyazo
+    downloads_context: 1308
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-hacker-news
+  label: Hacker News
+  partner: hacker-news
+  partner_name: Hacker News
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/arpitbbhayani/obsidian-hackernews
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: arpitbbhayani
+    register_id: https://github.com/arpitbbhayani/obsidian-hackernews
+    matched_domain: ycombinator.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: news.ycombinator.com
+    builder: community
+    plugins:
+    - obsidian-hackernews
+    - hackernews-comments
+    - hn-reader
+    downloads_context: 7184
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-hackerone
+  label: HackerOne
+  partner: hackerone
+  partner_name: HackerOne
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/neolex-security/obsidian-hackerone
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: neolex-security
+    register_id: https://github.com/neolex-security/obsidian-hackerone
+    matched_domain: hackerone.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: api.hackerone.com
+    builder: community
+    plugins:
+    - hackerone
+    downloads_context: 5145
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-hackmd
+  label: HackMD
+  partner: hackmd
+  partner_name: HackMD
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/thor314/hackmd-obsidian
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: thor314
+    register_id: https://github.com/thor314/hackmd-obsidian
+    matched_domain: hackmd.io
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: api.hackmd.io
+    builder: community
+    plugins:
+    - hackmd-sync
+    - hackmd-push
+    downloads_context: 3378
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-harvest
+  label: Harvest
+  partner: harvest
+  partner_name: Harvest
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/nwbort/obsidian-harvest
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: nwbort
+    register_id: https://github.com/nwbort/obsidian-harvest
+    matched_domain: getharvest.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: id.getharvest.com
+    builder: community
+    plugins:
+    - harvest
+    downloads_context: 158
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-hevy
+  label: Hevy
+  partner: hevy
+  partner_name: Hevy
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/s-t-i-h-i/obsidian-hevy-plugin
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: stihi
+    register_id: https://github.com/s-t-i-h-i/obsidian-hevy-plugin
+    matched_domain: hevyapp.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: www.hevyapp.com
+    builder: community
+    plugins:
+    - hevy-sync
+    downloads_context: 61
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-igdb
+  label: IGDB
+  partner: igdb
+  partner_name: IGDB
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/tetsuya-dev-jp/igdb-game-search
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: tetsuya-dev-jp
+    register_id: https://github.com/tetsuya-dev-jp/igdb-game-search
+    matched_domain: igdb.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: api-docs.igdb.com
+    builder: community
+    plugins:
+    - igdb-game-search
+    downloads_context: 1819
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-imagekit
+  label: ImageKit
+  partner: imagekit
+  partner_name: ImageKit
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/addozhang/obsidian-image-upload-toolkit
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: addozhang
+    register_id: https://github.com/addozhang/obsidian-image-upload-toolkit
+    matched_domain: imagekit.io
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: ik.imagekit.io
+    builder: community
+    plugins:
+    - image-upload-toolkit
+    - image-gin
+    downloads_context: 17111
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-imgbb
+  label: ImgBB
+  partner: imgbb
+  partner_name: ImgBB
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/jordanhandy/obsidian-imgbb-uploader
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: jordanhandy
+    register_id: https://github.com/jordanhandy/obsidian-imgbb-uploader
+    matched_domain: imgbb.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: imgbb.com
+    builder: community
+    plugins:
+    - imgbb-uploader
+    - image-hoist
+    downloads_context: 1645
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-imgur
+  label: Imgur
+  partner: imgur
+  partner_name: Imgur
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/gavvvr/obsidian-imgur-plugin
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: gavvvr
+    register_id: https://github.com/gavvvr/obsidian-imgur-plugin
+    matched_domain: imgur.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: api.imgur.com
+    builder: community
+    plugins:
+    - obsidian-imgur-plugin
+    - image-upload-toolkit
+    - quick-share-note-to-gist
+    - oss-gallery
+    downloads_context: 79277
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-instagram
+  label: Instagram
+  partner: instagram
+  partner_name: Instagram
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/solankidushyant07/instagram-saves-manager
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: coconutshell
+    register_id: https://github.com/solankidushyant07/instagram-saves-manager
+    matched_domain: instagram.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: instagram.com
+    builder: community
+    plugins:
+    - instagram-saves-manager
+    - instagram-dm-inbox
+    - summarize-video-to-text
+    - youtube-embed
+    - reel-to-md
+    downloads_context: 1015
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-jira
+  label: Jira
+  partner: jira
+  partner_name: Jira
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/nabheetcloud/Obsidian-Jira-Sync-Projects-Issues-Dashboard
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: Nabheet Madan
+    register_id: https://github.com/nabheetcloud/Obsidian-Jira-Sync-Projects-Issues-Dashboard
+    matched_domain: atlassian.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: id.atlassian.com
+    builder: community
+    plugins:
+    - jira-sync-dashboard
+    - jira-ticket-data-fetcher
+    downloads_context: 553
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-kroki
+  label: Kroki
+  partner: kroki
+  partner_name: Kroki
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/gregzuro/obsidian-kroki
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: gregzuro
+    register_id: https://github.com/gregzuro/obsidian-kroki
+    matched_domain: kroki.io
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: docs.kroki.io
+    builder: community
+    plugins:
+    - obsidian-kroki
+    downloads_context: 12637
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-languagetool
+  label: LanguageTool
+  partner: languagetool
+  partner_name: LanguageTool
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/clemens-e/obsidian-languagetool-plugin
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: clemens-e
+    register_id: https://github.com/clemens-e/obsidian-languagetool-plugin
+    matched_domain: languagetool.org
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: community.languagetool.org
+    builder: community
+    plugins:
+    - obsidian-languagetool-plugin
+    - languagetool
+    downloads_context: 374699
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-last-fm
+  label: Last.fm
+  partner: lastfm
+  partner_name: Last.fm
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/txoldi/obsidian-lastfm-plugin
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: txoldi
+    register_id: https://github.com/txoldi/obsidian-lastfm-plugin
+    matched_domain: last.fm
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: last.fm
+    builder: community
+    plugins:
+    - lastfm
+    - sync-lastfm
+    - stardust-importer
+    downloads_context: 1402
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-letterboxd
+  label: Letterboxd
+  partner: letterboxd
+  partner_name: Letterboxd
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/fleker/letterboxd-for-obsidian
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: fleker
+    register_id: https://github.com/fleker/letterboxd-for-obsidian
+    matched_domain: letterboxd.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: letterboxd.com
+    builder: community
+    plugins:
+    - letterboxd-rss-sync
+    - letterboxd-mirror
+    - letterboxd-sync
+    - letterboxd-recent-films
+    downloads_context: 4386
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-lichess
+  label: Lichess
+  partner: lichess
+  partner_name: Lichess
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/ekrizdis367/obsidian-caissa
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: Matthew Newton
+    register_id: https://github.com/ekrizdis367/obsidian-caissa
+    matched_domain: lichess.org
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: lichess.org
+    builder: community
+    plugins:
+    - caissa
+    downloads_context: 3042
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-linear
+  label: Linear
+  partner: linear-app
+  partner_name: Linear
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/caseybecking/obsidian-linear-plugin
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: caseybecking
+    register_id: https://github.com/caseybecking/obsidian-linear-plugin
+    matched_domain: linear.app
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: linear.app
+    builder: community
+    plugins:
+    - linear
+    - linear-integration
+    downloads_context: 3645
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-lm-studio
+  label: LM Studio
+  partner: lm-studio
+  partner_name: LM Studio
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/takeshy/obsidian-local-llm-hub
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: TAKESHI MORITA
+    register_id: https://github.com/takeshy/obsidian-local-llm-hub
+    matched_domain: lmstudio.ai
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: lmstudio.ai
+    builder: community
+    plugins:
+    - local-llm-hub
+    - lm-studio-connect
+    - horme
+    - perplexed
+    - lilbee
+    - llm-auto-title
+    - vault-crews
+    downloads_context: 41172
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-lorem-picsum
+  label: Lorem Picsum
+  partner: lorem-picsum
+  partner_name: Lorem Picsum
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/cloud-xero/obsidian-background-slideshow
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: cloud-xero
+    register_id: https://github.com/cloud-xero/obsidian-background-slideshow
+    matched_domain: picsum.photos
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: picsum.photos
+    builder: community
+    plugins:
+    - background-slideshow
+    downloads_context: 41
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-mapbox
+  label: Mapbox
+  partner: mapbox
+  partner_name: Mapbox
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/aaronczichon/obsidian-location-plugin
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: aaronczichon
+    register_id: https://github.com/aaronczichon/obsidian-location-plugin
+    matched_domain: mapbox.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: api.mapbox.com
+    builder: community
+    plugins:
+    - mapbox-location
+    - places-mapbox
+    downloads_context: 4632
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-maptiler
+  label: MapTiler
+  partner: maptiler
+  partner_name: MapTiler
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/bobstanton/places-maptiler
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: bobstanton
+    register_id: https://github.com/bobstanton/places-maptiler
+    matched_domain: maptiler.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: www.maptiler.com
+    builder: community
+    plugins:
+    - places-maptiler
+    downloads_context: 63
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-mastodon
+  label: Mastodon
+  partner: mastodon
+  partner_name: Mastodon
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/elpamplina/mastodon-threading
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: elpamplina
+    register_id: https://github.com/elpamplina/mastodon-threading
+    matched_domain: joinmastodon.org
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: docs.joinmastodon.org
+    builder: community
+    plugins:
+    - mastodon-threading
+    downloads_context: 2280
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-minimax
+  label: MiniMax
+  partner: minimax-ai
+  partner_name: MiniMax
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/chinoryunqin/lumen-ai-assistant
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: chinoryunqin
+    register_id: https://github.com/chinoryunqin/lumen-ai-assistant
+    matched_domain: minimax.io
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: platform.minimax.io
+    builder: community
+    plugins:
+    - lumen-ai-assistant
+    downloads_context: 547
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-minio
+  label: MinIO
+  partner: minio
+  partner_name: MinIO
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/stmoonar/oss-gallery-plugin-obsidian
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: stmoonar
+    register_id: https://github.com/stmoonar/oss-gallery-plugin-obsidian
+    matched_domain: min.io
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: play.min.io
+    builder: community
+    plugins:
+    - oss-gallery
+    downloads_context: 50
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-misskey
+  label: Misskey
+  partner: misskey
+  partner_name: Misskey
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/minimarimo3/Obsidian-plugin-for-Misskey
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: minimarimo3
+    register_id: https://github.com/minimarimo3/Obsidian-plugin-for-Misskey
+    matched_domain: misskey-hub.net
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: misskey-hub.net
+    builder: community
+    plugins:
+    - misskey-connector
+    downloads_context: 919
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-monday-com
+  label: Monday.com
+  partner: monday-com
+  partner_name: Monday.com
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/nbdev99/obsidian-monday-integration
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: nbdev99
+    register_id: https://github.com/nbdev99/obsidian-monday-integration
+    matched_domain: monday.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: monday.com
+    builder: community
+    plugins:
+    - monday-integration
+    downloads_context: 331
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-musicbrainz
+  label: MusicBrainz
+  partner: musicbrainz
+  partner_name: MusicBrainz
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/gfontenot/obsidian-music-search
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: gfontenot
+    register_id: https://github.com/gfontenot/obsidian-music-search
+    matched_domain: musicbrainz.org
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: musicbrainz.org
+    builder: community
+    plugins:
+    - music-search
+    downloads_context: 1631
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-myanimelist
+  label: MyAnimeList
+  partner: myanimelist
+  partner_name: MyAnimeList
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/venvk/obsidian-library-plugin
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: venv
+    register_id: https://github.com/venvk/obsidian-library-plugin
+    matched_domain: myanimelist.net
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: api-cdn.myanimelist.net
+    builder: community
+    plugins:
+    - library
+    downloads_context: 4640
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-n8n
+  label: n8n
+  partner: n8n
+  partner_name: n8n
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/masterb1234/obsidian-post-webhook
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: masterb1234
+    register_id: https://github.com/masterb1234/obsidian-post-webhook
+    matched_domain: n8n.io
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: n8n.io
+    builder: community
+    plugins:
+    - post-webhook
+    downloads_context: 8026
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-neo4j
+  label: Neo4j
+  partner: neo4j
+  partner_name: Neo4j
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/hemile/obsidian-neo4j-graph-view
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: hemile
+    register_id: https://github.com/hemile/obsidian-neo4j-graph-view
+    matched_domain: neo4j.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: neo4j.com
+    builder: community
+    plugins:
+    - neo4j-graph-view
+    downloads_context: 12287
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-netease-cloud-music
+  label: NetEase Cloud Music
+  partner: netease-cloud-music
+  partner_name: NetEase Cloud Music
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/louiss342/Vinyl-life
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: MacGuffin
+    register_id: https://github.com/louiss342/Vinyl-life
+    matched_domain: 163.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: interface.music.163.com
+    builder: community
+    plugins:
+    - vinyl-life
+    - netease-sync
+    downloads_context: 294
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-nextcloud
+  label: Nextcloud
+  partner: nextcloud
+  partner_name: Nextcloud
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/onlymykazari/obsidian-nextcloud-deck
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: onlymykazari
+    register_id: https://github.com/onlymykazari/obsidian-nextcloud-deck
+    matched_domain: nextcloud.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: docs.nextcloud.com
+    builder: community
+    plugins:
+    - nextdeck
+    - mysync
+    - nextclaw-sync
+    downloads_context: 3511
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-nominatim
+  label: Nominatim
+  partner: nominatim
+  partner_name: Nominatim
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/bobstanton/places-nominatim
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: bobstanton
+    register_id: https://github.com/bobstanton/places-nominatim
+    matched_domain: nominatim.org
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: nominatim.org
+    builder: community
+    plugins:
+    - places-nominatim
+    downloads_context: 120
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-nostr
+  label: Nostr
+  partner: nostr
+  partner_name: Nostr
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/jamesmagoo/nostr-writer
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: jamesmagoo
+    register_id: https://github.com/jamesmagoo/nostr-writer
+    matched_domain: nostr.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: nostr.com
+    builder: community
+    plugins:
+    - nostr-writer
+    downloads_context: 5769
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-notion
+  label: Notion
+  partner: notion
+  partner_name: Notion
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/jxpeng98/obsidian-to-NotionNext
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: jxpeng98
+    register_id: https://github.com/jxpeng98/obsidian-to-NotionNext
+    matched_domain: notion.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: api.notion.com
+    builder: community
+    plugins:
+    - share-to-notionnext
+    - obsidian-notion-video
+    - notional
+    - auto-note-importer
+    - feynman-learning
+    - notion-vault-sync
+    - notion-database-sync
+    - notion-pull-lite
+    - multisync
+    - markdown-relay
+    - journal-sync-bridge
+    - akbun-notion-sync
+    - llm-wiki-sync
+    - vault-to-notion
+    downloads_context: 34849
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-novelai
+  label: NovelAI
+  partner: novelai
+  partner_name: NovelAI
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/salokingreen/NAI4Obsidian
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: salokingreen
+    register_id: https://github.com/salokingreen/NAI4Obsidian
+    matched_domain: novelai.net
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: novelai.net
+    builder: community
+    plugins:
+    - nai4obsidian
+    downloads_context: 8174
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-nvidia-nim
+  label: NVIDIA NIM
+  partner: nvidia-nim
+  partner_name: NVIDIA NIM
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/axxalab/axxa-agent
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: AXXA Lab™
+    register_id: https://github.com/axxalab/axxa-agent
+    matched_domain: nvidia.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: api.ngc.nvidia.com
+    builder: community
+    plugins:
+    - axxa-agent
+    downloads_context: 901
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-ollama
+  label: Ollama
+  partner: ollama
+  partner_name: Ollama
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/pfrankov/obsidian-ai-providers
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: pfrankov
+    register_id: https://github.com/pfrankov/obsidian-ai-providers
+    matched_domain: ollama.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: docs.ollama.com
+    builder: community
+    plugins:
+    - ai-providers
+    - tars
+    - local-llm-hub
+    - quiz-generator
+    - ai_llm
+    - image-transcriber
+    - horme
+    - ollama-assistant
+    - agentic-chat
+    - lilbee
+    - agent-mcp
+    - detailed-canvas
+    - vault-brain
+    - second-brain-builder
+    - vaultchat
+    downloads_context: 197033
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-open-food-facts
+  label: Open Food Facts
+  partner: open-food-facts
+  partner_name: Open Food Facts
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/jamescliffordspratt/macros
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: jamescliffordspratt
+    register_id: https://github.com/jamescliffordspratt/macros
+    matched_domain: openfoodfacts.org
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: world.openfoodfacts.org
+    builder: community
+    plugins:
+    - macros
+    downloads_context: 7516
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-open-library
+  label: Open Library
+  partner: open-library
+  partner_name: Open Library
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/ducktapekiller/global-book-search
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: ducktapekiller
+    register_id: https://github.com/ducktapekiller/global-book-search
+    matched_domain: openlibrary.org
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: covers.openlibrary.org
+    builder: community
+    plugins:
+    - global-book-search
+    - easy-obookshelf
+    - book-search-covers
+    - book-metasearch
+    - tome
+    - isbn-bulk-import-bookshelf-builder
+    - reading-tracker
+    - library-notes
+    - media-quick-edit
+    - book-lookup
+    downloads_context: 18647
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-open-meteo
+  label: Open-Meteo
+  partner: open-meteo
+  partner_name: Open-Meteo
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/bobstanton/places-environment
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: bobstanton
+    register_id: https://github.com/bobstanton/places-environment
+    matched_domain: open-meteo.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: api.open-meteo.com
+    builder: community
+    plugins:
+    - places-environment
+    downloads_context: 175
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-openai
+  label: OpenAI
+  partner: openai
+  partner_name: OpenAI
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/nhaouari/obsidian-textgenerator-plugin
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: nhaouari
+    register_id: https://github.com/nhaouari/obsidian-textgenerator-plugin
+    matched_domain: openai.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: api.openai.com
+    builder: community
+    plugins:
+    - obsidian-textgenerator-plugin
+    - ai-providers
+    - whisper
+    - bmo-chatbot
+    - tars
+    - smart-chatgpt
+    - gpt3-notes
+    - ai-assistant
+    - quiz-generator
+    - aloud-tts
+    - ai-commander
+    - nanobanana-pro
+    - large-language-models
+    - ai-templater
+    - ai-research-assistant
+    downloads_context: 1155893
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-openalex
+  label: OpenAlex
+  partner: openalex
+  partner_name: OpenAlex
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/maxonamission/obsidian-parallax
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: Max
+    register_id: https://github.com/maxonamission/obsidian-parallax
+    matched_domain: openalex.org
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: api.openalex.org
+    builder: community
+    plugins:
+    - consensus-research
+    - arxiv-papers
+    - tome
+    - literature-graph
+    - literature-feed
+    downloads_context: 3645
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-openrouter
+  label: OpenRouter
+  partner: openrouter
+  partner_name: OpenRouter
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/bramses/chatgpt-md
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: bramses
+    register_id: https://github.com/bramses/chatgpt-md
+    matched_domain: openrouter.ai
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: openrouter.ai
+    builder: community
+    plugins:
+    - chatgpt-md
+    - llm-hub
+    - horme
+    - linkvault
+    - vaultchat
+    - axxa-agent
+    - open-pdf-translate
+    - synod
+    - synapse-ai
+    - culebra-ai-spell-correct
+    - polymind
+    - torbert-text-ai
+    - decision-tagger
+    - confidant
+    - vaultquiz
+    downloads_context: 169128
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-openrouteservice
+  label: OpenRouteService
+  partner: openrouteservice
+  partner_name: OpenRouteService
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/bobstanton/places-openrouteservice
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: bobstanton
+    register_id: https://github.com/bobstanton/places-openrouteservice
+    matched_domain: openrouteservice.org
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: api.openrouteservice.org
+    builder: community
+    plugins:
+    - places-openrouteservice
+    downloads_context: 63
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-openstreetmap
+  label: OpenStreetMap
+  partner: openstreetmap
+  partner_name: OpenStreetMap
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/bobstanton/places-nominatim
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: bobstanton
+    register_id: https://github.com/bobstanton/places-nominatim
+    matched_domain: openstreetmap.org
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: nominatim.openstreetmap.org
+    builder: community
+    plugins:
+    - places-nominatim
+    downloads_context: 120
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-oura
+  label: Oura
+  partner: oura-ring
+  partner_name: Oura
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/kinabalu/obsidian-oura-plugin
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: kinabalu
+    register_id: https://github.com/kinabalu/obsidian-oura-plugin
+    matched_domain: ouraring.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: cloud.ouraring.com
+    builder: community
+    plugins:
+    - obsidian-oura-plugin
+    - oura-metrics
+    downloads_context: 6361
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-perplexity
+  label: Perplexity
+  partner: perplexity
+  partner_name: Perplexity
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/thansheer/obsidian-omnichat
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: Mohammed Thanseer
+    register_id: https://github.com/thansheer/obsidian-omnichat
+    matched_domain: perplexity.ai
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: perplexity.ai
+    builder: community
+    plugins:
+    - aibrowser-chat
+    - perplexed
+    - co-intelligence
+    downloads_context: 9738
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-planetscale
+  label: Planetscale
+  partner: planetscale
+  partner_name: Planetscale
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/piriwata/pubScale
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: piriwata
+    register_id: https://github.com/piriwata/pubScale
+    matched_domain: planetscale.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: planetscale.com
+    builder: community
+    plugins:
+    - pubscale
+    downloads_context: 3369
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-pocket
+  label: Pocket
+  partner: pocket
+  partner_name: Pocket
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/canna71/obsidian-readlater
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: canna71
+    register_id: https://github.com/canna71/obsidian-readlater
+    matched_domain: getpocket.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: getpocket.com
+    builder: community
+    plugins:
+    - obsidian-readlater
+    downloads_context: 7136
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-pocketbase
+  label: PocketBase
+  partner: pocketbase
+  partner_name: PocketBase
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/sukum/OBPB-Backup
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: sree
+    register_id: https://github.com/sukum/OBPB-Backup
+    matched_domain: pocketbase.io
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: pocketbase.io
+    builder: community
+    plugins:
+    - obpb-backup
+    downloads_context: 28
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-protomaps
+  label: Protomaps
+  partner: protomaps
+  partner_name: Protomaps
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/bobstanton/places-protomaps
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: bobstanton
+    register_id: https://github.com/bobstanton/places-protomaps
+    matched_domain: protomaps.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: api.protomaps.com
+    builder: community
+    plugins:
+    - places-protomaps
+    downloads_context: 59
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-proxmox-ve
+  label: Proxmox VE
+  partner: proxmox
+  partner_name: Proxmox VE
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/psalkiewicz/obsidian-proxmox-vm-list
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: Pawel Salkiewicz
+    register_id: https://github.com/psalkiewicz/obsidian-proxmox-vm-list
+    matched_domain: proxmox.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: www.proxmox.com
+    builder: community
+    plugins:
+    - proxmox-vm-list
+    downloads_context: 276
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-qq-music
+  label: QQ Music
+  partner: qq-music
+  partner_name: QQ Music
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/louiss342/Vinyl-life
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: MacGuffin
+    register_id: https://github.com/louiss342/Vinyl-life
+    matched_domain: qq.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: aqqmusic.tc.qq.com
+    builder: community
+    plugins:
+    - vinyl-life
+    downloads_context: 197
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-quip
+  label: Quip
+  partner: quip
+  partner_name: Quip
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/sblakey/obsidian-quip
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: sblakey
+    register_id: https://github.com/sblakey/obsidian-quip
+    matched_domain: quip.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: platform.quip.com
+    builder: community
+    plugins:
+    - quip
+    downloads_context: 9184
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-replicate
+  label: Replicate
+  partner: replicate
+  partner_name: Replicate
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/dsebastien/obsidian-replicate
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: Sébastien Dubois
+    register_id: https://github.com/dsebastien/obsidian-replicate
+    matched_domain: replicate.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: replicate.com
+    builder: community
+    plugins:
+    - replicate
+    downloads_context: 1139
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-sanity
+  label: Sanity
+  partner: sanity
+  partner_name: Sanity
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/violet27chen/sanity-obsidian-plugin
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: violetchen
+    register_id: https://github.com/violet27chen/sanity-obsidian-plugin
+    matched_domain: sanity.io
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: 3hwpvo77.api.sanity.io
+    builder: community
+    plugins:
+    - sanity-sync
+    downloads_context: 41
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-scryfall
+  label: Scryfall
+  partner: scryfall
+  partner_name: Scryfall
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/louis1190/obsidian-mtg-collection-tracker
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: louis1190
+    register_id: https://github.com/louis1190/obsidian-mtg-collection-tracker
+    matched_domain: scryfall.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: api.scryfall.com
+    builder: community
+    plugins:
+    - mtg-collection-tracker
+    downloads_context: 206
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-semantic-scholar
+  label: Semantic Scholar
+  partner: semantic-scholar
+  partner_name: Semantic Scholar
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/maxonamission/obsidian-parallax
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: Max
+    register_id: https://github.com/maxonamission/obsidian-parallax
+    matched_domain: semanticscholar.org
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: api.semanticscholar.org
+    builder: community
+    plugins:
+    - consensus-research
+    - citation-graph
+    downloads_context: 2778
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-setlist-fm
+  label: setlist.fm
+  partner: setlist-fm
+  partner_name: setlist.fm
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/fleker/setlist-for-obsidian
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: fleker
+    register_id: https://github.com/fleker/setlist-for-obsidian
+    matched_domain: setlist.fm
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: api.setlist.fm
+    builder: community
+    plugins:
+    - setlist-fm-sync
+    downloads_context: 926
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-spotify
+  label: Spotify
+  partner: spotify
+  partner_name: Spotify
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/studiowebux/obsidian-spotify-link
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: studiowebux
+    register_id: https://github.com/studiowebux/obsidian-spotify-link
+    matched_domain: spotify.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: accounts.spotify.com
+    builder: community
+    plugins:
+    - spotify-link
+    - spotify-api
+    - spotify-links
+    - extended-embeds
+    - spotify-control
+    - stream-embed
+    - scrobble
+    - spotify-sorter
+    downloads_context: 27979
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-stadia-maps
+  label: Stadia Maps
+  partner: stadia-maps
+  partner_name: Stadia Maps
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/bobstanton/places-stadia
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: bobstanton
+    register_id: https://github.com/bobstanton/places-stadia
+    matched_domain: stadiamaps.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: stadiamaps.com
+    builder: community
+    plugins:
+    - places-stadia
+    downloads_context: 62
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-steam
+  label: Steam
+  partner: steam
+  partner_name: Steam
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/venvk/obsidian-library-plugin
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: venv
+    register_id: https://github.com/venvk/obsidian-library-plugin
+    matched_domain: steampowered.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: api.steampowered.com
+    builder: community
+    plugins:
+    - library
+    - game-search
+    - steamynotes
+    downloads_context: 7211
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-stepfun
+  label: StepFun
+  partner: stepfun
+  partner_name: StepFun
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/cheng-zi-qing/stepvox
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: ZiqingCheng
+    register_id: https://github.com/cheng-zi-qing/stepvox
+    matched_domain: stepfun.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: platform.stepfun.com
+    builder: community
+    plugins:
+    - stepvox
+    downloads_context: 348
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-strava
+  label: Strava
+  partner: strava
+  partner_name: Strava
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/watsonbox/obsidian-strava-sync
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: watsonbox
+    register_id: https://github.com/watsonbox/obsidian-strava-sync
+    matched_domain: strava.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: developers.strava.com
+    builder: community
+    plugins:
+    - strava-sync
+    - strava-periodic-note-sync
+    downloads_context: 6833
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-supabase
+  label: Supabase
+  partner: supabase
+  partner_name: Supabase
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/jaliriogbarrios19/SupSync
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: Jesús García
+    register_id: https://github.com/jaliriogbarrios19/SupSync
+    matched_domain: supabase.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: supabase.com
+    builder: community
+    plugins:
+    - supsync
+    - supabase-vault-sync
+    - telegram-bridge
+    - supabase-image-uploader
+    downloads_context: 964
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-tavily
+  label: Tavily
+  partner: tavily
+  partner_name: Tavily
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/reallygood83/reallygood-research
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: reallygood83
+    register_id: https://github.com/reallygood83/reallygood-research
+    matched_domain: tavily.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: api.tavily.com
+    builder: community
+    plugins:
+    - reallygood-research
+    downloads_context: 3602
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-telegraph
+  label: Telegraph
+  partner: telegraph
+  partner_name: Telegraph
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/reorx/obsidian-telegraph-publish
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: reorx
+    register_id: https://github.com/reorx/obsidian-telegraph-publish
+    matched_domain: telegra.ph
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: telegra.ph
+    builder: community
+    plugins:
+    - obsidian-telegraph-publish
+    downloads_context: 7638
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-tiktok
+  label: TikTok
+  partner: tiktok
+  partner_name: TikTok
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/ameyxd/obsidian-tiktoker
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: ameyxd
+    register_id: https://github.com/ameyxd/obsidian-tiktoker
+    matched_domain: tiktok.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: tiktok.com
+    builder: community
+    plugins:
+    - tiktoker
+    - summarize-video-to-text
+    - youtube-embed
+    downloads_context: 3763
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-todoist
+  label: Todoist
+  partner: todoist
+  partner_name: Todoist
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/ellpeck/ObsidianCustomFrames
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: Ell
+    register_id: https://github.com/ellpeck/ObsidianCustomFrames
+    matched_domain: todoist.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: todoist.com
+    builder: community
+    plugins:
+    - obsidian-custom-frames
+    - todoist-sync-plugin
+    - ultimate-todoist-sync
+    - todoist-text
+    - todoist-board
+    - obsidian-todoist-link
+    - todoist-completed-tasks-plugin
+    - todoist-context-bridge
+    - another-simple-todoist-sync
+    - sync-todoist
+    - todoist-review
+    - syncist-todoist-sync
+    - todoist-plug
+    - todoister
+    - semantic-todoist-sync
+    downloads_context: 560692
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-toggl-track
+  label: Toggl Track
+  partner: toggl
+  partner_name: Toggl Track
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/mcndt/obsidian-toggl-integration
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: mcndt
+    register_id: https://github.com/mcndt/obsidian-toggl-integration
+    matched_domain: toggl.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: support.toggl.com
+    builder: community
+    plugins:
+    - obsidian-toggl-integration
+    - toggl-import
+    - toggl-mobile-timer
+    downloads_context: 33212
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-tradingview
+  label: TradingView
+  partner: tradingview
+  partner_name: TradingView
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/themanuelml/obsidian-tradeview
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: Manuel Magaña
+    register_id: https://github.com/themanuelml/obsidian-tradeview
+    matched_domain: tradingview.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: s3.tradingview.com
+    builder: community
+    plugins:
+    - tradingview-widget
+    downloads_context: 1300
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-trakt
+  label: Trakt
+  partner: trakt
+  partner_name: Trakt
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/fleker/trakt-for-obsidian
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: fleker
+    register_id: https://github.com/fleker/trakt-for-obsidian
+    matched_domain: trakt.tv
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: trakt.tv
+    builder: community
+    plugins:
+    - trakt-tv
+    - sync-trakt
+    - stardust-importer
+    downloads_context: 4892
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-trello
+  label: Trello
+  partner: trello
+  partner_name: Trello
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/nathonius/obsidian-trello
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: nathonius
+    register_id: https://github.com/nathonius/obsidian-trello
+    matched_domain: trello.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: trello.com
+    builder: community
+    plugins:
+    - obsidian-trello
+    - trellosync
+    - trello-vault-sync
+    - trello-kanban-sync
+    downloads_context: 20699
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-unsplash
+  label: Unsplash
+  partner: unsplash
+  partner_name: Unsplash
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/cloudy9101/obsidian-image-inserter
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: cloudy9101
+    register_id: https://github.com/cloudy9101/obsidian-image-inserter
+    matched_domain: unsplash.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: unsplash.com
+    builder: community
+    plugins:
+    - insert-unsplash-image
+    downloads_context: 19174
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-vimeo
+  label: Vimeo
+  partner: vimeo
+  partner_name: Vimeo
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/shimodatami/Obsidian-vimeo
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: shimodatami
+    register_id: https://github.com/shimodatami/Obsidian-vimeo
+    matched_domain: vimeo.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: player.vimeo.com
+    builder: community
+    plugins:
+    - simple-vimeo
+    downloads_context: 64
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-virustotal
+  label: VirusTotal
+  partner: virustotal
+  partner_name: VirusTotal
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/ytisf/virustotal-enrich
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: ytisf
+    register_id: https://github.com/ytisf/virustotal-enrich
+    matched_domain: virustotal.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: www.virustotal.com
+    builder: community
+    plugins:
+    - virustotal-enrich
+    downloads_context: 1571
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-visual-crossing
+  label: Visual Crossing
+  partner: visual-crossing
+  partner_name: Visual Crossing
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/willasm/vc-weather
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: willasm
+    register_id: https://github.com/willasm/vc-weather
+    matched_domain: visualcrossing.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: www.visualcrossing.com
+    builder: community
+    plugins:
+    - visual-crossing-weather
+    downloads_context: 8663
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-vk
+  label: vk
+  partner: vk
+  partner_name: vk
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/filichev-evgeny/obsidianvkupdatenotifier
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: filichev-evgeny
+    register_id: https://github.com/filichev-evgeny/obsidianvkupdatenotifier
+    matched_domain: vk.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: vk.com
+    builder: community
+    plugins:
+    - vk-group-notifier
+    - vk-inbox
+    downloads_context: 1616
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-wikidata
+  label: Wikidata
+  partner: wikidata
+  partner_name: Wikidata
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/samwho/obsidian-wikidata-importer
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: samwho
+    register_id: https://github.com/samwho/obsidian-wikidata-importer
+    matched_domain: wikidata.org
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: query.wikidata.org
+    builder: community
+    plugins:
+    - wikidata-importer
+    downloads_context: 7226
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-wiktionary
+  label: Wiktionary
+  partner: wiktionary
+  partner_name: Wiktionary
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/jonas-karneboge/wiktionary-sidebar
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: Jonas Karneboge
+    register_id: https://github.com/jonas-karneboge/wiktionary-sidebar
+    matched_domain: wiktionary.org
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: de.wiktionary.org
+    builder: community
+    plugins:
+    - wiktionary-sidebar
+    - popup-dictionary
+    - mynary
+    downloads_context: 3295
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-withings
+  label: Withings
+  partner: withings
+  partner_name: Withings
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/iyiguncevik/obsidian-withings-sync
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: Iyigun Cevik
+    register_id: https://github.com/iyiguncevik/obsidian-withings-sync
+    matched_domain: withings.com
+    matched_by: domain+name-in-listing
+    matched_where: source
+    matched_host: account.withings.com
+    builder: community
+    plugins:
+    - withings-sync
+    downloads_context: 514
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-wordnik
+  label: Wordnik
+  partner: wordnik
+  partner_name: Wordnik
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/lizard-heart/obsidian-wordnik-definitions
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: Henry Gustafson
+    register_id: https://github.com/lizard-heart/obsidian-wordnik-definitions
+    matched_domain: wordnik.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: developer.wordnik.com
+    builder: community
+    plugins:
+    - obsidian-wordnik
+    downloads_context: 4934
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-wordpress
+  label: WordPress
+  partner: wordpress
+  partner_name: WordPress
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/roomi-fields/obsidian-content-publisher
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: roomi-fields
+    register_id: https://github.com/roomi-fields/obsidian-content-publisher
+    matched_domain: wordpress.org
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: make.wordpress.org
+    builder: community
+    plugins:
+    - content-publisher
+    downloads_context: 2447
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-workflowy
+  label: Workflowy
+  partner: workflowy
+  partner_name: Workflowy
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/springrain1/workflowy-style-outline
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: 'springrain | 公众号: 及时春雨'
+    register_id: https://github.com/springrain1/workflowy-style-outline
+    matched_domain: workflowy.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: workflowy.com
+    builder: community
+    plugins:
+    - workflowy-style-outline
+    - workflowy-sync
+    downloads_context: 3019
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-xai
+  label: xAI
+  partner: xai
+  partner_name: xAI
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/reallygood83/nanobanana-pro-obsidian
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: reallygood83
+    register_id: https://github.com/reallygood83/nanobanana-pro-obsidian
+    matched_domain: x.ai
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: api.x.ai
+    builder: community
+    plugins:
+    - nanobanana-pro
+    - grok-mobile
+    downloads_context: 18204
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-xiaomi
+  label: Xiaomi
+  partner: xiaomi
+  partner_name: Xiaomi
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/emac/obsidian-minote-plugin
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: emac
+    register_id: https://github.com/emac/obsidian-minote-plugin
+    matched_domain: mi.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: i.mi.com
+    builder: community
+    plugins:
+    - minote-sync
+    - mimocode
+    downloads_context: 2840
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-zhihu
+  label: Zhihu
+  partner: zhihu
+  partner_name: Zhihu
+  type: coverage
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  evidence: https://github.com/zimya/zhihu_obsidian
+  source: edge
+  relationship: connector-coverage
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: zimya
+    register_id: https://github.com/zimya/zhihu_obsidian
+    matched_domain: zhihu.com
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: www.zhihu.com
+    builder: community
+    plugins:
+    - zhihu
+    - zhihu-favorites-sync
+    - content-studio
+    - zhihu-reader
+    - zhihu-feed
+    downloads_context: 6978
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-exa
+  label: Exa
+  partner: exa-ai
+  partner_name: Exa
+  category: Obsidian community plugin
+  type: marketplace
+  marketplace: obsidian-community-plugins
+  channel: partner-built
+  evidence: https://github.com/exa-labs/obsidian-exa-search
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:publisher
+    registered_name: 10ishq
+    register_id: https://github.com/exa-labs/obsidian-exa-search
+    matched_domain: exa.ai
+    matched_by: domain+hand-review
+    matched_where: manifest authorUrl
+    matched_host: https://exa.ai
+    builder: publisher
+    plugins:
+    - exa-search
+    downloads_context: 176
+    signal_note: 'Provider-authored Obsidian plugin: manifest authorUrl on the provider''s domain and the manifest
+      author passes the name check. Listing alone = participation; downloads are context.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-motherduck
+  label: MotherDuck
+  partner: motherduck
+  partner_name: MotherDuck
+  category: Obsidian community plugin
+  type: marketplace
+  marketplace: obsidian-community-plugins
+  channel: partner-built
+  evidence: https://github.com/motherduckdb/obsidian-duckdb-motherduck
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:publisher
+    registered_name: Mehdi Ouazza
+    register_id: https://github.com/motherduckdb/obsidian-duckdb-motherduck
+    matched_domain: motherduck.com
+    matched_by: domain
+    matched_where: manifest authorUrl
+    matched_host: https://motherduck.com
+    builder: publisher
+    plugins:
+    - duckdb-motherduck
+    downloads_context: 1225
+    signal_note: 'Provider-authored Obsidian plugin: manifest authorUrl on the provider''s domain and the manifest
+      author passes the name check. Listing alone = participation; downloads are context.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-pieces
+  label: Pieces
+  partner: pieces
+  partner_name: Pieces
+  category: Obsidian community plugin
+  type: marketplace
+  marketplace: obsidian-community-plugins
+  channel: partner-built
+  evidence: https://github.com/pieces-app/obsidian-pieces
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:publisher
+    registered_name: pieces-app
+    register_id: https://github.com/pieces-app/obsidian-pieces
+    matched_domain: pieces.app
+    matched_by: domain
+    matched_where: manifest authorUrl
+    matched_host: https://pieces.app
+    builder: publisher
+    plugins:
+    - pieces-for-developers
+    downloads_context: 28630
+    signal_note: 'Provider-authored Obsidian plugin: manifest authorUrl on the provider''s domain and the manifest
+      author passes the name check. Listing alone = participation; downloads are context.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-publora
+  label: Publora
+  partner: publora
+  partner_name: Publora
+  category: Obsidian community plugin
+  type: marketplace
+  marketplace: obsidian-community-plugins
+  channel: partner-built
+  evidence: https://github.com/publora/obsidian-publora
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:publisher
+    registered_name: Publora
+    register_id: https://github.com/publora/obsidian-publora
+    matched_domain: publora.com
+    matched_by: domain
+    matched_where: manifest authorUrl
+    matched_host: https://publora.com?utm_source=obsidian&utm_medium=plugin
+    builder: publisher
+    plugins:
+    - publora
+    downloads_context: 190
+    signal_note: 'Provider-authored Obsidian plugin: manifest authorUrl on the provider''s domain and the manifest
+      author passes the name check. Listing alone = participation; downloads are context.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-unirate-api
+  label: UniRate API
+  partner: unirateapi
+  partner_name: UniRate API
+  category: Obsidian community plugin
+  type: marketplace
+  marketplace: obsidian-community-plugins
+  channel: partner-built
+  evidence: https://github.com/unirate-api/obsidian-currency
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:publisher
+    registered_name: unirate-api
+    register_id: https://github.com/unirate-api/obsidian-currency
+    matched_domain: unirateapi.com
+    matched_by: domain
+    matched_where: manifest authorUrl
+    matched_host: https://unirateapi.com
+    builder: publisher
+    plugins:
+    - unirate-currency
+    downloads_context: 212
+    signal_note: 'Provider-authored Obsidian plugin: manifest authorUrl on the provider''s domain and the manifest
+      author passes the name check. Listing alone = participation; downloads are context.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-vectorize
+  label: Vectorize
+  partner: vectorize-io
+  partner_name: Vectorize
+  category: Obsidian community plugin
+  type: marketplace
+  marketplace: obsidian-community-plugins
+  channel: partner-built
+  evidence: https://github.com/vectorize-io/hindsight-obsidian
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:publisher
+    registered_name: Vectorize
+    register_id: https://github.com/vectorize-io/hindsight-obsidian
+    matched_domain: vectorize.io
+    matched_by: domain
+    matched_where: manifest authorUrl
+    matched_host: https://hindsight.vectorize.io
+    builder: publisher
+    plugins:
+    - hindsight
+    downloads_context: 4311
+    signal_note: 'Provider-authored Obsidian plugin: manifest authorUrl on the provider''s domain and the manifest
+      author passes the name check. Listing alone = participation; downloads are context.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-wakatime
+  label: WakaTime
+  partner: wakatime
+  partner_name: WakaTime
+  category: Obsidian community plugin
+  type: marketplace
+  marketplace: obsidian-community-plugins
+  channel: partner-built
+  evidence: https://github.com/wakatime/obsidian-wakatime
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:publisher
+    registered_name: wakatime
+    register_id: https://github.com/wakatime/obsidian-wakatime
+    matched_domain: wakatime.com
+    matched_by: domain
+    matched_where: manifest authorUrl
+    matched_host: https://wakatime.com
+    builder: publisher
+    plugins:
+    - obsidian-wakatime
+    downloads_context: 14151
+    signal_note: 'Provider-authored Obsidian plugin: manifest authorUrl on the provider''s domain and the manifest
+      author passes the name check. Listing alone = participation; downloads are context.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: obsidian-whimsical
+  label: Whimsical
+  partner: whimsical
+  partner_name: Whimsical
+  category: Obsidian community plugin
+  type: marketplace
+  marketplace: obsidian-community-plugins
+  channel: partner-built
+  evidence: https://github.com/whimsicalcode/obsidian-whimsical-plugin
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:publisher
+    registered_name: Whimsical
+    register_id: https://github.com/whimsicalcode/obsidian-whimsical-plugin
+    matched_domain: whimsical.com
+    matched_by: domain
+    matched_where: manifest authorUrl
+    matched_host: https://whimsical.com
+    builder: publisher
+    plugins:
+    - whimsical
+    downloads_context: 156
+    signal_note: 'Provider-authored Obsidian plugin: manifest authorUrl on the provider''s domain and the manifest
+      author passes the name check. Listing alone = participation; downloads are context.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
